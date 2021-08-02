@@ -1,2 +1,2 @@
-# kunaljain.github.io
+# kj7kunal.github.io
 Project log
