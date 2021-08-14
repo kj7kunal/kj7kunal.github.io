@@ -3,19 +3,19 @@ module.exports = {
     // Site URL for when it goes live
     siteUrl: `https://elastic-meninsky-aa7c74.netlify.app/`,
     // Your Name
-    name: 'Ryan Fitzgerald',
+    name: 'Kunal Jain',
     // Main Site Title
-    title: `Ryan Fitzgerald | Full-Stack Developer`,
+    title: `Kunal Jain | Machine Learning Engineer`,
     // Description that goes under your name in main bio
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit, ipsum.`,
+    description: `Machine Learning Engineer currently in Tokyo, Japan`,
     // Optional: Twitter account handle
-    author: `@rfitzio`,
+    author: `@kj7kunal`,
     // Optional: Github account URL
-    github: `https://github.com/ryanfitzgerald`,
+    github: `https://github.com/kj7kunal`,
     // Optional: LinkedIn account URL
-    linkedin: `https://www.linkedin.com/in/ryanafitzgerald/`,
+    linkedin: `https://www.linkedin.com/in/kj7kunal`,
     // Content of the About Me section
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis porro cumque ea error ab voluptatem. Temporibus adipisci exercitationem similique itaque quibusdam laudantium, qui molestiae quas, aut amet animi id.`,
+    about: `I'm a motivated machine learning engineer who has experienced building ML models and applying AI to supplement various products and services. I'm passionate about working in challenging and high-impact environments, and building automation pipelines that help save human time and effort. I take up pet projects actively and I recently started competitive programming for interviewing.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
@@ -40,19 +40,27 @@ module.exports = {
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
-        name: 'Acme Corp',
-        description: 'Full-Stack Developer, February 2020 - Present',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'Visional Inc. (formerly BizReach Inc.)',
+        description: 'Machine Learning Engineer, October 2019 - Present',
+        link: 'https://www.visional.inc/ja/index.html',
       },
       {
-        name: 'Globex Corp',
-        description: 'Full-Stack Developer, December 2017 - February 2020',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'Nanyang Technological University, Singapore',
+        description: 'Summer Research Internship, May 2018 - July 2018',
+        link: 'https://www.ntu.edu.sg/rose',
       },
       {
-        name: 'Hooli',
-        description: 'Full-Stack Developer, May 2015 - December 2017',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'ISRO Satellite Centre, Bangalore',
+        description: 'Summer Research Internship, May 2017 - July 2017',
+        link: 'https://www.ursc.gov.in/',
+      },
+    ],
+    // Optional: List your experience, they must have `name` and `description`. `link` is optional.
+    education: [
+      {
+        name: 'Indian Institute of Technology Kharagpur',
+        description: '[Dual (B.Tech + M.Tech.)] Aerospace Engineering | [Minor] Computer Science and Engineering | 2014 - 2019',
+        link: 'http://www.iitkgp.ac.in/',
       },
     ],
     // Optional: List your skills, they must have `name` and `description`.

@@ -1,9 +1,9 @@
 {
-  "name": "devfolio",
+  "name": "kj7kunal.github.io",
   "private": true,
-  "description": "A modern and production-ready personal portfolio + blog template built with GatsbyJs and TailwindCSS",
+  "description": "Personal portfolio + blogs. Built with GatsbyJs and TailwindCSS",
   "version": "0.1.0",
-  "author": "Ryan Fitzgerald",
+  "author": "Kunal Jain",
   "dependencies": {
     "gatsby": "^2.24.67",
     "gatsby-image": "^2.4.20",
@@ -33,10 +33,22 @@
   },
   "devDependencies": {
     "prettier": "2.1.2",
-    "tailwindcss": "^1.8.13"
+    "tailwindcss": "^2.2.7"
   },
   "keywords": [
-    "gatsby"
+    "kj7kunal",
+    "portfolio",
+    "personal",
+    "website",
+    "tech",
+    "coding",
+    "dev",
+    "machine learning engineer",
+    "ml/ai",
+    "ai",
+    "ml engineer",
+    "ai engineer",
+    "kunal jain"
   ],
   "license": "MIT",
   "scripts": {
@@ -49,9 +61,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/RyanFitzgerald/devfolio"
+    "url": "https://github.com/kj7kunal/kj7kunal.github.io"
   },
   "bugs": {
-    "url": "https://github.com/RyanFitzgerald/devfolio/issues"
+    "url": "https://github.com/kj7kunal/kj7kunal.github.io/issues"
   }
 }
