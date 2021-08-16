@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     // Site URL for when it goes live
-    siteUrl: `https://elastic-meninsky-aa7c74.netlify.app/`,
+    siteUrl: `https://kj7kunal.github.io/`,
     // Your Name
     name: 'Kunal Jain',
     // Main Site Title
@@ -15,26 +15,26 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/kj7kunal`,
     // Content of the About Me section
-    about: `I'm a motivated machine learning engineer who has experienced building ML models and applying AI to supplement various products and services. I'm passionate about working in challenging and high-impact environments, and building automation pipelines that help save human time and effort. I take up pet projects actively and I recently started competitive programming for interviewing.`,
+    about: `I'm a Machine Learning Engineer passionate about working in challenging and high-impact environments, and building automation pipelines that help save human time and effort. I take up pet projects actively and like spending caffeinated lofi evenings working on them. I recently, and very reluctantly, started competitive programming for interviewing, but caved in to the benefits.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
-        name: 'Devfolio',
+        name: 'E-Medic',
         description:
-          'A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+          'A WhatsApp chatbot for contact-less consultation booking and healthcare management during Covid-19',
+        link: 'https://github.com/kj7kunal/e-med',
       },
       {
-        name: 'ChromeExtensionKit',
+        name: 'Pokemon Go Social',
         description:
-          'Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates',
-        link: 'https://chromeextensionkit.com/?ref=devfolio',
+          'Maybe a social networking app for Pokemon GO',
+        link: 'https://github.com/kj7kunal/Pokemon-Go-Social',
       },
       {
-        name: 'Another Cool Project',
+        name: 'Newspaper Sudoku Solver',
         description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit ducimus perferendis',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+          'Solve a Standard Sudoku by looking at it',
+        link: 'https://github.com/kj7kunal/newspaper_sudoku_solver',
       },
     ],
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
@@ -68,16 +68,16 @@ module.exports = {
       {
         name: 'Languages & Frameworks',
         description:
-          'JavaScript (ES6+), Golang, Node.js, Express.js, React, Ruby on Rails, PHP',
+          'Python, JavaScript (ES6+), PyTorch, pandas, OpenCV, Dialogflow, Node.js, Express.js, Vue.js, React',
       },
       {
-        name: 'Databases',
-        description: 'MongoDB, PostreSQL, MySQL',
+        name: 'Databases & ORMs',
+        description: 'MySQL, Sequelize',
       },
       {
         name: 'Other',
         description:
-          'Docker, Amazon Web Services (AWS), CI / CD, Microservices, API design, Agile / Scrum',
+          'Docker, Amazon Web Services (AWS), Heroku, API design, Agile / Scrum',
       },
     ],
   },
