@@ -29,7 +29,13 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "trim-newlines": ">=3.0.1",
+    "glob-parent": ">=5.1.2",
+    "trim": ">=0.0.3",
+    "sanitize-html": ">=2.3.2",
+    "is-svg": ">=4.2.2",
+    "react-dev-utils": ">=11.0.4"
   },
   "devDependencies": {
     "gh-pages": "^3.2.3",
