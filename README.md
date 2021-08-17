@@ -78,7 +78,14 @@ The _Education_ section is defined as an array under the `education` key in the 
 ```js
 {
   name: 'University of XYZ', // Required
-  description: 'Computer Science & Engineering, July 2014 - May 2019', // Required
+  description: [
+    {
+      text: 'Computer Science & Engineering, July 2014 - May 2019'
+    }
+    {
+      text: 'Minor in Aerospace Engineering'
+    }
+  ], // Required
   link: 'https://github.com/RyanFitzgerald/devfolio', // Optional
 },
 ```
