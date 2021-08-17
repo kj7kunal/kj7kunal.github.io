@@ -1,5 +1,7 @@
 # kj7kunal.github.io
 
+![Preview](src/images/social.jpg)
+
 Based on RyanFitzgerald/devfolio. [Devfolio](https://github.com/RyanFitzgerald/devfolio) is a modern and production-ready personal portfolio and blog template built on GatsbyJS and styled with TailwindCSS. Easily show off your projects, experience, and skills, as well as write blog posts showcasing your knowledge.
 
 Some of the features include:
@@ -27,6 +29,7 @@ For a live demo of a slightly customized version of the template (my own persona
   - [General](#general)
   - [About Me](#about-me)
   - [Projects](#projects)
+  - [Education](#education)
   - [Experience](#experience)
   - [Skills](#skills)
 - [Setting Up The Blog](#setting-up-the-blog)
@@ -66,6 +69,25 @@ The _Projects_ section is defined as an array under the `projects` key in the co
   description: 'A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS', // Required
   link: 'https://github.com/RyanFitzgerald/devfolio', // Optional
 }
+```
+
+### Education
+
+The _Education_ section is defined as an array under the `education` key in the config and is optional. Education items have the following format:
+
+```js
+{
+  name: 'University of XYZ', // Required
+  description: [
+    {
+      text: 'Computer Science & Engineering, July 2014 - May 2019'
+    }
+    {
+      text: 'Minor in Aerospace Engineering'
+    }
+  ], // Required
+  link: 'https://github.com/RyanFitzgerald/devfolio', // Optional
+},
 ```
 
 ### Experience

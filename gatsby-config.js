@@ -37,6 +37,21 @@ module.exports = {
         link: 'https://github.com/kj7kunal/newspaper_sudoku_solver',
       },
     ],
+    // Optional: List your education, they must have `name` and `description`. `link` is optional.
+    education: [
+      {
+        name: 'Indian Institute of Technology Kharagpur',
+        description: [
+          {
+            text: '[Dual (B.Tech + M.Tech.)] Aerospace Engineering, July 2014 - May 2019',
+          },
+          {
+            text: '[Minor] Computer Science and Engineering',
+          },
+        ],
+        link: 'http://www.iitkgp.ac.in/',
+      },
+    ],
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
@@ -53,14 +68,6 @@ module.exports = {
         name: 'ISRO Satellite Centre, Bangalore',
         description: 'Summer Research Internship, May 2017 - July 2017',
         link: 'https://www.ursc.gov.in/',
-      },
-    ],
-    // Optional: List your experience, they must have `name` and `description`. `link` is optional.
-    education: [
-      {
-        name: 'Indian Institute of Technology Kharagpur',
-        description: '[Dual (B.Tech + M.Tech.)] Aerospace Engineering | [Minor] Computer Science and Engineering | 2014 - 2019',
-        link: 'http://www.iitkgp.ac.in/',
       },
     ],
     // Optional: List your skills, they must have `name` and `description`.
