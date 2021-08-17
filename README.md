@@ -1,5 +1,7 @@
 # kj7kunal.github.io
 
+![Preview](src/images/social.jpg)
+
 Based on RyanFitzgerald/devfolio. [Devfolio](https://github.com/RyanFitzgerald/devfolio) is a modern and production-ready personal portfolio and blog template built on GatsbyJS and styled with TailwindCSS. Easily show off your projects, experience, and skills, as well as write blog posts showcasing your knowledge.
 
 Some of the features include:
