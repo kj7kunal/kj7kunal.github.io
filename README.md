@@ -29,6 +29,7 @@ For a live demo of a slightly customized version of the template (my own persona
   - [General](#general)
   - [About Me](#about-me)
   - [Projects](#projects)
+  - [Education](#education)
   - [Experience](#experience)
   - [Skills](#skills)
 - [Setting Up The Blog](#setting-up-the-blog)
@@ -68,6 +69,18 @@ The _Projects_ section is defined as an array under the `projects` key in the co
   description: 'A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS', // Required
   link: 'https://github.com/RyanFitzgerald/devfolio', // Optional
 }
+```
+
+### Education
+
+The _Education_ section is defined as an array under the `education` key in the config and is optional. Education items have the following format:
+
+```js
+{
+  name: 'University of XYZ', // Required
+  description: 'Computer Science & Engineering, July 2014 - May 2019', // Required
+  link: 'https://github.com/RyanFitzgerald/devfolio', // Optional
+},
 ```
 
 ### Experience
