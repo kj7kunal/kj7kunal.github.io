@@ -9,13 +9,15 @@ module.exports = {
     // Description that goes under your name in main bio
     description: `Machine Learning Engineer currently in Tokyo, Japan`,
     // Optional: Twitter account handle
-    author: `@kj7kunal`,
+    author: `kj7kunal`,
     // Optional: Github account URL
     github: `https://github.com/kj7kunal`,
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/kj7kunal`,
+    // Optional: Resume URL
+    resume: `https://tinyurl.com/kunaljainresume`,
     // Content of the About Me section
-    about: `I'm a Machine Learning Engineer passionate about working in challenging and high-impact environments, and building automation pipelines that help save human time and effort. I take up pet projects actively and like spending caffeinated lofi evenings working on them. I recently, and very reluctantly, started competitive programming for interviewing, but caved in to the benefits.`,
+    about: `I'm a Machine Learning Engineer passionate about working in challenging and high-impact environments, and building automation pipelines that help save human time and effort. I take up side projects actively and like spending caffeinated lofi evenings working on them. I recently, and very reluctantly, started competitive programming for interviewing, but caved in to the benefits.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
@@ -27,7 +29,7 @@ module.exports = {
       {
         name: 'Pokemon Go Social',
         description:
-          'Maybe a social networking app for Pokemon GO',
+          'A fun conceptualization of a social networking app for Pokemon GO',
         link: 'https://github.com/kj7kunal/Pokemon-Go-Social',
       },
       {
