@@ -8,7 +8,7 @@ description: 'What makes kj7kunal?'
 
 I like to document my life, and up until now, I was using social networking to do so. I wanted to create a personal virtual space, fitting my own preferences and tastes. I wonder how this will turn out in the end.
 
-![Profile Picture](./src/images/profile.png)
+![Profile Picture](profile.jpg)
 
 ## Meet the Artist
 
