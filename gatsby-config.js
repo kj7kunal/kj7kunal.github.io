@@ -33,6 +33,12 @@ module.exports = {
         link: 'https://github.com/kj7kunal/Pokemon-Go-Social',
       },
       {
+        name: 'Guess The Doodle',
+        description:
+          'An instagram filter that challenges you to guess the doodle before it finishes drawing',
+        link: 'https://github.com/kj7kunal/GuessTheDoodle',
+      },
+      {
         name: 'Newspaper Sudoku Solver',
         description:
           'Solve a Standard Sudoku by looking at it',
