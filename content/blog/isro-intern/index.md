@@ -4,35 +4,29 @@ date: '2020-08-01T12:00:00.00Z'
 description: 'Research intern experience at ISRO Satellite Centre'
 ---
 
-```
-```
+I spent the summer of 2017 as a research intern at the [ISRO Satellite Centre, Bangalore](https://www.ursc.gov.in/).
 
-Summer of 2017, I had interned at the [ISRO Satellite Centre, Bangalore](https://www.ursc.gov.in/).
-
-At the start of my third-year at IIT Kharagpur, I had no idea I would get to
-work for [my country's national space agency](https://www.isro.gov.in/) and be able to further ongoing theoretical
-research on ways to tackle the Kessler syndrome.
+At the start of my third-year at IIT Kharagpur, I would not have guessed that I
+would get to work for [my country's national space agency](https://www.isro.gov.in/)
+and be able to further ongoing theoretical research on ways to tackle the Kessler syndrome.
 
 In this internship, I designed mathematical models and simulations for physical objects interacting in space.
 
-#### Contents
-
-[How I got selected](#how-i-got-selected)
-
-- [Resume](#Resume)
-- [Application Process](#application-process)
-- [Interview Call](#interview-call)
-
-[The Project](#the-project)
-
-- [Objectives](#objectives)
-- [Motivation](#motivation)
-- [Implementation](#implementation)
-- [Result](#result)
-
-[My Experience](#my-experience)
-
 ```
+Contents
+
+- How I got selected
+  - Resume
+  - Application Process
+  - Interview Call
+
+- The Project
+  - Objectives
+  - Motivation
+  - Implementation
+  - Result
+
+- My Experience
 ```
 
 ## How I got selected
@@ -49,7 +43,7 @@ misalignment estimation during various burn phases, mainly in MATLAB.
 
 The application process was tricky. I could not find an "open positions" page
 online. And if you have ever been to the ISRO website, it's really hard to find
-what you're looking for anyway. No, my best friend here, was networking.
+what you're looking for. No, my best friend here, was networking.
 
 I had heard about the [Indian Institute of Space Science and Technology](https://www.iist.ac.in/) having direct ties with ISRO, and that students usually go for internships at
 various labs across the entire space agency. Through a bit of googling, I found a
@@ -141,7 +135,7 @@ rigid bodies as kinematic pairs (joints, springs and dampers).
 ### Result
 
 The results of this research were drafted into a research paper and accepted for
-[Interactive Presentation in the 69th International Astronautical Congress 2018](https://iafastro.directory/iac/archive/browse/IAC-18/A6/IP/48269/) 
+[Interactive Presentation in the 69th International Astronautical Congress 2018](https://iafastro.directory/iac/archive/browse/IAC-18/A6/IP/48269/)
 in Bremen, Germany. However, due to lack of sponsorship and funds, I was not able
 to attend the conference.
 
@@ -150,7 +144,7 @@ to attend the conference.
 
 ## My Experience
 
-As an aerospace engineering student, I had very enthusiastic about working at the
+As an aerospace engineering student, I was very enthusiastic about working at the
 ISRO Satellite Centre, and I was very excited to fly to Bangalore as soon as my
 summer vacation started.
 
@@ -165,7 +159,7 @@ really friendly, and talking to them was like talking to any senior from college
 There were 3 more interns from different universities, who had their own
 stories of how they got their internships.
 
-I usually started work at 10am and ended work around 4pm. My mentor and I synced
+I usually started work at 10AM and ended work around 4PM. My mentor and I synced
 up twice each week and discussed work updates every day. It motivated me to stay
 on track. Since I could be flexible, I sometimes used to work from cafes near my
 place instead of going to office. My mentor was super approachable, and I could
