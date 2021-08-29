@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kunal Jain | Machine Learning Engineer]]></title><description><![CDATA[Machine Learning Engineer currently in Tokyo, Japan]]></description><link>https://kj7kunal.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 29 Aug 2021 08:16:02 GMT</lastBuildDate><item><title><![CDATA[Meet the creator]]></title><description><![CDATA[A more personal introduction I like to document my life, and up until now, I was using social networking to do so. I wanted to create a…]]></description><link>https://kj7kunal.github.io/blog/more-about/</link><guid isPermaLink="false">https://kj7kunal.github.io/blog/more-about/</guid><pubDate>Fri, 20 Aug 2021 12:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;A more personal introduction&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kunal Jain | Machine Learning Engineer]]></title><description><![CDATA[Machine Learning Engineer currently in Tokyo, Japan]]></description><link>https://kj7kunal.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 29 Aug 2021 08:38:30 GMT</lastBuildDate><item><title><![CDATA[Meet the creator]]></title><description><![CDATA[A more personal introduction I like to document my life, and up until now, I was using social networking to do so. I wanted to create a…]]></description><link>https://kj7kunal.github.io/blog/more-about/</link><guid isPermaLink="false">https://kj7kunal.github.io/blog/more-about/</guid><pubDate>Fri, 20 Aug 2021 12:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;A more personal introduction&lt;/h2&gt;
 &lt;p&gt;I like to document my life, and up until now, I was using social networking to do so. I wanted to create a personal virtual space, fitting my own preferences and tastes. I wonder how this will turn out in the end.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -107,28 +107,25 @@
 
 &lt;span class=&quot;token function&quot;&gt;helloWorld&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token function&quot;&gt;helloWorld&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;John Doe&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Numquam fugiat quibusdam aut ut, voluptatibus accusamus repellendus quas minus consequuntur possimus!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The ISRO Internship]]></title><description><![CDATA[Summer of 2017, I had interned at the ISRO Satellite Centre, Bangalore. At the start of my third-year at IIT Kharagpur, I had no idea I…]]></description><link>https://kj7kunal.github.io/blog/isro-intern/</link><guid isPermaLink="false">https://kj7kunal.github.io/blog/isro-intern/</guid><pubDate>Sat, 01 Aug 2020 12:00:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Summer of 2017, I had interned at the &lt;a href=&quot;https://www.ursc.gov.in/&quot;&gt;ISRO Satellite Centre, Bangalore&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;At the start of my third-year at IIT Kharagpur, I had no idea I would get to
-work for &lt;a href=&quot;https://www.isro.gov.in/&quot;&gt;my country’s national space agency&lt;/a&gt; and be able to further ongoing theoretical
-research on ways to tackle the Kessler syndrome.&lt;/p&gt;
+&lt;p&gt;Numquam fugiat quibusdam aut ut, voluptatibus accusamus repellendus quas minus consequuntur possimus!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The ISRO Internship]]></title><description><![CDATA[I spent the summer of 2017 as a research intern at the ISRO Satellite Centre, Bangalore. At the start of my third-year at IIT Kharagpur, I…]]></description><link>https://kj7kunal.github.io/blog/isro-intern/</link><guid isPermaLink="false">https://kj7kunal.github.io/blog/isro-intern/</guid><pubDate>Sat, 01 Aug 2020 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I spent the summer of 2017 as a research intern at the &lt;a href=&quot;https://www.ursc.gov.in/&quot;&gt;ISRO Satellite Centre, Bangalore&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;At the start of my third-year at IIT Kharagpur, I would not have guessed that I
+would get to work for &lt;a href=&quot;https://www.isro.gov.in/&quot;&gt;my country’s national space agency&lt;/a&gt;
+and be able to further ongoing theoretical research on ways to tackle the Kessler syndrome.&lt;/p&gt;
 &lt;p&gt;In this internship, I designed mathematical models and simulations for physical objects interacting in space.&lt;/p&gt;
-&lt;h4&gt;Contents&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;#how-i-got-selected&quot;&gt;How I got selected&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#Resume&quot;&gt;Resume&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#application-process&quot;&gt;Application Process&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#interview-call&quot;&gt;Interview Call&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;#the-project&quot;&gt;The Project&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#objectives&quot;&gt;Objectives&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#motivation&quot;&gt;Motivation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#implementation&quot;&gt;Implementation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#result&quot;&gt;Result&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;#my-experience&quot;&gt;My Experience&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Contents
+
+- How I got selected
+  - Resume
+  - Application Process
+  - Interview Call
+
+- The Project
+  - Objectives
+  - Motivation
+  - Implementation
+  - Result
+
+- My Experience&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;How I got selected&lt;/h2&gt;
 &lt;h3&gt;Resume&lt;/h3&gt;
 &lt;p&gt;Well, other than being enrolled in an Aerospace Engineering degree at one of the most
@@ -139,7 +136,7 @@ misalignment estimation during various burn phases, mainly in MATLAB.&lt;/p&gt;
 &lt;h3&gt;Application Process&lt;/h3&gt;
 &lt;p&gt;The application process was tricky. I could not find an “open positions” page
 online. And if you have ever been to the ISRO website, it’s really hard to find
-what you’re looking for anyway. No, my best friend here, was networking.&lt;/p&gt;
+what you’re looking for. No, my best friend here, was networking.&lt;/p&gt;
 &lt;p&gt;I had heard about the &lt;a href=&quot;https://www.iist.ac.in/&quot;&gt;Indian Institute of Space Science and Technology&lt;/a&gt; having direct ties with ISRO, and that students usually go for internships at
 various labs across the entire space agency. Through a bit of googling, I found a
 list of students who had interned at the ISRO Satellite Centre the previous summer,
@@ -237,7 +234,7 @@ in Bremen, Germany. However, due to lack of sponsorship and funds, I was not abl
 to attend the conference.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;My Experience&lt;/h2&gt;
-&lt;p&gt;As an aerospace engineering student, I had very enthusiastic about working at the
+&lt;p&gt;As an aerospace engineering student, I was very enthusiastic about working at the
 ISRO Satellite Centre, and I was very excited to fly to Bangalore as soon as my
 summer vacation started.&lt;/p&gt;
 &lt;p&gt;Since I was an “unofficial” intern, I was not given any stipend, and I had to cut
@@ -249,7 +246,7 @@ Dynamics and Simulation Group, who were mostly graduates from IIST. They were
 really friendly, and talking to them was like talking to any senior from college.
 There were 3 more interns from different universities, who had their own
 stories of how they got their internships.&lt;/p&gt;
-&lt;p&gt;I usually started work at 10am and ended work around 4pm. My mentor and I synced
+&lt;p&gt;I usually started work at 10AM and ended work around 4PM. My mentor and I synced
 up twice each week and discussed work updates every day. It motivated me to stay
 on track. Since I could be flexible, I sometimes used to work from cafes near my
 place instead of going to office. My mentor was super approachable, and I could
