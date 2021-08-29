@@ -75,7 +75,7 @@ module.exports = {
       {
         name: 'ISRO Satellite Centre, Bangalore',
         description: 'Summer Research Internship, May 2017 - July 2017',
-        link: 'https://www.ursc.gov.in/',
+        link: '/blog/isro-intern',
       },
     ],
     // Optional: List your skills, they must have `name` and `description`.
