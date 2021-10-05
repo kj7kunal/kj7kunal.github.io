@@ -8,17 +8,16 @@ Having worked on 3 ML projects in my fourth year, I really wanted to take up the
 challenge of collaborating within a distinguished research group, preferably abroad.
 A foreign training or FT, as per my university lingo, was considered a prestigious
 opportunity, as not only would you gain indispensable experience working in an established
-institute set against a completely unfamiliar environment, it would also be really
-amazing interacting with people from different cultural backgrounds with similar interests
-and freely exchange ideas in the same field.
+institute set in an unfamiliar environment, it would also be really thrilling to
+interact with people from different cultural backgrounds with similar interests
+to freely exchange ideas and experiences.
 
 Out of around 30 research labs that I applied to all over the world, I received
 3 offers. I was most excited to work at the
 [Rapid-Rich Object Search (ROSE) Lab](https://www.ntu.edu.sg/rose) at the
 [Nanyang Technological University, Singapore](https://www.ntu.edu.sg/index),
-as not only did the research focus align with my interests, I would also be
-able to have [one of the top universities in Asia](https://www.topuniversities.com/university-rankings/asian-university-rankings/2018)
-on my resume.
+as not only did the lab's research focus align with my interests, I would also be
+able to gain work experience in [one of the top universities in Asia](https://www.topuniversities.com/university-rankings/asian-university-rankings/2018).
 
 ```
 Contents
@@ -51,32 +50,37 @@ to work on some interesting applications of Machine Learning:
 As part of the Machine Learning course (CS60050), I trained various ML models to
 estimate mental workload of a subject playing the N-Back game while wearing an
 Emotiv BCI headset. The project included feature engineering using signal processing
-techniques and finally presenting a comparitive study between various ML models such
+techniques and resulted in a comparitive study between various ML models such
 as Decision Trees, Random Forests and Neural Nets.
 - [Artistic Image Rendering](https://github.com/kj7kunal/Artistic_Image_Rendering):
 As part of the Deep Learning course (CS60048), I decided to implement neural
-image style transfer as described in the paper [_A Neural Algorithm of Artistic Style by Gatys et al_](https://arxiv.org/pdf/1508.06576v2.pdf). This gave me a good understanding
-of how CNNs propagate signals, and how we can use intermediate feature maps to
-extract representations of textures and color schemes from the lower layers, and
-of structure from the deeper layers. I also learned about designing custom loss
-functions for the given optimization problem.
+image style transfer as described in the paper
+[_A Neural Algorithm of Artistic Style by Gatys et al_](https://arxiv.org/pdf/1508.06576v2.pdf).
+This gave me a good understanding of how CNNs propagate signals, and how we can
+use intermediate feature maps to extract representations of textures and color
+schemes from the lower layers, and of structure from the deeper layers. I also
+learned about designing custom loss functions for the given optimization problem.
 
-Apart from these courses, I also independently took up online courses on Coursera
-such as the ones by Prof. Andrew Ng, to improve my basics of ML/DL techniques through
-theory and coding assignments.
+Apart from curriculum coursework, I also independently took up online courses on 
+Coursera such as the [Machine Learning course (Stanford University)](https://www.coursera.org/learn/machine-learning)
+and the [Deep Learning Specialization (DeepLearning.AI)](https://www.coursera.org/specializations/deep-learning)
+taught by Prof. Andrew Ng, to improve my knowledge of basic ML/DL techniques
+through theory and coding assignments.
 
 ### Application Process
 
-The application process was pretty straightforward. Since I was focussing on getting
-research experience, I had compiled a list of around 30-40 research labs in various
-top universities that I wanted to work with. However, most of the replies were negative,
-partly because I applied quite late in the year and partly because my background
-in aerospace engineering put me at a disadvantage in a cohort of CS major students.
+The application process was pretty straightforward. Since I was mainly focussed on
+getting research experience, I had compiled a list of around 30-40 research labs
+that I wanted to work with and emailed their respective POCs. 
+However, most of the replies were negative, partly because I applied very late
+in the year and partly because my background in aerospace engineering put me at
+a disadvantage in a cohort of CS major students, which I feel was the case in my
+applications to research internship programs like DAAD and MITACS.
 
-However, I heard back from 3 places, one of which was ROSE Lab, a joint collaboration
+Ultimately, I heard back from 3 places, one of which was ROSE Lab, a joint collaboration
 between Nanyang Technological University, Singapore, and Peking University, China.
 I was very surprised to have received a positive reply from them, as it was in the
-top 10 of my list, which was basically an ambitious tier.
+top 10 of my list, which was basically an ambitious tier for me.
 
 After exchanging a few emails, we scheduled an hour-long interview call a week later,
 and I was asked to prepare a short presentation about 1~2 of my best projects.
@@ -84,8 +88,10 @@ and I was asked to prepare a short presentation about 1~2 of my best projects.
 ### Interview Call
 
 I sent my presentation 2 days in advance of the interview call. On the Skype call, I
-connected with the Deputy Director, [Dr Dennis Sng](https://sg.linkedin.com/in/dennissng), who oversaw projects undertaken by the ROSE Lab, and [Dr Lin Shan](https://github.com/LinShanify),
-a research fellow, who led the project I was supposed to work on.
+connected with the Deputy Director, [Dr Dennis Sng](https://sg.linkedin.com/in/dennissng),
+who oversaw projects undertaken by the ROSE Lab, [Dr Lin Shan](https://warwick.ac.uk/fac/sci/dcs/people/xuuldl/),
+a research fellow, who led the project I was supposed to work on, and of course
+the lab's POC, with whom I was so far in touch with.
 
 The interview call went on quite smoothly, and was structured mainly around my
 presentation. I was able to explain my contributions to my projects and answered
