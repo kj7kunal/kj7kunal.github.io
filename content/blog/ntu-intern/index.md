@@ -27,6 +27,8 @@ Contents
   - Application Process
   - Interview Call
 
+- The Lab
+
 - The Project
   - Objectives
   - Motivation
@@ -91,7 +93,7 @@ I sent my presentation 2 days in advance of the interview call. On the Skype cal
 connected with the Deputy Director, [Dr Dennis Sng](https://sg.linkedin.com/in/dennissng),
 who oversaw projects undertaken by the ROSE Lab, [Dr Lin Shan](https://warwick.ac.uk/fac/sci/dcs/people/xuuldl/),
 a research fellow, who led the project I was supposed to work on, and of course
-the lab's POC, with whom I was so far in touch with.
+the lab's POC, Ms Wang Qian, with whom I was so far in touch with.
 
 The interview call went on quite smoothly, and was structured mainly around my
 presentation. I was able to explain my contributions to my projects and answered
@@ -104,42 +106,94 @@ to start the visa process!
 ```
 ```
 
+## The Lab
+The [Rapid-Rich Object Search (ROSE) Lab](https://www.ntu.edu.sg/rose) is a joint
+collaboration between NTU Singapore and Peking University, China. Its vision is to
+create the largest collection of structured domain object database in Asia, and to
+further image-based object search applications.
+
+The lab conducts research in the areas of computer vision, image processing, and
+pattern recognition. It aims to develop scalable and robust mobile object search
+services/applications involving areas of research like object recognition & retrieval,
+deep learning & video analytics and multimedia forensics & biometrics. They have
+taken the initiative of creating various [publicly-shared databases](https://www.ntu.edu.sg/rose/research-focus/datasets)
+to further research that they believe might create huge economic value and
+opportunities in the future.
+
+Projects undertaken by the lab were usually overseen by Dr Dennis Sng (Deputy Director
+& Principal Scientist​), and advised by [Prof Alex C. Kot](https://dr.ntu.edu.sg/cris/rp/rp00653) (Director).
+The lab involves a workforce both from academia and industry, and hosts events
+pertaining to the dissemination of knowledge on vision-based AI, particularly in
+object search technology. 
+
+![ROSE Lab](ROSELabDoor.jpeg)
+
+```
+```
+
 ## The Project
 
 ### Objectives
 
-The goal of the project was to simulate active space debris removal using tether-net
-connected to satellites in formation. There were 3 main concepts involved:
+The project was a collaboration between ROSE Lab and the 
+[Defence Science and Technology Agency (DSTA) Singapore](https://www.dsta.gov.sg/home).
 
-- Spacecraft formation flying. This topic is well explored and enough literature was
-available. It involved relative position control combined with orbital mechanics.
+The goal was to build a new dataset for Person Re-Identification (Person Re-ID) with 
+the aim of simulating the real world application domain as much as possible. 
+The plan involved capturing data with:
 
-- Tether net modelling. The behaviour of the net had to be described as a spatially
-distributed mechanical system.
+- Scene Invariance
+  - Wide range of locations covered using outdoor public surveillance cameras
+  - Various times of the day (morning/afternoon/evening)
+  - Different weather conditions (sunny/cloudy/rainy)
+- Clothing Invariance
+  - "Actors" advised to wear various types of clothing during data collection
 
-- Contact dynamics. The collective behaviour of the net and the satellites in formation
-during and after debris contact phases.
+My responsibilities in the project were to create tools to automate extraction and
+annotation of target "actor" images from surveillance video frames, to populate the
+initial test dataset, which would later be benchmarked by existing Person Re-ID models.
+I worked closely with [Dr Lin Shan](https://warwick.ac.uk/fac/sci/dcs/people/xuuldl/),
+who was leading the Re-ID project.
 
 ### Motivation
 
-Among many things, space is also the most dangerous junkyard Earth has created.
-If you have seen the 2013 film Gravity, the accident that caused the astronauts
-to break off from the ship was due to the debris in space.
+Person Re-ID is defined as the problem of matching people across disjoint camera views
+in a multi-camera system. It is an important task in the field of intelligent security.
+A Re-ID system should be able to keep track of subjects (who are on a certain “watch-list”)
+in surveillance videos of multiple probable locations of re-appearance.
 
-![Gravity Accident](gravity_debris_accident.gif)
+It is an extremely challenging task due to a plethora of reasons:
+- Pose/viewing angle difference
+- Low Resolution CCTV footage
+- Crowded Areas
+- Occlusions
+- Algorithm (Detection errors / Real-time requirement)
+- Unlimited/Open dataset task (Infinite number of classes for a classification problem)
 
-It is estimated that there are 600,000 debris fragments ranging from 1~10 cm,
-and on average one satellite is destroyed by collision with space junk each year.
-If satellites are not disposed of properly, the parts could become high-speed bullets
-leading to a chain reaction of collisions, a theoretical scenario popularly known
-as the [Kessler Syndrome](https://en.wikipedia.org/wiki/Kessler_syndrome).
-Apart from dramatic accidents, such a scenario could lead to serious consequences
-including unusable orbits or communication blackouts.
+<p align="center">
+  <img src="reid_system.jpeg" />
+</p>
+<!-- ![ReID system](reid_system.jpeg) -->
 
-A number of cleanup efforts have been explored/proposed in recent years - robotic
-grappling arms, harpoons, deploying nets, electrodynamic tethers, ground-based lasers, etc.
+My task in the first week of the internship was to familiarize myself with the current
+SOTA and identify strengths and shortcomings of popular public Person ReID datasets.
 
-This project combined swarm satellites and tether-nets for Active Space Debris Removal.
+![Dataset Comparison](datasets.png) 
+
+I took a note of image sizes and attributes (such as gender, clothes, accessories, etc.)
+in these datasets. I found out that these datasets lacked variance in scenes,
+which we could easily work on, having secured access to public CCTV cameras:
+- ~80 cameras spread over 34 locations in NTU Singapore Campus (thanks to NTU)
+- ~50 cameras spread over 23 locations in Singapore (thanks to DSTA)
+  - Orchard Road (Shopping Area), CBD (Business Area) and Civic District (Tourist Area)
+  
+![CCTV footage](cctv.png) 
+
+Moreover, I learned that most of these datasets were hand-annotated, which ensured
+high accuracy, but led to a smaller dataset and longer time to create one. Since I had
+the fortune of working on the project in 2018, I decided to automate Person Detection
+using Machine Learning.
+
 
 ### Implementation
 
