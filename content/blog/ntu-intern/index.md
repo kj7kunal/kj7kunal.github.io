@@ -202,29 +202,29 @@ using Machine Learning.
 After the literature reviews, I drafted a roadmap for the project with my mentor,
 which resulted the following to be implemented.
 
-#### Privacy-aware user-driven dataset collection strategy
+#### Dataset collection strategy: NTU ReID WebApp
 
 We were considerate about privacy from an early stage, and developed what was called
-the "Privacy-aware user-driven dataset collection strategy". This involved a mobile
+the **Privacy-aware user-driven dataset collection strategy**. This involved a mobile
 web-app designed to provide an easy interface for the volunteering “actors” in
 the dataset. 
 
 ![Mobile WebApp](daq_ntu.png)
 
-- Privacy-aware: Only collected images of participants who accepted the privacy policy
-- User-driven: The actor could indicate when they were passing through the FOV of
+- *Privacy-aware*: Only collected images of participants who accepted the privacy policy
+- *User-driven*: The actor could indicate when they were passing through the FOV of
 a given surveillance camera, reducing annotation effort:
   - the web-app automatically recorded time-stamps which could be matched in the surveillance
   videos to extract 1-min clips for the particular actor
   - the actors enterred their own accurate appearance attributes into a form
-- Collection Strategy: The web-app would display active paths which could be walked
+- *Collection Strategy*: The web-app would display active paths which could be walked
 on a particular day. This reduced the number of CCTV footage archives that had to
 be accessed in a day.
 
 This approach proved to be an important USP of our system, since a year later, in 2019,
-due to controveries about privacy and consent, the DukeMTMC and Market1501 datasets
-were shut down and MSMT17 has to release a new version to mask up the faces of all
-pedestrians involved.
+due to controveries about privacy and consent, the DukeMTMC dataset was
+[shut down](https://www.dukechronicle.com/article/2019/06/duke-university-facial-recognition-data-set-study-surveillance-video-students-china-uyghur)
+and MSMT17 has to release a new version to mask up the faces of all pedestrians involved.
 
 #### Person Detection using YOLOv3
 
