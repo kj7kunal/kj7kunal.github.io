@@ -226,24 +226,55 @@ due to controveries about privacy and consent, the DukeMTMC dataset was
 [shut down](https://www.dukechronicle.com/article/2019/06/duke-university-facial-recognition-data-set-study-surveillance-video-students-china-uyghur)
 and MSMT17 has to release a new version to mask up the faces of all pedestrians involved.
 
-#### Person Detection using YOLOv3
+#### Dataset creation: YOLOv3 -> ResNet50 -> Cosine Similarity
 
-![Lumped parameter model](net_lpm.gif)
+From the previous step, we could obtain 1-min video clips of the actors in the scene.
+The next step was to extract the target actor's images from the video frames and
+annotate them with the IDs and attributes of the target actor. The proposed pipeline
+involved two main components - Person Detection and Person Retrieval.
 
-A [lumped parameter approach](https://en.wikipedia.org/wiki/Lumped-element_model#Mechanical_systems) is used to model the dynamics of the
-tether-net and the tether-net to spacecraft connectivity.
+The first task was to isolate regions corresponding to people within a video frame.
+A person detector was built using the [**YOLOv3 architecture**](https://pjreddie.com/darknet/yolo/)
+in **PyTorch**, and modified to return region proposals (bounding boxes) corresponding
+to the "Person" class. The YOLOv3 system was much faster than Deformable Part Models
+(DPM) used in Market-1501 and Faster-RCNN architecture used in MSMT17, and had a
+mAP of 57.9% on [COCO test-dev](https://paperswithcode.com/sota/object-detection-on-coco).
+For more details, I recommend you to read the paper,
+[YOLOv3: An Incremental Improvement](https://pjreddie.com/media/files/papers/YOLOv3.pdf),
+as it is a very interesting and fun read! 
 
-This simplifies the description of the behaviour of spatially distributed
-physical systems such as a tether-net, into a topology consisting of discrete
-entities (nodes) that represent rigid bodies with mass and interactions between
-rigid bodies as kinematic pairs (joints, springs and dampers).
+
+The YOLOv3 Person Detection system was able to achieve 10fps processing speed on a
+Nvidia GTX 1070 GPU, for detecting and annotating bounding boxes within the surveillance video.
+
+<p align="center">
+  <img src="person_detect.gif" />
+</p>
+
+The next step was to separate (retrieve) images of the target person from multiple YOLOv3
+detections. Since this was basically a simple tracking problem in a single video, we use
+a feature extraction with distance metric two-stage pipeline.
+
+A [ResNet50 CNN (pre-trained on ImageNet)](https://pytorch.org/hub/pytorch_vision_resnet/)
+was used to extract robust feature representations of detected pedestrians. The user
+first had to select the target person image, called the probe/query image, and tracking
+was achieved by ranking the [cosine similarity score](https://en.wikipedia.org/wiki/Cosine_similarity#Definition)
+of the 2048-D feature embeddings (after the global max-pooling layer) between query
+and YOLOv3 detected images. 
+
+Since the video was continuous, a weighted average of the original query image and
+the detected target image tracked in the last frame was used as the new query image.
+
+![Person retrieval](retrieval.png)
+
+The Person Tracking system was able to a maximum of 5fps processing speed on a Nvidia
+GTX 1070 GPU, for the entire pipeline, which involved person detection, target matching
+and annotating bounding boxes within the surveillance video.
+<p align="center">
+  <img src="person_track.gif" />
+</p>
 
 ### Result
-
-The results of this research were drafted into a research paper and accepted for
-[Interactive Presentation in the 69th International Astronautical Congress 2018](https://iafastro.directory/iac/archive/browse/IAC-18/A6/IP/48269/)
-in Bremen, Germany. However, due to lack of sponsorship and funds, I was not able
-to attend the conference.
 
 The new Rose-IDentification-Outdoor (Re-ID-Outdoor) dataset was collected and
 annotated. The dataset was collected from 50 real surveillance cameras in NTU
@@ -251,10 +282,15 @@ and came with privacy consideration from all participants (volunteers in the cam
 Overall, the Re-ID-Outdoor dataset was considered the most realistic and also
 the only privacy-aware public dataset for Person Re-ID research so far.
 
+A similar dataset was also created from surveillance cameras in different areas
+in Singapore, with actors consisting of ROSE Lab members. However, I am not sure
+if that dataset was processed or released.
+
 [Dr Lin Shan's thesis](http://wrap.warwick.ac.uk/143315/1/WRAP_Theses_Lin_2019.pdf)
 explains his work on Person Re-ID meticulously, and is worth going through.
-Some of the images were taken directly from the thesis for ease.
+Some of the images were taken directly from the thesis for ease of writing this blog.
 
+![Result](result.png)
 ```
 ```
 
