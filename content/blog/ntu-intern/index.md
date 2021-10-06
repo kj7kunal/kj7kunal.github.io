@@ -153,7 +153,8 @@ My responsibilities in the project were to create tools to automate extraction a
 annotation of target "actor" images from surveillance video frames, to populate the
 initial test dataset, which would later be benchmarked by existing Person Re-ID models.
 I worked closely with [Dr Lin Shan](https://warwick.ac.uk/fac/sci/dcs/people/xuuldl/),
-who was leading the Re-ID project.
+a PhD student who was leading the Re-ID project, as part of a two year secondment
+under EU IDENTITY project between University of Warwick and NTU Singapore.
 
 ### Motivation
 
@@ -167,7 +168,7 @@ It is an extremely challenging task due to a plethora of reasons:
 - Low Resolution CCTV footage
 - Crowded Areas
 - Occlusions
-- Algorithm (Detection errors / Real-time requirement)
+- Algorithm inadequacies (Detection errors / Real-time requirement)
 - Unlimited/Open dataset task (Infinite number of classes for a classification problem)
 
 <p align="center">
@@ -181,8 +182,9 @@ SOTA and identify strengths and shortcomings of popular public Person ReID datas
 ![Dataset Comparison](datasets.png) 
 
 I took a note of image sizes and attributes (such as gender, clothes, accessories, etc.)
-in these datasets. I found out that these datasets lacked variance in scenes,
-which we could easily work on, having secured access to public CCTV cameras:
+in these datasets. I found out that these datasets had small camera networks, therefore
+less variance in scenes. We were able to expand the network, as well as create a more
+realistic surveillance setting, having secured access to public CCTV cameras:
 - ~80 cameras spread over 34 locations in NTU Singapore Campus (thanks to NTU)
 - ~50 cameras spread over 23 locations in Singapore (thanks to DSTA)
   - Orchard Road (Shopping Area), CBD (Business Area) and Civic District (Tourist Area)
@@ -197,24 +199,34 @@ using Machine Learning.
 
 ### Implementation
 
-Simulations for the various components were developed in MATLAB and working code was
-replicated in C++ for faster experimentation. A C++ library implementation for MATLAB’s
-matrix/vector manipulation was developed which reduced simulation time by 5 times
-and allowed easy code porting.
+After the literature reviews, I drafted a roadmap for the project with my mentor,
+which resulted the following to be implemented.
 
-#### Spacecraft formation flying
+#### Privacy-aware user-driven dataset collection strategy
 
-![Satellite swarm](satellite_swarm.png)
+We were considerate about privacy from an early stage, and developed what was called
+the "Privacy-aware user-driven dataset collection strategy". This involved a mobile
+web-app designed to provide an easy interface for the volunteering “actors” in
+the dataset. 
 
-Relative orbit dynamics of two objects in close orbits, can be modelled using the
-[Hill-Clohessy-Wiltshire (HCW) equations](https://en.wikipedia.org/wiki/Clohessy%E2%80%93Wiltshire_equations). These were used to model feedback linearization
-based proportional-derivative (PD) controller for generating the control commands for the spacecraft, necessary to keep the spacecraft in formation to maintain the required
-tether-net shape in various phases of the operation.
+![Mobile WebApp](daq_ntu.png)
 
-Continuous torque commands had to be converted to on-off commands to model actuators.
-This was done using Pulse Width and Pulse Frequency modulation (PWPFM).
+- Privacy-aware: Only collected images of participants who accepted the privacy policy
+- User-driven: The actor could indicate when they were passing through the FOV of
+a given surveillance camera, reducing annotation effort:
+  - the web-app automatically recorded time-stamps which could be matched in the surveillance
+  videos to extract 1-min clips for the particular actor
+  - the actors enterred their own accurate appearance attributes into a form
+- Collection Strategy: The web-app would display active paths which could be walked
+on a particular day. This reduced the number of CCTV footage archives that had to
+be accessed in a day.
 
-#### Tether net modelling
+This approach proved to be an important USP of our system, since a year later, in 2019,
+due to controveries about privacy and consent, the DukeMTMC and Market1501 datasets
+were shut down and MSMT17 has to release a new version to mask up the faces of all
+pedestrians involved.
+
+#### Person Detection using YOLOv3
 
 ![Lumped parameter model](net_lpm.gif)
 
@@ -232,6 +244,16 @@ The results of this research were drafted into a research paper and accepted for
 [Interactive Presentation in the 69th International Astronautical Congress 2018](https://iafastro.directory/iac/archive/browse/IAC-18/A6/IP/48269/)
 in Bremen, Germany. However, due to lack of sponsorship and funds, I was not able
 to attend the conference.
+
+The new Rose-IDentification-Outdoor (Re-ID-Outdoor) dataset was collected and
+annotated. The dataset was collected from 50 real surveillance cameras in NTU
+and came with privacy consideration from all participants (volunteers in the campus).
+Overall, the Re-ID-Outdoor dataset was considered the most realistic and also
+the only privacy-aware public dataset for Person Re-ID research so far.
+
+[Dr Lin Shan's thesis](http://wrap.warwick.ac.uk/143315/1/WRAP_Theses_Lin_2019.pdf)
+explains his work on Person Re-ID meticulously, and is worth going through.
+Some of the images were taken directly from the thesis for ease.
 
 ```
 ```
