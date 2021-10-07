@@ -70,7 +70,7 @@ module.exports = {
       {
         name: 'Nanyang Technological University, Singapore',
         description: 'Summer Research Internship, May 2018 - July 2018',
-        link: 'https://www.ntu.edu.sg/rose',
+        link: '/blog/ntu-intern',
       },
       {
         name: 'ISRO Satellite Centre, Bangalore',
