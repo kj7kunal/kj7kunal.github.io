@@ -153,7 +153,7 @@ my costs by staying at my uncle's place - about an hour of bus travel each day.
 But also because of that, I had the benefits of working flexibly in terms of
 hours and place of work.
 
-My first week at ISAC, my mentor introduced my to the team at the Control
+My first week at ISAC, my mentor introduced me to the team at the Control
 Dynamics and Simulation Group, who were mostly graduates from IIST. They were
 really friendly, and talking to them was like talking to any senior from college.
 There were 3 more interns from different universities, who had their own
