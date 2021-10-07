@@ -7,10 +7,10 @@ description: 'Research intern experience at NTU ROSE Lab'
 Having worked on 3 ML projects in my fourth year, I really wanted to take up the
 challenge of collaborating within a distinguished research group, preferably abroad.
 A foreign training or FT, as per my university lingo, was considered a prestigious
-opportunity, as not only would you gain indispensable experience working in an established
-institute set in an unfamiliar environment, it would also be really thrilling to
-interact with people from different cultural backgrounds with similar interests
-to freely exchange ideas and experiences.
+opportunity for multifaceted exposure, as not only would you gain indispensable
+experience working in an established institute set in an unfamiliar environment,
+it would also be really thrilling to interact with people from different cultural
+backgrounds with similar interests to freely exchange ideas and experiences.
 
 Out of around 30 research labs that I applied to all over the world, I received
 3 offers. I was most excited to work at the
@@ -287,8 +287,9 @@ in Singapore, with actors consisting of ROSE Lab members. However, I am not sure
 if that dataset was processed or released.
 
 [Dr Lin Shan's thesis](http://wrap.warwick.ac.uk/143315/1/WRAP_Theses_Lin_2019.pdf)
-explains his work on Person Re-ID meticulously, and is worth going through.
-Some of the images were taken directly from the thesis for ease of writing this blog.
+explains his work on Person Re-ID meticulously, and is worth going through to understand
+how the work was carried forward. Some of the images were taken directly from
+the thesis for ease of writing this blog.
 
 ![Result](result.png)
 ```
@@ -296,50 +297,66 @@ Some of the images were taken directly from the thesis for ease of writing this 
 
 ## My Experience
 
-As an aerospace engineering student, I was very enthusiastic about working at the
-ISRO Satellite Centre, and I was very excited to fly to Bangalore as soon as my
-summer vacation started.
+As it was my first time going abroad, I was super excited to fly to Singapore as soon
+as my fourth year ended. I had a list of action items sorted out for my first week
+after talking to my lab's POC, to settle in the new place.
 
-Since I was an "unofficial" intern, I was not given any stipend, and I had to cut
-my costs by staying at my uncle's place - about an hour of bus travel each day.
-But also because of that, I had the benefits of working flexibly in terms of
-hours and place of work.
+I was given a competitive stipend, and my lab had arranged for me to live in one of
+the NTU hostels. NTU had a well-connected bus network, so getting around was no issue.
+I had a Vietnamese roommate, who was a Bachelor's student in the university, and also a
+great tour guide around the campus.
 
-My first week at ISAC, my mentor introduced my to the team at the Control
-Dynamics and Simulation Group, who were mostly graduates from IIST. They were
-really friendly, and talking to them was like talking to any senior from college.
-There were 3 more interns from different universities, who had their own
-stories of how they got their internships.
+My first week at ROSE Lab was a mix of introductions and formal work. There was an
+introductory session organized by Prof Kot and Dr Dennis, who introduced us to the
+ROSE Lab team, talked about the various projects undertaken by the lab, and finally
+showed us to our respective working areas. I had to take a day to visit the Singapore
+Ministry of Manpower to receive my work permit, which was a very smooth process. I
+also had to register for a temporary student ID with NTU Singapore. 
 
-I usually started work at 10AM and ended work around 4PM. My mentor and I synced
-up twice each week and discussed work updates every day. It motivated me to stay
-on track. Since I could be flexible, I sometimes used to work from cafes near my
-place instead of going to office. My mentor was super approachable, and I could
-call him up in the middle of the night to discuss a sudden idea I had. I also
-synced up with the group's project director, [Dr Vinod Kumar](https://www.siliconindia.com/profiles/dr-vinod-kumar-XEac3AFM.html), a few times, who told me about his long
-journey at ISRO.
+My "cubicle" was well-equipped and I was free to personalize it for the duration of
+my stay! Even though there was a PC, I liked to use my own laptop, as most of my work
+was on the on-prem servers. The research scholars around me were really friendly and
+approachable, and they guided me through most of the setup process. 
+<p align="center">
+  <img src="cubicle.png" />
+</p>
 
-I enjoyed such 1on1 sessions. They helped me connect with the team better. I also
-loved the two _chai breaks_, where employees used to line up for free tea/coffee
-and free talk. In some of these, my mentor and the other team members used to
-take us for tours of the Satellite Centre. It was unbelievable seeing the mission
-control for the recently launched [GSAT-9](https://en.wikipedia.org/wiki/South_Asia_Satellite)
-and [GSAT-11](https://en.wikipedia.org/wiki/GSAT-11) in development, right in front of our eyes!
+There were no fixed working hours within the lab, and I was trusted to work enough
+hours to do my tasks well, at times that suit me and my team. Due to the extremely
+hot and humid weather in Singapore, I tried to spend the day in the air-conditioned
+lab. Sometimes I used to work through the nights, just to experiment. I had weekly
+sync meetings with Lin Shan, and if I had anything else to discuss, we preferred
+doing it over a walk around the building. I enjoyed Professor Kot's once-in-a-while
+sync-ups with the interns, where he used to coax us with the benefits of living and
+working in Singapore.
 
-However, amongst all things shiny, there were things that stood out
-that I could not help feeling irritated about. Offices were similar to old Indian
-government offices desperately in need of an upgrade. Some of the PCs we used to
-work on were still equipped with age-old hardware like CRT monitors. My team's
-office was a room divided into cubicles, which my mentor said made him feel
-claustrophobic at times. I used to see more progress when I was working on my
-laptop from a cafe than when I was working in a no-window office all day.
+The lab had a diverse demographic, and I interacted with people from China, Brazil,
+Belarus, Poland, etc. This was the first time I had mingled with people on a
+global scale, and it was a really thrilling and emboldening experience for me. As an
+introvert, I found it slightly overwhelming to socialize (free-talk) with such a group,
+and I felt this experience helped me gain self-confidence and getting over my fears.
 
-I learned a lot talking to my colleagues. The engineers/scientists shared a lot
-of career insight, which had helped me gear up into changing my career in the
-coming months. I discussed about some ML projects I worked on in college, and 
-I learned how it was applied in projects at ISRO. Discussions that could not be
-completed over _chai breaks_ were continued the next day or free pizza treats
-after work!
+I was very happy to find 3 more Indian interns, as well as an Indian research scholar
+working in the lab. We bonded well both in and outside the lab, and frequently went
+out to explore Singapore over the weekends.
 
-![Buffet Treats](buffet_treat.jpeg)
-![Visva](visva.jpeg)
+![ROSE Indians](ROSE_indian.png)
+
+The most unexpected experience during my internship was the 3-day summer school
+organized by ROSE Lab on research topics in 
+[Visual Image Search and Video Analytics (VISVA)](https://rose1.ntu.edu.sg/event/VISVA2018/). 
+It was an opportunity for me to get to know the state of the art technologies from
+direct interaction and discussions with pioneers in academia and industry, in a
+friendly and constructive environment. Research topics included Biometrics, Image
+Forensics, Autonomous Vehicles, Object retrieval, as well as Person Re-ID in
+Surveillance, which gave me a lot of insight while working on my own project!
+
+[![VISVA 2018](visva_all.png)](https://www.youtube.com/watch?v=w2_HG4WV-v0)
+
+As I was facing my final year after the end of the internship, I was hungry for
+career insight. Luckily, I was around research scholars who had and were taking such
+decisions themselves. After multiple such interactions, as well as a career counseling
+with Dr Dennis Sng, I found that I understood the merits to both academic and corporate life,
+but also that I wanted to pursue higher studies only to get better jobs. However, one
+thing was different from my past internships, and that was my reinforced enthusiasm
+for the field I was working in - Machine Learning and Artificial Intelligence!
