@@ -269,7 +269,8 @@ the detected target image tracked in the last frame was used as the new query im
 
 The Person Tracking system was able to a maximum of 5fps processing speed on a Nvidia
 GTX 1070 GPU, for the entire pipeline, which involved person detection, target matching
-and annotating bounding boxes within the surveillance video.
+and annotating bounding boxes within the surveillance video. Some of the developmental
+scripts are available in this [Github repo](https://github.com/kj7kunal/Person-detect-identify).
 <p align="center">
   <img src="person_track.gif" />
 </p>
