@@ -1,6 +1,6 @@
 ---
 title: Summer Internship at NTU Singapore
-date: '2020-08-01T12:00:00.00Z'
+date: '2020-09-01T12:00:00.00Z'
 description: 'Research intern experience at NTU ROSE Lab'
 ---
 
@@ -126,7 +126,9 @@ The lab involves a workforce both from academia and industry, and hosts events
 pertaining to the dissemination of knowledge on vision-based AI, particularly in
 object search technology. 
 
-![ROSE Lab](ROSELabDoor.jpeg)
+<p align="center">
+  <img src="ROSELabDoor.jpeg" alt="ROSE Lab"/>
+</p>
 
 ```
 ```
@@ -172,14 +174,16 @@ It is an extremely challenging task due to a plethora of reasons:
 - Unlimited/Open dataset task (Infinite number of classes for a classification problem)
 
 <p align="center">
-  <img src="reid_system.jpeg" />
+  <img src="reid_system.jpeg" alt="ReID system"/>
 </p>
-<!-- ![ReID system](reid_system.jpeg) -->
 
 My task in the first week of the internship was to familiarize myself with the current
 SOTA and identify strengths and shortcomings of popular public Person ReID datasets.
 
-![Dataset Comparison](datasets.png) 
+<p align="center">
+  <img src="datasets.png" alt="Dataset Comparison"/>
+</p>
+
 
 I took a note of image sizes and attributes (such as gender, clothes, accessories, etc.)
 in these datasets. I found out that these datasets had small camera networks, therefore
@@ -188,8 +192,10 @@ realistic surveillance setting, having secured access to public CCTV cameras:
 - ~80 cameras spread over 34 locations in NTU Singapore Campus (thanks to NTU)
 - ~50 cameras spread over 23 locations in Singapore (thanks to DSTA)
   - Orchard Road (Shopping Area), CBD (Business Area) and Civic District (Tourist Area)
-  
-![CCTV footage](cctv.png) 
+
+<p align="center">
+  <img src="cctv.png" alt="CCTV footage"/>
+</p>
 
 Moreover, I learned that most of these datasets were hand-annotated, which ensured
 high accuracy, but led to a smaller dataset and longer time to create one. Since I had
@@ -209,7 +215,9 @@ the **Privacy-aware user-driven dataset collection strategy**. This involved a m
 web-app designed to provide an easy interface for the volunteering “actors” in
 the dataset. 
 
-![Mobile WebApp](daq_ntu.png)
+<p align="center">
+  <img src="daq_ntu.png" alt="Mobile WebApp"/>
+</p>
 
 - *Privacy-aware*: Only collected images of participants who accepted the privacy policy
 - *User-driven*: The actor could indicate when they were passing through the FOV of
@@ -248,7 +256,7 @@ The YOLOv3 Person Detection system was able to achieve 10fps processing speed on
 Nvidia GTX 1070 GPU, for detecting and annotating bounding boxes within the surveillance video.
 
 <p align="center">
-  <img src="person_detect.gif" />
+  <img src="person_detect.gif" alt="Person Detection Demo"/>
 </p>
 
 The next step was to separate (retrieve) images of the target person from multiple YOLOv3
@@ -265,14 +273,16 @@ and YOLOv3 detected images.
 Since the video was continuous, a weighted average of the original query image and
 the detected target image tracked in the last frame was used as the new query image.
 
-![Person retrieval](retrieval.png)
+<p align="center">
+  <img src="retrieval.png" alt="Retrieval flow"/>
+</p>
 
 The Person Tracking system was able to a maximum of 5fps processing speed on a Nvidia
 GTX 1070 GPU, for the entire pipeline, which involved person detection, target matching
 and annotating bounding boxes within the surveillance video. Some of the developmental
 scripts are available in this [Github repo](https://github.com/kj7kunal/Person-detect-identify).
 <p align="center">
-  <img src="person_track.gif" />
+  <img src="person_track.gif" alt="Person Tracking demo"/>
 </p>
 
 ### Result
@@ -292,7 +302,9 @@ explains his work on Person Re-ID meticulously, and is worth going through to un
 how the work was carried forward. Some of the images were taken directly from
 the thesis for ease of writing this blog.
 
-![Result](result.png)
+<p align="center">
+  <img src="result.png" alt="Result"/>
+</p>
 ```
 ```
 
@@ -319,7 +331,7 @@ my stay! Even though there was a PC, I liked to use my own laptop, as most of my
 was on the on-prem servers. The research scholars around me were really friendly and
 approachable, and they guided me through most of the setup process. 
 <p align="center">
-  <img src="cubicle.png" />
+  <img src="cubicle.png" alt="My work area"/>
 </p>
 
 There were no fixed working hours within the lab, and I was trusted to work enough
@@ -341,7 +353,9 @@ I was very happy to find 3 more Indian interns, as well as an Indian research sc
 working in the lab. We bonded well both in and outside the lab, and frequently went
 out to explore Singapore over the weekends.
 
-![ROSE Indians](ROSE_indian.png)
+<p align="center">
+  <img src="ROSE_indian.png" alt="ROSE Indians"/>
+</p>
 
 The most unexpected experience during my internship was the 3-day summer school
 organized by ROSE Lab on research topics in 
@@ -352,7 +366,11 @@ friendly and constructive environment. Research topics included Biometrics, Imag
 Forensics, Autonomous Vehicles, Object retrieval, as well as Person Re-ID in
 Surveillance, which gave me a lot of insight while working on my own project!
 
-[![VISVA 2018](visva_all.png)](https://www.youtube.com/watch?v=w2_HG4WV-v0)
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=w2_HG4WV-v0">
+    <img src="visva_all.png" alt="VISVA 2018"/>
+  </a>
+</p>
 
 As I was facing my final year after the end of the internship, I was hungry for
 career insight. Luckily, I was around research scholars who had and were taking such

@@ -86,7 +86,9 @@ Among many things, space is also the most dangerous junkyard Earth has created.
 If you have seen the 2013 film Gravity, the accident that caused the astronauts
 to break off from the ship was due to the debris in space.
 
-![Gravity Accident](gravity_debris_accident.gif)
+<p align="center">
+  <img src="gravity_debris_accident.gif" alt="Gravity Accident"/>
+</p>
 
 It is estimated that there are 600,000 debris fragments ranging from 1~10 cm,
 and on average one satellite is destroyed by collision with space junk each year.
@@ -110,7 +112,9 @@ and allowed easy code porting.
 
 #### Spacecraft formation flying
 
-![Satellite swarm](satellite_swarm.png)
+<p align="center">
+  <img src="satellite_swarm.png" alt="Satellite swarm"/>
+</p>
 
 Relative orbit dynamics of two objects in close orbits, can be modelled using the
 [Hill-Clohessy-Wiltshire (HCW) equations](https://en.wikipedia.org/wiki/Clohessy%E2%80%93Wiltshire_equations). These were used to model feedback linearization
@@ -122,8 +126,6 @@ This was done using Pulse Width and Pulse Frequency modulation (PWPFM).
 
 #### Tether net modelling
 
-![Lumped parameter model](net_lpm.gif)
-
 A [lumped parameter approach](https://en.wikipedia.org/wiki/Lumped-element_model#Mechanical_systems) is used to model the dynamics of the
 tether-net and the tether-net to spacecraft connectivity.
 
@@ -131,6 +133,10 @@ This simplifies the description of the behaviour of spatially distributed
 physical systems such as a tether-net, into a topology consisting of discrete
 entities (nodes) that represent rigid bodies with mass and interactions between
 rigid bodies as kinematic pairs (joints, springs and dampers).
+
+<p align="center">
+  <img src="net_lpm.gif" alt="Lumped parameter model"/>
+</p>
 
 ### Result
 
@@ -189,4 +195,6 @@ I learned how it was applied in projects at ISRO. Discussions that could not be
 completed over _chai breaks_ were continued the next day or free pizza treats
 after work!
 
-![Pizza Treats](free_pizzaaa.jpg)
+<p align="center">
+  <img src="free_pizzaaa.jpg" alt="Pizza Treats"/>
+</p>
