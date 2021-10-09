@@ -212,8 +212,8 @@ which resulted the following to be implemented.
 
 We were considerate about privacy from an early stage, and developed what was called
 the **Privacy-aware user-driven dataset collection strategy**. This involved a mobile
-web-app designed to provide an easy interface for the volunteering “actors” in
-the dataset. 
+web-app designed using the **Google Maps API**, **Flask** and **Gunicorn** in **Python**.
+It provided an easy interface for the volunteering “actors” in the dataset. 
 
 <p align="center">
   <img src="daq_ntu.png" alt="Mobile WebApp"/>
