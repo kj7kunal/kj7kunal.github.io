@@ -1,6 +1,6 @@
 ---
 title: Meet the creator
-date: '2021-08-20T12:00:00.00Z'
+date: '2019-05-10T12:00:00.00Z'
 description: 'What makes kj7kunal?'
 ---
 
@@ -10,7 +10,7 @@ I like to document my life, and up until now, I was using social networking to d
 
 ![Profile Picture](profile.jpg)
 
-## Meet the Artist
+## Meet the Pianist
 
 lorem ipsum
 
@@ -18,7 +18,7 @@ lorem ipsum
 
 foo bar
 
-## Meet the Pianist
+## Meet the Runner
 
 hoge hoge
 
