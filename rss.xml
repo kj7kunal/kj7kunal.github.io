@@ -1,113 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kunal Jain | Machine Learning Engineer]]></title><description><![CDATA[Machine Learning Engineer currently in Tokyo, Japan]]></description><link>https://kj7kunal.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 07 Oct 2021 21:03:26 GMT</lastBuildDate><item><title><![CDATA[Meet the creator]]></title><description><![CDATA[A more personal introduction I like to document my life, and up until now, I was using social networking to do so. I wanted to create a…]]></description><link>https://kj7kunal.github.io/blog/more-about/</link><guid isPermaLink="false">https://kj7kunal.github.io/blog/more-about/</guid><pubDate>Fri, 20 Aug 2021 12:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;A more personal introduction&lt;/h2&gt;
-&lt;p&gt;I like to document my life, and up until now, I was using social networking to do so. I wanted to create a personal virtual space, fitting my own preferences and tastes. I wonder how this will turn out in the end.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin: 0 0 30px;&quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/02950b3e6be2fdb323d51e9c9fa1d463/5deef/profile.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAQCAQX/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgD/2gAMAwEAAhADEAAAAbcUeWzpMzdIM8A//8QAHBAAAgICAwAAAAAAAAAAAAAAAQIAAwQSETEy/9oACAEBAAEFAg4jXqIeSV1VWbbKVgZ1LmKWDz//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAVEQEBAAAAAAAAAAAAAAAAAAAQAf/aAAgBAgEBPwEh/8QAGhAAAgMBAQAAAAAAAAAAAAAAAAERISICEP/aAAgBAQAGPwIpElwNRiKNN+ctMR//xAAdEAEAAgMAAwEAAAAAAAAAAAABABEhMUFRYYGh/9oACAEBAAE/ISnvxMYqupsDn8lJb6ggosKHa3AVs3yO1cxEzZER1HwNT//aAAwDAQACAAMAAAAQLDAC/8QAGREAAwADAAAAAAAAAAAAAAAAAAERECFB/9oACAEDAQE/ENUqH3H/xAAXEQEBAQEAAAAAAAAAAAAAAAABABEx/9oACAECAQE/EDUkRy7nt//EABoQAQEBAQEBAQAAAAAAAAAAAAERACExQVH/2gAIAQEAAT8QHFv1XmNGMlHHXl2UPx+ZgE+rFdTAAQHthMZRSInx7musVD7y5lBSFQPOY0ZweG//2Q==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Profile Picture&quot;
-        title=&quot;Profile Picture&quot;
-        src=&quot;/static/02950b3e6be2fdb323d51e9c9fa1d463/1c72d/profile.jpg&quot;
-        srcset=&quot;/static/02950b3e6be2fdb323d51e9c9fa1d463/a80bd/profile.jpg 148w,
-/static/02950b3e6be2fdb323d51e9c9fa1d463/1c91a/profile.jpg 295w,
-/static/02950b3e6be2fdb323d51e9c9fa1d463/1c72d/profile.jpg 590w,
-/static/02950b3e6be2fdb323d51e9c9fa1d463/a8a14/profile.jpg 885w,
-/static/02950b3e6be2fdb323d51e9c9fa1d463/fbd2c/profile.jpg 1180w,
-/static/02950b3e6be2fdb323d51e9c9fa1d463/5deef/profile.jpg 2517w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h2&gt;Meet the Artist&lt;/h2&gt;
-&lt;p&gt;lorem ipsum&lt;/p&gt;
-&lt;h2&gt;Meet the Coder&lt;/h2&gt;
-&lt;p&gt;foo bar&lt;/p&gt;
-&lt;h2&gt;Meet the Pianist&lt;/h2&gt;
-&lt;p&gt;hoge hoge&lt;/p&gt;
-&lt;h2&gt;Meet the Barista&lt;/h2&gt;
-&lt;p&gt;yada yada&lt;/p&gt;
-&lt;h2&gt;Meet the Sportsman&lt;/h2&gt;
-&lt;p&gt;“It’s in the game”&lt;/p&gt;
-&lt;h2&gt;Meet the Hopeless romantic&lt;/h2&gt;
-&lt;p&gt;lol wha?&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My First Blog Post]]></title><description><![CDATA[Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit…]]></description><link>https://kj7kunal.github.io/blog/my-first-blog/</link><guid isPermaLink="false">https://kj7kunal.github.io/blog/my-first-blog/</guid><pubDate>Sun, 20 Sep 2020 12:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit&lt;/h2&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit inventore sunt, consequatur omnis tempore ullam natus, porro odit aut, atque asperiores repudiandae corporis quidem esse eos provident velit perferendis magni fugit eum quisquam eligendi. Atque distinctio iure aliquam veniam inventore, soluta est, cum accusantium possimus illum quasi eveniet sed amet ipsa culpa vel in delectus laboriosam repellendus totam. Facere.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin: 0 0 30px;&quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/04fd963e3e5a465c84a4c4d5014f320f/c08c5/mountain.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 66.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAYCBAX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABtxwC4YBfE//EABgQAAMBAQAAAAAAAAAAAAAAAAABERIi/9oACAEBAAEFAojmcmmaZT//xAAXEQEAAwAAAAAAAAAAAAAAAAAAAREh/9oACAEDAQE/Abhj/8QAFhEAAwAAAAAAAAAAAAAAAAAAAAER/9oACAECAQE/AYyM/8QAFxABAQEBAAAAAAAAAAAAAAAAADEBEP/aAAgBAQAGPwJcVV5//8QAGhAAAwEBAQEAAAAAAAAAAAAAAAERMVEhkf/aAAgBAQABPyHjB7eAqWC619K6xfT/2gAMAwEAAgADAAAAEOAP/8QAGBEAAgMAAAAAAAAAAAAAAAAAABEhMVH/2gAIAQMBAT8QhoeD/8QAFREBAQAAAAAAAAAAAAAAAAAAAGH/2gAIAQIBAT8Qoo//xAAcEAEAAgIDAQAAAAAAAAAAAAABABEhYTFxkYH/2gAIAQEAAT8QACiQttuMYfSZg94XHxtHmDtm17P/2Q==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Mountain&quot;
-        title=&quot;Mountain&quot;
-        src=&quot;/static/04fd963e3e5a465c84a4c4d5014f320f/1c72d/mountain.jpg&quot;
-        srcset=&quot;/static/04fd963e3e5a465c84a4c4d5014f320f/a80bd/mountain.jpg 148w,
-/static/04fd963e3e5a465c84a4c4d5014f320f/1c91a/mountain.jpg 295w,
-/static/04fd963e3e5a465c84a4c4d5014f320f/1c72d/mountain.jpg 590w,
-/static/04fd963e3e5a465c84a4c4d5014f320f/c08c5/mountain.jpg 640w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Aliquam aliquid rem facere dolorum consectetur consequatur distinctio &lt;a href=&quot;https://github.com/RyanFitzgerald/devfolio&quot;&gt;mollitia id modi repellendus&lt;/a&gt; vero quae dolorem commodi soluta voluptates iusto nobis est dolore provident, porro veritatis placeat nemo impedit! Asperiores culpa delectus hic qui saepe, ipsum quia, exercitationem repellendus magni soluta sit suscipit laborum ducimus.&lt;/p&gt;
-&lt;h2&gt;Asperiores culpa delectus hic qui saepe&lt;/h2&gt;
-&lt;h3&gt;Facere labore velit ad autem&lt;/h3&gt;
-&lt;p&gt;Vitae veritatis quae eius quis vel soluta cumque? Facere labore velit ad autem. Nisi recusandae ducimus molestiae error ipsa quaerat, dignissimos suscipit similique itaque sunt provident quasi minus ut porro. Optio modi harum &lt;em&gt;dolore necessitatibus exercitationem&lt;/em&gt; blanditiis magni error ipsum, odit deleniti eligendi facilis, nesciunt delectus sit nostrum porro quam accusamus excepturi labore sequi maiores soluta?&lt;/p&gt;
-&lt;h3&gt;Porro veritatis placeat nemo impedit&lt;/h3&gt;
-&lt;p&gt;Veritatis et praesentium totam neque earum commodi nesciunt dolor quibusdam incidunt non, ex dicta molestias omnis maiores, maxime velit perferendis tenetur aut porro nostrum, suscipit soluta necessitatibus deserunt nobis. Minus rem dicta eos exercitationem illum consequatur consectetur praesentium voluptas. Dolor inventore quasi necessitatibus odio eaque doloribus.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Repudiandae iusto et iure pariatur aliquid, quisquam, non sed culpa, dignissimos recusandae facilis. Debitis hic, quaerat recusandae ad id, quis nisi perspiciatis quo aliquid natus similique.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Illum esse recusandae facere ipsam fugiat est eaque ducimus facilis provident, distinctio cum aut corporis officiis quo fugit, similique temporibus inventore quidem tempora commodi saepe dicta! Numquam fugiat quibusdam aut ut, voluptatibus accusamus &lt;strong&gt;repellendus quas minus consequuntur&lt;/strong&gt; possimus! Est eaque nesciunt, reiciendis voluptate placeat aspernatur doloremque unde cum et architecto suscipit quam facere corrupti nihil odit eum minima voluptatem nobis.&lt;/p&gt;
-&lt;h2&gt;Voluptatibus accusamus repellendus quas minus&lt;/h2&gt;
-&lt;p&gt;Ipsum quod, ut animi mollitia ipsam repellat, dolore voluptate quibusdam quasi reiciendis necessitatibus odio ea nostrum illo explicabo? Ducimus, in repudiandae. Ratione dolore sequi in animi obcaecati incidunt reprehenderit illo repellat atque aperiam, praesentium eligendi! Sed voluptas voluptatem sunt distinctio pariatur ullam? Laudantium laboriosam.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Numquam fugiat quibusdam aut ut&lt;/li&gt;
-&lt;li&gt;Soluta necessitatibus deserunt nobis&lt;/li&gt;
-&lt;li&gt;Illum esse recusandae facere ipsam&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit inventore sunt, consequatur omnis tempore ullam natus.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Numquam fugiat quibusdam aut ut&lt;/li&gt;
-&lt;li&gt;Soluta necessitatibus deserunt nobis&lt;/li&gt;
-&lt;li&gt;Illum esse recusandae facere ipsam&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit inventore sunt, consequatur omnis tempore ullam natus, porro odit aut, atque asperiores repudiandae corporis quidem esse eos provident velit perferendis magni fugit eum quisquam eligendi. Atque distinctio iure aliquam veniam inventore, soluta est, cum accusantium possimus illum quasi eveniet sed amet ipsa culpa vel in delectus laboriosam repellendus totam. Facere.&lt;/p&gt;
-&lt;h2&gt;Suscipit soluta necessitatibus deserunt nobi&lt;/h2&gt;
-&lt;p&gt;Minus rem dicta eos exercitationem illum consequatur consectetur praesentium voluptas. Dolor inventore quasi necessitatibus odio eaque doloribus.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; helloWorld &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;World&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;Hello &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;name&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token function&quot;&gt;helloWorld&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token function&quot;&gt;helloWorld&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;John Doe&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Numquam fugiat quibusdam aut ut, voluptatibus accusamus repellendus quas minus consequuntur possimus!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Summer Internship at NTU Singapore]]></title><description><![CDATA[Having worked on 3 ML projects in my fourth year, I really wanted to take up the
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kunal Jain | Machine Learning Engineer]]></title><description><![CDATA[Machine Learning Engineer currently in Tokyo, Japan]]></description><link>https://kj7kunal.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 09 Oct 2021 20:03:52 GMT</lastBuildDate><item><title><![CDATA[Summer Internship at NTU Singapore]]></title><description><![CDATA[Having worked on 3 ML projects in my fourth year, I really wanted to take up the
 challenge of collaborating within a distinguished research…]]></description><link>https://kj7kunal.github.io/blog/ntu-intern/</link><guid isPermaLink="false">https://kj7kunal.github.io/blog/ntu-intern/</guid><pubDate>Tue, 01 Sep 2020 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Having worked on 3 ML projects in my fourth year, I really wanted to take up the
 challenge of collaborating within a distinguished research group, preferably abroad.
 A foreign training or FT, as per my university lingo, was considered a prestigious
@@ -318,8 +209,8 @@ which resulted the following to be implemented.&lt;/p&gt;
 &lt;h4&gt;Dataset collection strategy: NTU ReID WebApp&lt;/h4&gt;
 &lt;p&gt;We were considerate about privacy from an early stage, and developed what was called
 the &lt;strong&gt;Privacy-aware user-driven dataset collection strategy&lt;/strong&gt;. This involved a mobile
-web-app designed to provide an easy interface for the volunteering “actors” in
-the dataset. &lt;/p&gt;
+web-app designed using the &lt;strong&gt;Google Maps API&lt;/strong&gt;, &lt;strong&gt;Flask&lt;/strong&gt; and &lt;strong&gt;Gunicorn&lt;/strong&gt; in &lt;strong&gt;Python&lt;/strong&gt;.
+It provided an easy interface for the volunteering “actors” in the dataset. &lt;/p&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin: 0 0 30px;&quot;&gt;
       &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 37.16216216216216%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABYlAAAWJQFJUiTwAAABqUlEQVQoz0WRy27TQBhG84QseBk2gNTSFKqyKM+B2LBAQJGomqhcqjRKQqMGaBPbsWN7Zny348SGw6+w6EifNJs58106eZpgjEZFBq01OvDxRkOcwSWe55PnGf3eZw6eH3Pw4iXdw0Oe7HX58PGU9bqirmvyoiBOErabmk6WxmijCFwHfzJCacNqPML++oX5dIanYso8ptpsSestf9YpW/mkbhqyLKNp2h20rCrathFgkaHtBbPzM6zJGO+ih/PpPavrH4SWjVJLSeAS+iuuh0OWC5fp9CfLIKAUZ237H1hvNnLf0oniCMe2cL71sa8uGb95zd27twSWhU4UoXtDkiX4Et8WWJ5KNSYglqriOCZJUoqi3LltGwEa6U0JVN3eiAuXxWTC/Owc9+qCxMzxtUuWR6xWijT02JSGSPpK8hyTFYRG3uqINK8oqrUAZZBQFFhzllL+rbfk19136XRGqAKRFkCElsihY5MmhiD0yaoSNi0t8Jf7Iw4VypjdKM7ZKd6kj45+S5xUFN1LXHmRRNQrWT5mMOjx6MFDnj3do3t0zOP9fU5enfAP7zz98ZbXwTsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
@@ -458,6 +349,22 @@ sync meetings with Lin Shan, and if I had anything else to discuss, we preferred
 doing it over a walk around the building. I enjoyed Professor Kot’s once-in-a-while
 sync-ups with the interns, where he used to coax us with the benefits of living and
 working in Singapore.&lt;/p&gt;
+&lt;p&gt;I lost a lot of weight during my stay in Singapore. No, it wasn’t just because I was
+saving money by eating less - my job involved a lot of field-work to collect the dataset!
+As I am a very passionate runner, I used to sync data collection paths with my running
+routes. I was also able to do some sightseeing around Singapore with some colleagues
+in the process of collecting data!&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin: 0 0 30px;&quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAABYlAAAWJQFJUiTwAAABkElEQVQY0x2O20tTAQCHzx/gk4RvoiRC3hXUvISZoAaCaA/B6MEHmYboi/WwUWgiaYTo3CS8sAaLIhELH4yCwFTGBAVdK3Vuc1OHu5ydXY8eFeJz9nv6Hj4+fsKx140ohkkmkpydnSPLMoqicDOr7S+r9kOsPoX14AVbQZkU4hWT2F2H/Es5RwERh8dDWAoTO48jXF5dEhJDiGGRUChALBolkYj/D5o+zFFTU4F2TI9K84rH3Sp6NT30DagZ0r1gYXGexeVv/FjbYHNnm/nPegSH18Jv50/+uFY4ObHhPNjCuW/DH/Cy8muWZ+3FTI48wDB3j1lzNV29+RjeNzE88ITW2jLe9D/FOKrl7ct+jDM6hB3Hd6z2BfZcFvw+D7t2C+6DXUS/m+kvS9S2pd6Md2E2F/DxUzkz70owmRtQd6roaGng0cM6KkuLuJNXQkXdfQQp5iMoeYjET4lEgiRiEtGohCInGZr+SkazBvXrQQy62+gnypkaK+S5tor0/HpyG7sR0m6RlZ1JdXEOjXdLuQa9qSbw539/VQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;Data Walks&quot; title=&quot;Data Walks&quot; src=&quot;/static/018942a896ac6b6776078154555ecb16/fcda8/data_walk.png&quot; srcset=&quot;/static/018942a896ac6b6776078154555ecb16/12f09/data_walk.png 148w,
+/static/018942a896ac6b6776078154555ecb16/e4a3f/data_walk.png 295w,
+/static/018942a896ac6b6776078154555ecb16/fcda8/data_walk.png 590w,
+/static/018942a896ac6b6776078154555ecb16/efc66/data_walk.png 885w,
+/static/018942a896ac6b6776078154555ecb16/c83ae/data_walk.png 1180w,
+/static/018942a896ac6b6776078154555ecb16/30faf/data_walk.png 2802w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;
+&lt;/p&gt;
 &lt;p&gt;The lab had a diverse demographic, and I interacted with people from China, Brazil,
 Belarus, Poland, etc. This was the first time I had mingled with people on a
 global scale, and it was a really thrilling and emboldening experience for me. As an
@@ -665,4 +572,113 @@ after work!&lt;/p&gt;
 /static/7291d20fb873e9d83312bd236408512f/47311/free_pizzaaa.jpg 1080w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
   &lt;/a&gt;
     &lt;/span&gt;
-&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Meet the creator]]></title><description><![CDATA[A more personal introduction I like to document my life, and up until now, I was using social networking to do so. I wanted to create a…]]></description><link>https://kj7kunal.github.io/blog/more-about/</link><guid isPermaLink="false">https://kj7kunal.github.io/blog/more-about/</guid><pubDate>Fri, 10 May 2019 12:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;A more personal introduction&lt;/h2&gt;
+&lt;p&gt;I like to document my life, and up until now, I was using social networking to do so. I wanted to create a personal virtual space, fitting my own preferences and tastes. I wonder how this will turn out in the end.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin: 0 0 30px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/02950b3e6be2fdb323d51e9c9fa1d463/5deef/profile.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAQCAQX/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgD/2gAMAwEAAhADEAAAAbcUeWzpMzdIM8A//8QAHBAAAgICAwAAAAAAAAAAAAAAAQIAAwQSETEy/9oACAEBAAEFAg4jXqIeSV1VWbbKVgZ1LmKWDz//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAVEQEBAAAAAAAAAAAAAAAAAAAQAf/aAAgBAgEBPwEh/8QAGhAAAgMBAQAAAAAAAAAAAAAAAAERISICEP/aAAgBAQAGPwIpElwNRiKNN+ctMR//xAAdEAEAAgMAAwEAAAAAAAAAAAABABEhMUFRYYGh/9oACAEBAAE/ISnvxMYqupsDn8lJb6ggosKHa3AVs3yO1cxEzZER1HwNT//aAAwDAQACAAMAAAAQLDAC/8QAGREAAwADAAAAAAAAAAAAAAAAAAERECFB/9oACAEDAQE/ENUqH3H/xAAXEQEBAQEAAAAAAAAAAAAAAAABABEx/9oACAECAQE/EDUkRy7nt//EABoQAQEBAQEBAQAAAAAAAAAAAAERACExQVH/2gAIAQEAAT8QHFv1XmNGMlHHXl2UPx+ZgE+rFdTAAQHthMZRSInx7musVD7y5lBSFQPOY0ZweG//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Profile Picture&quot;
+        title=&quot;Profile Picture&quot;
+        src=&quot;/static/02950b3e6be2fdb323d51e9c9fa1d463/1c72d/profile.jpg&quot;
+        srcset=&quot;/static/02950b3e6be2fdb323d51e9c9fa1d463/a80bd/profile.jpg 148w,
+/static/02950b3e6be2fdb323d51e9c9fa1d463/1c91a/profile.jpg 295w,
+/static/02950b3e6be2fdb323d51e9c9fa1d463/1c72d/profile.jpg 590w,
+/static/02950b3e6be2fdb323d51e9c9fa1d463/a8a14/profile.jpg 885w,
+/static/02950b3e6be2fdb323d51e9c9fa1d463/fbd2c/profile.jpg 1180w,
+/static/02950b3e6be2fdb323d51e9c9fa1d463/5deef/profile.jpg 2517w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;Meet the Pianist&lt;/h2&gt;
+&lt;p&gt;lorem ipsum&lt;/p&gt;
+&lt;h2&gt;Meet the Coder&lt;/h2&gt;
+&lt;p&gt;foo bar&lt;/p&gt;
+&lt;h2&gt;Meet the Runner&lt;/h2&gt;
+&lt;p&gt;hoge hoge&lt;/p&gt;
+&lt;h2&gt;Meet the Barista&lt;/h2&gt;
+&lt;p&gt;yada yada&lt;/p&gt;
+&lt;h2&gt;Meet the Sportsman&lt;/h2&gt;
+&lt;p&gt;“It’s in the game”&lt;/p&gt;
+&lt;h2&gt;Meet the Hopeless romantic&lt;/h2&gt;
+&lt;p&gt;lol wha?&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My First Blog Post]]></title><description><![CDATA[Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit…]]></description><link>https://kj7kunal.github.io/blog/my-first-blog/</link><guid isPermaLink="false">https://kj7kunal.github.io/blog/my-first-blog/</guid><pubDate>Thu, 17 Jul 2014 12:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit inventore sunt, consequatur omnis tempore ullam natus, porro odit aut, atque asperiores repudiandae corporis quidem esse eos provident velit perferendis magni fugit eum quisquam eligendi. Atque distinctio iure aliquam veniam inventore, soluta est, cum accusantium possimus illum quasi eveniet sed amet ipsa culpa vel in delectus laboriosam repellendus totam. Facere.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin: 0 0 30px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/04fd963e3e5a465c84a4c4d5014f320f/c08c5/mountain.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAYCBAX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABtxwC4YBfE//EABgQAAMBAQAAAAAAAAAAAAAAAAABERIi/9oACAEBAAEFAojmcmmaZT//xAAXEQEAAwAAAAAAAAAAAAAAAAAAAREh/9oACAEDAQE/Abhj/8QAFhEAAwAAAAAAAAAAAAAAAAAAAAER/9oACAECAQE/AYyM/8QAFxABAQEBAAAAAAAAAAAAAAAAADEBEP/aAAgBAQAGPwJcVV5//8QAGhAAAwEBAQEAAAAAAAAAAAAAAAERMVEhkf/aAAgBAQABPyHjB7eAqWC619K6xfT/2gAMAwEAAgADAAAAEOAP/8QAGBEAAgMAAAAAAAAAAAAAAAAAABEhMVH/2gAIAQMBAT8QhoeD/8QAFREBAQAAAAAAAAAAAAAAAAAAAGH/2gAIAQIBAT8Qoo//xAAcEAEAAgIDAQAAAAAAAAAAAAABABEhYTFxkYH/2gAIAQEAAT8QACiQttuMYfSZg94XHxtHmDtm17P/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Mountain&quot;
+        title=&quot;Mountain&quot;
+        src=&quot;/static/04fd963e3e5a465c84a4c4d5014f320f/1c72d/mountain.jpg&quot;
+        srcset=&quot;/static/04fd963e3e5a465c84a4c4d5014f320f/a80bd/mountain.jpg 148w,
+/static/04fd963e3e5a465c84a4c4d5014f320f/1c91a/mountain.jpg 295w,
+/static/04fd963e3e5a465c84a4c4d5014f320f/1c72d/mountain.jpg 590w,
+/static/04fd963e3e5a465c84a4c4d5014f320f/c08c5/mountain.jpg 640w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Aliquam aliquid rem facere dolorum consectetur consequatur distinctio &lt;a href=&quot;https://github.com/RyanFitzgerald/devfolio&quot;&gt;mollitia id modi repellendus&lt;/a&gt; vero quae dolorem commodi soluta voluptates iusto nobis est dolore provident, porro veritatis placeat nemo impedit! Asperiores culpa delectus hic qui saepe, ipsum quia, exercitationem repellendus magni soluta sit suscipit laborum ducimus.&lt;/p&gt;
+&lt;h2&gt;Asperiores culpa delectus hic qui saepe&lt;/h2&gt;
+&lt;h3&gt;Facere labore velit ad autem&lt;/h3&gt;
+&lt;p&gt;Vitae veritatis quae eius quis vel soluta cumque? Facere labore velit ad autem. Nisi recusandae ducimus molestiae error ipsa quaerat, dignissimos suscipit similique itaque sunt provident quasi minus ut porro. Optio modi harum &lt;em&gt;dolore necessitatibus exercitationem&lt;/em&gt; blanditiis magni error ipsum, odit deleniti eligendi facilis, nesciunt delectus sit nostrum porro quam accusamus excepturi labore sequi maiores soluta?&lt;/p&gt;
+&lt;h3&gt;Porro veritatis placeat nemo impedit&lt;/h3&gt;
+&lt;p&gt;Veritatis et praesentium totam neque earum commodi nesciunt dolor quibusdam incidunt non, ex dicta molestias omnis maiores, maxime velit perferendis tenetur aut porro nostrum, suscipit soluta necessitatibus deserunt nobis. Minus rem dicta eos exercitationem illum consequatur consectetur praesentium voluptas. Dolor inventore quasi necessitatibus odio eaque doloribus.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Repudiandae iusto et iure pariatur aliquid, quisquam, non sed culpa, dignissimos recusandae facilis. Debitis hic, quaerat recusandae ad id, quis nisi perspiciatis quo aliquid natus similique.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Illum esse recusandae facere ipsam fugiat est eaque ducimus facilis provident, distinctio cum aut corporis officiis quo fugit, similique temporibus inventore quidem tempora commodi saepe dicta! Numquam fugiat quibusdam aut ut, voluptatibus accusamus &lt;strong&gt;repellendus quas minus consequuntur&lt;/strong&gt; possimus! Est eaque nesciunt, reiciendis voluptate placeat aspernatur doloremque unde cum et architecto suscipit quam facere corrupti nihil odit eum minima voluptatem nobis.&lt;/p&gt;
+&lt;h2&gt;Voluptatibus accusamus repellendus quas minus&lt;/h2&gt;
+&lt;p&gt;Ipsum quod, ut animi mollitia ipsam repellat, dolore voluptate quibusdam quasi reiciendis necessitatibus odio ea nostrum illo explicabo? Ducimus, in repudiandae. Ratione dolore sequi in animi obcaecati incidunt reprehenderit illo repellat atque aperiam, praesentium eligendi! Sed voluptas voluptatem sunt distinctio pariatur ullam? Laudantium laboriosam.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Numquam fugiat quibusdam aut ut&lt;/li&gt;
+&lt;li&gt;Soluta necessitatibus deserunt nobis&lt;/li&gt;
+&lt;li&gt;Illum esse recusandae facere ipsam&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit inventore sunt, consequatur omnis tempore ullam natus.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Numquam fugiat quibusdam aut ut&lt;/li&gt;
+&lt;li&gt;Soluta necessitatibus deserunt nobis&lt;/li&gt;
+&lt;li&gt;Illum esse recusandae facere ipsam&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit inventore sunt, consequatur omnis tempore ullam natus, porro odit aut, atque asperiores repudiandae corporis quidem esse eos provident velit perferendis magni fugit eum quisquam eligendi. Atque distinctio iure aliquam veniam inventore, soluta est, cum accusantium possimus illum quasi eveniet sed amet ipsa culpa vel in delectus laboriosam repellendus totam. Facere.&lt;/p&gt;
+&lt;h2&gt;Suscipit soluta necessitatibus deserunt nobi&lt;/h2&gt;
+&lt;p&gt;Minus rem dicta eos exercitationem illum consequatur consectetur praesentium voluptas. Dolor inventore quasi necessitatibus odio eaque doloribus.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; helloWorld &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;World&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;Hello &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;name&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token function&quot;&gt;helloWorld&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;helloWorld&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;John Doe&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Numquam fugiat quibusdam aut ut, voluptatibus accusamus repellendus quas minus consequuntur possimus!&lt;/p&gt;</content:encoded></item></channel></rss>
