@@ -343,6 +343,16 @@ doing it over a walk around the building. I enjoyed Professor Kot's once-in-a-wh
 sync-ups with the interns, where he used to coax us with the benefits of living and
 working in Singapore.
 
+I lost a lot of weight during my stay in Singapore. No, it wasn't just because I was
+saving money by eating less - my job involved a lot of field-work to collect the dataset!
+As I am a very passionate runner, I used to sync data collection paths with my running
+routes. I was also able to do some sightseeing around Singapore with some colleagues
+in the process of collecting data!
+
+<p align="center">
+  <img src="data_walk.png" alt="Data Walks"/>
+</p>
+
 The lab had a diverse demographic, and I interacted with people from China, Brazil,
 Belarus, Poland, etc. This was the first time I had mingled with people on a
 global scale, and it was a really thrilling and emboldening experience for me. As an
