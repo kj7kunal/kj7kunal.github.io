@@ -7,7 +7,7 @@ const classes = {
   heading:
     'font-xs font-light tracking-widest text-sm text-gray-600 leading-normal uppercase',
   content: 'flex-none text-lg text-gray-600 font-light md:flex-1 md:pl-20',
-  link: 'hover:underline hover:text-black',
+  link: 'hover:underline hover:text-blue-500',
 };
 
 const Section = ({ title, link, children }) => {
