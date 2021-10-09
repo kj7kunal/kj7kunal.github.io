@@ -16,8 +16,28 @@ module.exports = {
     linkedin: `https://www.linkedin.com/in/kj7kunal`,
     // Optional: Resume URL
     resume: `https://tinyurl.com/kunaljainresume`,
+    // Optional: Email ID
+    mail: `kjkunal7996@gmail.com`,
     // Content of the About Me section
     about: `I'm a Machine Learning Engineer passionate about working in challenging and high-impact environments, and building automation pipelines that help save human time and effort. I take up side projects actively and like spending caffeinated lofi evenings working on them. I recently, and very reluctantly, started competitive programming for interviewing, but caved in to the benefits.`,
+    // Optional: List your experience, they must have `name` and `description`. `link` is optional.
+    experience: [
+      {
+        name: 'Visional Inc. (formerly BizReach Inc.)',
+        description: 'Machine Learning Engineer, October 2019 - Present',
+        link: 'https://www.visional.inc/ja/index.html',
+      },
+      {
+        name: 'Nanyang Technological University, Singapore',
+        description: 'Summer Research Internship, May 2018 - July 2018',
+        link: '/blog/ntu-intern',
+      },
+      {
+        name: 'ISRO Satellite Centre, Bangalore',
+        description: 'Summer Research Internship, May 2017 - July 2017',
+        link: '/blog/isro-intern',
+      },
+    ],
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
@@ -58,24 +78,6 @@ module.exports = {
           },
         ],
         link: 'http://www.iitkgp.ac.in/',
-      },
-    ],
-    // Optional: List your experience, they must have `name` and `description`. `link` is optional.
-    experience: [
-      {
-        name: 'Visional Inc. (formerly BizReach Inc.)',
-        description: 'Machine Learning Engineer, October 2019 - Present',
-        link: 'https://www.visional.inc/ja/index.html',
-      },
-      {
-        name: 'Nanyang Technological University, Singapore',
-        description: 'Summer Research Internship, May 2018 - July 2018',
-        link: '/blog/ntu-intern',
-      },
-      {
-        name: 'ISRO Satellite Centre, Bangalore',
-        description: 'Summer Research Internship, May 2017 - July 2017',
-        link: '/blog/isro-intern',
       },
     ],
     // Optional: List your skills, they must have `name` and `description`.
@@ -142,7 +144,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `ADD YOUR TRACKING ID HERE`, // Optional Google Analytics
+        trackingId: `UA-193465086-1`, // Optional Google Analytics
       },
     },
     {

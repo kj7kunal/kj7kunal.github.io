@@ -2,6 +2,14 @@ import { Link } from 'gatsby';
 import get from 'lodash/get';
 import React from 'react';
 
+import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
+import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
+import { FaTwitter } from "@react-icons/all-files/fa/FaTwitter";
+import { FaBlog } from "@react-icons/all-files/fa/FaBlog";
+import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope";
+import { FaFileDownload } from "@react-icons/all-files/fa/FaFileDownload";
+
+
 import profileImg from '../../images/profile.jpg';
 
 const classes = {
@@ -14,7 +22,9 @@ const classes = {
   list: 'mt-6 uppercase tracking-wider',
   item: 'inline list-none pr-4',
   link:
-    'inline-block py-2 font-semibold text-xs text-gray-600 hover:text-black',
+    'inline-block py-2 font-semibold text-xs text-gray-600 hover:text-blue-500',
+  icon:
+    'inline-block py-2 font-semibold pr-5 text-lg text-gray-600 hover:text-blue-500',
 };
 
 const Header = ({ metadata = {}, noBlog = false }) => {
@@ -22,6 +32,7 @@ const Header = ({ metadata = {}, noBlog = false }) => {
   const github = get(metadata, 'github', false);
   const linkedin = get(metadata, 'linkedin', false);
   const resume = get(metadata, 'resume', false);
+  const mail = get(metadata, 'mail', false);
 
   return (
     <div className={classes.wrapper}>
@@ -35,17 +46,7 @@ const Header = ({ metadata = {}, noBlog = false }) => {
           <Link to="/">{metadata.name}</Link>
         </h1>
         <p className={classes.description}>{metadata.description}</p>
-        <ul className={classes.list}>
-          {twitter && (
-            <li className={classes.item}>
-              <a
-                className={classes.link}
-                href={`https://twitter.com/${twitter}`}
-              >
-                Twitter
-              </a>
-            </li>
-          )}
+        {/* <ul className={classes.list}>
           {github && (
             <li className={classes.item}>
               <a className={classes.link} href={github}>
@@ -60,6 +61,16 @@ const Header = ({ metadata = {}, noBlog = false }) => {
               </a>
             </li>
           )}
+          {twitter && (
+            <li className={classes.item}>
+              <a
+                className={classes.link}
+                href={`https://twitter.com/${twitter}`}
+              >
+                Twitter
+              </a>
+            </li>
+          )}
           {!noBlog && (
             <li className={classes.item}>
               <Link className={classes.link} to="/blog">
@@ -71,6 +82,55 @@ const Header = ({ metadata = {}, noBlog = false }) => {
             <li className={classes.item}>
               <a className={classes.link} href={resume}>
                 Resume
+              </a>
+            </li>
+          )}
+        </ul> */}
+        <ul className={classes.list}>
+          {github && (
+            <li className={classes.item}>
+              <a className={classes.icon} href={github}>
+                <FaGithub />
+              </a>
+            </li>
+          )}
+          {linkedin && (
+            <li className={classes.item}>
+              <a className={classes.icon} href={linkedin}>
+                <FaLinkedin />
+              </a>
+            </li>
+          )}
+          {mail && (
+            <li className={classes.item}>
+              <a className={classes.icon}
+                href={`mailto:${mail}`}
+              >
+                <FaEnvelope />
+              </a>
+            </li>
+          )}
+          {twitter && (
+            <li className={classes.item}>
+              <a
+                className={classes.icon}
+                href={`https://twitter.com/${twitter}`}
+              >
+                <FaTwitter />
+              </a>
+            </li>
+          )}
+          {!noBlog && (
+            <li className={classes.item}>
+              <Link className={classes.icon} to="/blog">
+                <FaBlog />
+              </Link>
+            </li>
+          )}
+          {resume && (
+            <li className={classes.item}>
+              <a className={classes.icon} href={resume}>
+                <FaFileDownload />
               </a>
             </li>
           )}

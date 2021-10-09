@@ -14,10 +14,10 @@ import SEO from '../components/seo';
 
 const Index = ({ data }) => {
   const about = get(data, 'site.siteMetadata.about', false);
+  const experience = get(data, 'site.siteMetadata.experience', false);
   const projects = get(data, 'site.siteMetadata.projects', false);
   const posts = data.allMarkdownRemark.edges;
   const education = get(data, 'site.siteMetadata.education', false);
-  const experience = get(data, 'site.siteMetadata.experience', false);
   const skills = get(data, 'site.siteMetadata.skills', false);
   const noBlog = !posts || !posts.length;
 
@@ -26,13 +26,13 @@ const Index = ({ data }) => {
       <SEO />
       <Header metadata={data.site.siteMetadata} noBlog={noBlog} />
       {about && <SectionAbout about={about} />}
+      {experience && experience.length && (
+        <SectionExperience experience={experience} />
+      )}
       {projects && projects.length && <SectionProjects projects={projects} />}
       {!noBlog && <SectionBlog posts={posts} />}
       {education && education.length && (
         <SectionEducation education={education} />
-      )}
-      {experience && experience.length && (
-        <SectionExperience experience={experience} />
       )}
       {skills && skills.length && <SectionSkills skills={skills} />}
     </Layout>
@@ -53,6 +53,12 @@ export const pageQuery = graphql`
         github
         linkedin
         resume
+        mail
+        experience {
+          name
+          description 
+          link
+        }
         projects {
           name
           description
@@ -63,11 +69,6 @@ export const pageQuery = graphql`
           description {
             text
           }
-          link
-        }
-        experience {
-          name
-          description 
           link
         }
         skills {
