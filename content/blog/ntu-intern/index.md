@@ -305,6 +305,7 @@ the thesis for ease of writing this blog.
 <p align="center">
   <img src="result.png" alt="Result"/>
 </p>
+
 ```
 ```
 
