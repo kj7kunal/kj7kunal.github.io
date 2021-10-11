@@ -5,27 +5,27 @@ description: '2 years as an ML/AI Engineer at Visional Inc.'
 ---
 
 I have been working with [Visional Inc.](https://www.visional.inc/ja/index.html), based in
-Tokyo, Japan, since October 2019. This is my first job after graduation, and I work as an
-ML/AI Engineer in the AI Team. As it is my second work anniversary, I think it would be
-cool to look back and reflect on how far I have come.
+Tokyo, Japan, since October 2019. This was my first job after graduation, and I have been
+working as an ML/AI Engineer in the AI Team. As it is my second work anniversary, I think
+it would be worthwhile to look back and reflect on my journey so far.
 
 My work mainly involves the development of end-to-end Machine Learning workflows as well as
-their deployment for the various services and products offered by the company.
+their deployment in the various services and products offered by the company.
 
 I also contribute to Machine Learning research undertaken by the AI team, and had initiated
 and led the research and development of an OCR system for Japanese handwritten addresses.
 
 I have limited work proficiency in Japanese, so I prefer to use English as much as possible.
-I am able to use English for my work within the AI team, but often have to switch to
-Japanese for cross-team communication. 
+I am able to use English for work within the AI team, but often need to switch to Japanese
+for cross-team communication. 
 
 ```
 ```
 ## Contents
 
 - <a href="#selected">How I got selected</a>
-  - <a href="#resume">Resume</a>
-  - <a href="#interview">Placement Interview</a>
+  - <a href="#resume">Interview Preparation</a>
+  - <a href="#interview">Placement Interviews</a>
 - <a href="#projects">Projects</a>
   - <a href="#objectives">Objectives</a>
   - <a href="#motivation">Motivation</a>
@@ -38,33 +38,105 @@ Japanese for cross-team communication.
 
 <h2 id="selected">How I got selected</h2>
 
-<h3 id="resume">Resume</h3>
+<h3 id="resume">Interview Preparation</h3>
 
-Well, other than being enrolled in an Aerospace Engineering degree at one of the most
-prominent institutes of the country, the strongest point on my resume was a
-successful 3-month internship at [Team Indus](https://www.teamindus.in/) in the summer of 2016. Team Indus is a private for-profit aerospace company that was all geared up at
-winning the [Google Lunar X Prize competition](https://www.xprize.org/prizes/google-lunar/competing-teams). I had designed some mathematical models and simulations for thruster
-misalignment estimation during various burn phases, mainly in MATLAB.
+After [my internship with ROSE Lab](/blog/ntu-intern) in the summer of 2018,
+I immediately started to prepare for job interviews in the 
+[IIT Kharagpur Placement Season 2018](https://www.shiksha.com/b-tech/articles/iit-kharagpur-placements-blogId-20045#:~:text=placements%202018%20below.-,IIT%20Kharagpur%20placements,-are%20conducted%20for).
+Placements are a time of extensive planning and preparation, and depending on their
+targeted companies, students choose from various preparation strategies to get through. 
 
-<h3 id="interview">Placement Interview</h3>
+Fresh from a very interesting internship, I was determined to pursue a Machine Learning 
+/ Software Engineering role, even though my major in Aerospace Engineering put me at a
+fair disadvantage compared to students of "circuit" (CS, EE, MA, etc) branches. In a batch
+of over 1000 applicants, companies had to apply such constraints in order to make the
+shortlist really "short". This meant, that I would not be able to sit for the tests for
+these companies, even though I was fairly confident in my skills. On top of this, the rules
+restricted us from accepting more than one job offer in the entire season.
 
-The application process was tricky. I could not find an "open positions" page
-online. And if you have ever been to the ISRO website, it's really hard to find
-what you're looking for. No, my best friend here, was networking.
+Keeping in mind the above constraints, I decided to keep my preparation very general and
+open to multiple opportunities. From information gathered from seniors as well as
+company introductory talks, I understood that most of the tests involved similar formats.
+On the basis of this information, my preparation included brushing up on:
 
-I had heard about the [Indian Institute of Space Science and Technology](https://www.iist.ac.in/) having direct ties with ISRO, and that students usually go for internships at
-various labs across the entire space agency. Through a bit of googling, I found a
-list of students who had interned at the ISRO Satellite Centre the previous summer,
-and through a bit of facebooking, I found one student with a close mutual friend.
-I soon scheduled a call with her, and she turned out be a really interesting person.
-We talked about her project which was based on robotics, as well as her university life.
-She set me up for a call with her mentor, who was also a graduate from her university.
+- Analytical/Probability skills: [Fifty Challenging Problems in Probability with Solutions](https://mbapreponline.files.wordpress.com/2013/07/fifty_challenging_problems_in__2.pdf)
+- Machine Learning theory: my notes from online courses on Coursera such as the
+[Machine Learning course (Stanford University)](https://www.coursera.org/learn/machine-learning)
+and the [Deep Learning Specialization (DeepLearning.AI)](https://www.coursera.org/specializations/deep-learning)
+- Data Structures/Algorithms: Practice questions on [InterviewBit](https://www.interviewbit.com/)
 
-My call with my mentor, [Mr Aditya R.](https://twitter.com/arallapalli), basically involved
-a CV runthrough, an extensive discussion about my work at Team Indus, and a free-talk
-about my interests and projects at IIT Kharagpur. To my relief, he said he was looking
-for interns and my resume matched his requirements. More luckily, I got to choose between
-2 projects to work on!
+This way, I was able to prepare fairly well for both software and data science roles. 
+
+Parallely, I drafted a one-page resume showcasing my projects and my internships, and got
+it reviewed by a lot of friends and seniors. After a few revisions, I submitted it to the
+placement portal, and waited anxiously for the placement process to start.
+
+<h3 id="interview">Placement Interviews</h3>
+
+Reality hit hard on Day 1, when I found out some companies I was hoping to be shortlisted
+in had actually used the "circuit branch" constraint, and I was only able to sit in 2 of
+the 6 companies I applied for that day. My interview with Airbus went well, but I
+eventually apologized and pulled out, since their Embedded Software Engineer role was not
+something I was very fond of. I was not able to perform well in the Capital One analyst
+interview, since the "Case Interview" style was not something I had prepared for. In summary,
+Day 1 was a complete bust because of the restrictions on the placement process, and I was
+disappointed.
+
+However, later that night, I was very happy to find out that I cleared the shortlist for
+BizReach Inc., based in Tokyo, for the Machine Learning Engineer role. As expected,
+most of the circuit branch students had already received job offers, and were out of the
+placement process. Day 2 is usually the arena for companies that are new participants
+in the placements, and sometimes, these are provide offers that are on-par or even better
+than the previous day. BizReach was one such company, and the job description was exactly
+what I had hoped for!
+
+I called up a senior who was working in Mercari, Tokyo (I had also called him up the
+previous night, since I was furious Mercari was only looking for circuit branch students),
+and asked him some tips for interviewing with Japanese people. His input really helped
+me refocus my mind on this new opportunity. After some modest revision and self pep-talk,
+I called it a night.
+
+The next day, I showed up for the interviews, and I was surprised to see only a few
+candidates lined up. I had a quick judgmental glance at the candidates, and narcissitically
+reassured myself. I knew I was a slight bit overconfident, but in such a situation, it
+really helped me to not ponder on my nerves. I ran simulations of my plan in my head while
+I waited.
+
+I was already impressed at how punctual the Japanese were at taking interviews. Each
+interview went on for a total maximum of 30-minutes, with two exact 15-minute segments.
+The first part was basically a 3-on-1 technical interview, involving a CV runthrough
+and some behavioral questions, whereas the second part was a coding round.
+
+My interview began at 1830hrs, and I went inside and greeted them, saying "Konnichiwa" 
+(hello, in Japanese). They were delighted, and started talking in Japanese to test/tease me.
+I told them liked watching anime with subtitles, and I liked to pick up a few words here
+and there. I was happy with how the mood was from that point - light and cheery. They
+introduced themselves as Takeuchi-san (CTO), Ikawa-san (VP of Engineering) and Dat-san
+(Team lead in the AI division). 
+
+In the first part, I was mainly asked in detail about my thesis project, with some questions
+about the image segmentation pipeline, and also my ROSE Lab internship. Other than 
+well-prepared answers to possible questions to my resume, I was quick to emphasize on my
+experience working in an Asian working environment as well as my knowledge about Japan
+during the behavioral questions. In general, I felt our interaction was positive and I was
+optimistic when I began the coding part. There were two questions of easy/medium difficulty,
+involving array manipulation and 2-pointers. I was easily able to work through them and
+write clean code in Python, which was the programming language I was most comfortable with
+as well as the language with which I was expected to work with if I were selected.
+
+I left at exactly 1900hrs after asking a few more questions I had about the company and the
+role, and was told to wait outside for about an hour. At 2000hrs, all 3 interviewers came
+outside, and announced three names they selected - and I was so relieved when I heard mine!
+After taking some photos outside the venue, the interviewers left shortly after. I called
+up my parents, and my friends and shared the news. It was one of the happiest nights of my
+life, and I did no injustice in celebrating that feeling! It was the result of hard work
+and meticulous planning, and most of all - being my genuine self.
+
+Here is a meme that sums up my placement process:
+
+<p align="center">
+  <img src="thanos_meme.png" alt="Placement Meme"/>
+</p>
 
 ```
 ```
