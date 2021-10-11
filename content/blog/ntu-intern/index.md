@@ -20,28 +20,28 @@ as not only did the lab's research focus align with my interests, I would also b
 able to gain work experience in [one of the top universities in Asia](https://www.topuniversities.com/university-rankings/asian-university-rankings/2018).
 
 ```
-Contents
-
-- How I got selected
-  - Resume
-  - Application Process
-  - Interview Call
-
-- The Lab
-
-- The Project
-  - Objectives
-  - Motivation
-  - Implementation
-  - Result
-
-- My Experience
 ```
 
+## Contents
 
-## How I got selected
+- <a href="#selected">How I got selected</a>
+  - <a href="#resume">Resume</a>
+  - <a href="#application">Application Process</a>
+  - <a href="#interview">Interview Call</a>
+- <a href="#lab">The Lab</a>
+- <a href="#project">The Project</a>
+  - <a href="#objectives">Objectives</a>
+  - <a href="#motivation">Motivation</a>
+  - <a href="#implementation">Implementation</a>
+  - <a href="#result">Result</a>
+- <a href="#experience">My Experience</a>
 
-### Resume
+```
+```
+
+<h2 id="selected">How I got selected</h2>
+
+<h3 id="resume">Resume</h3>
 
 In my fourth year, I started to diverge my career away from aerospace engineering,
 to focus on my minor in Computer Science, especially in the areas of
@@ -69,7 +69,7 @@ and the [Deep Learning Specialization (DeepLearning.AI)](https://www.coursera.or
 taught by Prof. Andrew Ng, to improve my knowledge of basic ML/DL techniques
 through theory and coding assignments.
 
-### Application Process
+<h3 id="application">Application Process</h3>
 
 The application process was pretty straightforward. Since I was mainly focussed on
 getting research experience, I had compiled a list of around 30-40 research labs
@@ -87,7 +87,7 @@ top 10 of my list, which was basically an ambitious tier for me.
 After exchanging a few emails, we scheduled an hour-long interview call a week later,
 and I was asked to prepare a short presentation about 1~2 of my best projects.
 
-### Interview Call
+<h3 id="interview">Interview Call</h3>
 
 I sent my presentation 2 days in advance of the interview call. On the Skype call, I
 connected with the Deputy Director, [Dr Dennis Sng](https://sg.linkedin.com/in/dennissng),
@@ -106,7 +106,7 @@ to start the visa process!
 ```
 ```
 
-## The Lab
+<h2 id="lab">The Lab</h2>
 The [Rapid-Rich Object Search (ROSE) Lab](https://www.ntu.edu.sg/rose) is a joint
 collaboration between NTU Singapore and Peking University, China. Its vision is to
 create the largest collection of structured domain object database in Asia, and to
@@ -133,9 +133,9 @@ object search technology.
 ```
 ```
 
-## The Project
+<h2 id="project">The Project</h2>
 
-### Objectives
+<h3 id="objectives">Objectives</h3>
 
 The project was a collaboration between ROSE Lab and the 
 [Defence Science and Technology Agency (DSTA) Singapore](https://www.dsta.gov.sg/home).
@@ -158,7 +158,7 @@ I worked closely with [Dr Lin Shan](https://warwick.ac.uk/fac/sci/dcs/people/xuu
 a PhD student who was leading the Re-ID project, as part of a two year secondment
 under EU IDENTITY project between University of Warwick and NTU Singapore.
 
-### Motivation
+<h3 id="motivation">Motivation</h3>
 
 Person Re-ID is defined as the problem of matching people across disjoint camera views
 in a multi-camera system. It is an important task in the field of intelligent security.
@@ -203,7 +203,7 @@ the fortune of working on the project in 2018, I decided to automate Person Dete
 using Machine Learning.
 
 
-### Implementation
+<h3 id="implementation">Implementation</h3>
 
 After the literature reviews, I drafted a roadmap for the project with my mentor,
 which resulted the following to be implemented.
@@ -285,7 +285,7 @@ scripts are available in this [Github repo](https://github.com/kj7kunal/Person-d
   <img src="person_track.gif" alt="Person Tracking demo"/>
 </p>
 
-### Result
+<h3 id="result">Result</h3>
 
 The new Rose-IDentification-Outdoor (Re-ID-Outdoor) dataset was collected and
 annotated. The dataset was collected from 50 real surveillance cameras in NTU
@@ -309,7 +309,7 @@ the thesis for ease of writing this blog.
 ```
 ```
 
-## My Experience
+<h2 id="experience">My Experience</h2>
 
 As it was my first time going abroad, I was super excited to fly to Singapore as soon
 as my fourth year ended. I had a list of action items sorted out for my first week
