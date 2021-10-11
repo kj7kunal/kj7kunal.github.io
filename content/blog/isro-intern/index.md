@@ -13,25 +13,26 @@ and be able to further ongoing theoretical research on ways to tackle the Kessle
 In this internship, I designed mathematical models and simulations for physical objects interacting in space.
 
 ```
-Contents
+```
+## Contents
 
-- How I got selected
-  - Resume
-  - Application Process
-  - Interview Call
+- <a href="#selected">How I got selected</a>
+  - <a href="#resume">Resume</a>
+  - <a href="#application">Application Process</a>
+  - <a href="#interview">Interview Call</a>
+- <a href="#project">The Project</a>
+  - <a href="#objectives">Objectives</a>
+  - <a href="#motivation">Motivation</a>
+  - <a href="#implementation">Implementation</a>
+  - <a href="#result">Result</a>
+- <a href="#experience">My Experience</a>
 
-- The Project
-  - Objectives
-  - Motivation
-  - Implementation
-  - Result
-
-- My Experience
+```
 ```
 
-## How I got selected
+<h2 id="selected">How I got selected</h2>
 
-### Resume
+<h3 id="resume">Resume</h3>
 
 Well, other than being enrolled in an Aerospace Engineering degree at one of the most
 prominent institutes of the country, the strongest point on my resume was a
@@ -39,7 +40,7 @@ successful 3-month internship at [Team Indus](https://www.teamindus.in/) in the 
 winning the [Google Lunar X Prize competition](https://www.xprize.org/prizes/google-lunar/competing-teams). I had designed some mathematical models and simulations for thruster
 misalignment estimation during various burn phases, mainly in MATLAB.
 
-### Application Process
+<h3 id="application">Application Process</h3>
 
 The application process was tricky. I could not find an "open positions" page
 online. And if you have ever been to the ISRO website, it's really hard to find
@@ -53,7 +54,7 @@ I soon scheduled a call with her, and she turned out be a really interesting per
 We talked about her project which was based on robotics, as well as her university life.
 She set me up for a call with her mentor, who was also a graduate from her university.
 
-### Interview Call
+<h3 id="interview">Interview Call</h3>
 
 My call with my mentor, [Mr Aditya R.](https://twitter.com/arallapalli), basically involved
 a CV runthrough, an extensive discussion about my work at Team Indus, and a free-talk
@@ -64,9 +65,10 @@ for interns and my resume matched his requirements. More luckily, I got to choos
 ```
 ```
 
-## The Project
+<h2 id="project">The Project</h2>
 
-### Objectives
+<h3 id="objectives">Objectives</h3>
+
 
 The goal of the project was to simulate active space debris removal using tether-net
 connected to satellites in formation. There were 3 main concepts involved:
@@ -80,7 +82,7 @@ distributed mechanical system.
 - Contact dynamics. The collective behaviour of the net and the satellites in formation
 during and after debris contact phases.
 
-### Motivation
+<h3 id="motivation">Motivation</h3>
 
 Among many things, space is also the most dangerous junkyard Earth has created.
 If you have seen the 2013 film Gravity, the accident that caused the astronauts
@@ -103,7 +105,7 @@ grappling arms, harpoons, deploying nets, electrodynamic tethers, ground-based l
 
 This project combined swarm satellites and tether-nets for Active Space Debris Removal.
 
-### Implementation
+<h3 id="implementation">Implementation</h3>
 
 Simulations for the various components were developed in MATLAB and working code was
 replicated in C++ for faster experimentation. A C++ library implementation for MATLAB’s
@@ -138,7 +140,7 @@ rigid bodies as kinematic pairs (joints, springs and dampers).
   <img src="net_lpm.gif" alt="Lumped parameter model"/>
 </p>
 
-### Result
+<h3 id="result">Result</h3>
 
 The results of this research were drafted into a research paper and accepted for
 [Interactive Presentation in the 69th International Astronautical Congress 2018](https://iafastro.directory/iac/archive/browse/IAC-18/A6/IP/48269/)
@@ -148,7 +150,7 @@ to attend the conference.
 ```
 ```
 
-## My Experience
+<h2 id="experience">My Experience</h2>
 
 As an aerospace engineering student, I was very enthusiastic about working at the
 ISRO Satellite Centre, and I was very excited to fly to Bangalore as soon as my
