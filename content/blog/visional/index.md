@@ -1,13 +1,13 @@
 ---
-title: The ISRO Internship
+title: My first Full-Time Job - A Look Back
 date: '2021-10-01T12:00:00.00Z'
 description: '2 years as an ML/AI Engineer at Visional Inc.'
 ---
 
 I have been working with [Visional Inc.](https://www.visional.inc/ja/index.html), based in
 Tokyo, Japan, since October 2019. This was my first job after graduation, and I have been
-working as an ML/AI Engineer in the AI Team. As it is my second work anniversary, I think
-it would be worthwhile to look back and reflect on my journey so far.
+working as an ML/AI Engineer in the AI Team. As it is my **second work anniversary**, I
+think it would be worthwhile to look back and reflect on my journey so far.
 
 My work mainly involves the development of end-to-end Machine Learning workflows as well as
 their deployment in the various services and products offered by the company.
@@ -23,120 +23,48 @@ for cross-team communication.
 ```
 ## Contents
 
-- <a href="#selected">How I got selected</a>
-  - <a href="#resume">Interview Preparation</a>
-  - <a href="#interview">Placement Interviews</a>
+- <a href="#company">The Company</a>
 - <a href="#projects">Projects</a>
   - <a href="#objectives">Objectives</a>
   - <a href="#motivation">Motivation</a>
   - <a href="#implementation">Implementation</a>
   - <a href="#result">Result</a>
 - <a href="#experience">My Experience</a>
+- <a href="#selected">How I got selected</a>
+  - <a href="#preparation">Interview Preparation</a>
+  - <a href="#placements">Placement Interviews</a>
 
 ```
 ```
 
-<h2 id="selected">How I got selected</h2>
+<h2 id="company">The Company</h2>
 
-<h3 id="resume">Interview Preparation</h3>
+Established in April 2009, BizReach has been operating a variety of Internet services
+that support the future of work in Japan with the mission of "creating a society where
+everyone can believe in their own potential". The company, headquartered in (Shibuya) Tokyo,
+has regional offices in Osaka, Nagoya, Fukuoka, Shizuoka, and Hiroshima. 
 
-After [my internship with ROSE Lab](/blog/ntu-intern) in the summer of 2018,
-I immediately started to prepare for job interviews in the 
-[IIT Kharagpur Placement Season 2018](https://www.shiksha.com/b-tech/articles/iit-kharagpur-placements-blogId-20045#:~:text=placements%202018%20below.-,IIT%20Kharagpur%20placements,-are%20conducted%20for).
-Placements are a time of extensive planning and preparation, and depending on their
-targeted companies, students choose from various preparation strategies to get through. 
+Visional was born in February 2020, when Bizreach Inc. shifted to a group management
+structure. The company's main focus is primarily in the HR Tech and SaaS business.
+The group broadly has a heirarchical structure with the following products and services:
 
-Fresh from a very interesting internship, I was determined to pursue a Machine Learning 
-/ Software Engineering role, even though my major in Aerospace Engineering put me at a
-fair disadvantage compared to students of "circuit" (CS, EE, MA, etc) branches. In a batch
-of over 1000 applicants, companies had to apply such constraints in order to make the
-shortlist really "short". This meant, that I would not be able to sit for the tests for
-these companies, even though I was fairly confident in my skills. On top of this, the rules
-restricted us from accepting more than one job offer in the entire season.
-
-Keeping in mind the above constraints, I decided to keep my preparation very general and
-open to multiple opportunities. From information gathered from seniors as well as
-company introductory talks, I understood that most of the tests involved similar formats.
-On the basis of this information, my preparation included brushing up on:
-
-- Analytical/Probability skills: [Fifty Challenging Problems in Probability with Solutions](https://mbapreponline.files.wordpress.com/2013/07/fifty_challenging_problems_in__2.pdf)
-- Machine Learning theory: my notes from online courses on Coursera such as the
-[Machine Learning course (Stanford University)](https://www.coursera.org/learn/machine-learning)
-and the [Deep Learning Specialization (DeepLearning.AI)](https://www.coursera.org/specializations/deep-learning)
-- Data Structures/Algorithms: Practice questions on [InterviewBit](https://www.interviewbit.com/)
-
-This way, I was able to prepare fairly well for both software and data science roles. 
-
-Parallely, I drafted a one-page resume showcasing my projects and my internships, and got
-it reviewed by a lot of friends and seniors. After a few revisions, I submitted it to the
-placement portal, and waited anxiously for the placement process to start.
-
-<h3 id="interview">Placement Interviews</h3>
-
-Reality hit hard on Day 1, when I found out some companies I was hoping to be shortlisted
-in had actually used the "circuit branch" constraint, and I was only able to sit in 2 of
-the 6 companies I applied for that day. My interview with Airbus went well, but I
-eventually apologized and pulled out, since their Embedded Software Engineer role was not
-something I was very fond of. I was not able to perform well in the Capital One analyst
-interview, since the "Case Interview" style was not something I had prepared for. In summary,
-Day 1 was a complete bust because of the restrictions on the placement process, and I was
-disappointed.
-
-However, later that night, I was very happy to find out that I cleared the shortlist for
-BizReach Inc., based in Tokyo, for the Machine Learning Engineer role. As expected,
-most of the circuit branch students had already received job offers, and were out of the
-placement process. Day 2 is usually the arena for companies that are new participants
-in the placements, and sometimes, these are provide offers that are on-par or even better
-than the previous day. BizReach was one such company, and the job description was exactly
-what I had hoped for!
-
-I called up a senior who was working in Mercari, Tokyo (I had also called him up the
-previous night, since I was furious Mercari was only looking for circuit branch students),
-and asked him some tips for interviewing with Japanese people. His input really helped
-me refocus my mind on this new opportunity. After some modest revision and self pep-talk,
-I called it a night.
-
-The next day, I showed up for the interviews, and I was surprised to see only a few
-candidates lined up. I had a quick judgmental glance at the candidates, and narcissitically
-reassured myself. I knew I was a slight bit overconfident, but in such a situation, it
-really helped me to not ponder on my nerves. I ran simulations of my plan in my head while
-I waited.
-
-I was already impressed at how punctual the Japanese were at taking interviews. Each
-interview went on for a total maximum of 30-minutes, with two exact 15-minute segments.
-The first part was basically a 3-on-1 technical interview, involving a CV runthrough
-and some behavioral questions, whereas the second part was a coding round.
-
-My interview began at 1830hrs, and I went inside and greeted them, saying "Konnichiwa" 
-(hello, in Japanese). They were delighted, and started talking in Japanese to test/tease me.
-I told them liked watching anime with subtitles, and I liked to pick up a few words here
-and there. I was happy with how the mood was from that point - light and cheery. They
-introduced themselves as Takeuchi-san (CTO), Ikawa-san (VP of Engineering) and Dat-san
-(Team lead in the AI division). 
-
-In the first part, I was mainly asked in detail about my thesis project, with some questions
-about the image segmentation pipeline, and also my ROSE Lab internship. Other than 
-well-prepared answers to possible questions to my resume, I was quick to emphasize on my
-experience working in an Asian working environment as well as my knowledge about Japan
-during the behavioral questions. In general, I felt our interaction was positive and I was
-optimistic when I began the coding part. There were two questions of easy/medium difficulty,
-involving array manipulation and 2-pointers. I was easily able to work through them and
-write clean code in Python, which was the programming language I was most comfortable with
-as well as the language with which I was expected to work with if I were selected.
-
-I left at exactly 1900hrs after asking a few more questions I had about the company and the
-role, and was told to wait outside for about an hour. At 2000hrs, all 3 interviewers came
-outside, and announced three names they selected - and I was so relieved when I heard mine!
-After taking some photos outside the venue, the interviewers left shortly after. I called
-up my parents, and my friends and shared the news. It was one of the happiest nights of my
-life, and I did no injustice in celebrating that feeling! It was the result of hard work
-and meticulous planning, and most of all - being my genuine self.
-
-Here is a meme that sums up my placement process:
-
-<p align="center">
-  <img src="thanos_meme.png" alt="Placement Meme"/>
-</p>
+- [Visional Corporation](https://www.visional.inc/ja/index.html), the holding company,
+supports the group management
+- [Bizreach Corporation](https://www.bizreach.co.jp/), responsible for the management of
+the original HR Tech and SaaS businesses
+  - [Bizreach](https://www.bizreach.jp/), a job-change website that connects companies with
+  human resources with immediate availability
+  - [CareerTrek](https://www.careertrek.com/), a job search site for young graduates
+  - [HRMOS](https://hrmos.co/), a human resources management cloud platform
+  - [Campus](https://br-campus.jp/), an alumni network service for career consultation
+- [Visional Incubation Corporation](https://www.visional.inc/ja/visional-incubation.html),
+responsible for new business development and acquisitions
+  - [Succeed](https://br-succeed.jp/), an M&A platform for business succession
+  - [Yamory](https://yamory.io/), security vulnerability management cloud for IT systems
+  - [BizHint](https://bizhint.jp/), a website providing "business tips" in the form of
+  keywords, case studies and solutions
+  - [BINAR](https://binar.jp/), a career change platform for highly specialized IT Engineers
+  - [StanBy](https://jp.stanby.com/), a job-search engine jointly owned with Yahoo Japan
 
 ```
 ```
@@ -276,6 +204,106 @@ I learned how it was applied in projects at ISRO. Discussions that could not be
 completed over _chai breaks_ were continued the next day or free pizza treats
 after work!
 
+```
+```
+
+<h2 id="selected">How I got selected</h2>
+
+<h3 id="preparation">Interview Preparation</h3>
+
+After [my internship with ROSE Lab](/blog/ntu-intern) in the summer of 2018,
+I immediately started to prepare for job interviews in the 
+[IIT Kharagpur Placement Season 2018](https://www.shiksha.com/b-tech/articles/iit-kharagpur-placements-blogId-20045#:~:text=placements%202018%20below.-,IIT%20Kharagpur%20placements,-are%20conducted%20for).
+Placements are a time of extensive planning and preparation, and depending on their
+targeted companies, students choose from various preparation strategies to get through. 
+
+Fresh from a very interesting internship, I was determined to pursue a Machine Learning 
+/ Software Engineering role, even though my major in Aerospace Engineering put me at a
+fair disadvantage compared to students of "circuit" (CS, EE, MA, etc) branches. In a batch
+of over 1000 applicants, companies had to apply such constraints in order to make the
+shortlist really "short". This meant, that I would not be able to sit for the tests for
+these companies, even though I was fairly confident in my skills. On top of this, the rules
+restricted us from accepting more than one job offer in the entire season.
+
+Keeping in mind the above constraints, I decided to keep my preparation very general and
+open to multiple opportunities. From information gathered from seniors as well as
+company introductory talks, I understood that most of the tests involved similar formats.
+On the basis of this information, my preparation included brushing up on:
+
+- Analytical/Probability skills: [Fifty Challenging Problems in Probability with Solutions](https://mbapreponline.files.wordpress.com/2013/07/fifty_challenging_problems_in__2.pdf)
+- Machine Learning theory: my notes from online courses on Coursera such as the
+[Machine Learning course (Stanford University)](https://www.coursera.org/learn/machine-learning)
+and the [Deep Learning Specialization (DeepLearning.AI)](https://www.coursera.org/specializations/deep-learning)
+- Data Structures/Algorithms: Practice questions on [InterviewBit](https://www.interviewbit.com/)
+
+This way, I was able to prepare fairly well for both software and data science roles. 
+
+Parallely, I drafted a one-page resume showcasing my projects and my internships, and got
+it reviewed by a lot of friends and seniors. After a few revisions, I submitted it to the
+placement portal, and waited anxiously for the placement process to start.
+
+<h3 id="placements">Placement Interviews</h3>
+
+Reality hit hard on Day 1, when I found out some companies I was hoping to be shortlisted
+in had actually used the "circuit branch" constraint, and I was only able to sit in 2 of
+the 6 companies I applied for that day. My interview with Airbus went well, but I
+eventually apologized and pulled out, since their Embedded Software Engineer role was not
+something I was very keen about. I was not able to perform well in the Capital One analyst
+interview, since I had not prepared for the "Case Interview" style at all. In summary,
+Day 1 was a complete bust because of the restrictions on the placement process, and I was
+disappointed with the limited options I had.
+
+Later that night, however, I was happy to find out that I cleared the shortlist for
+BizReach Inc., based in Tokyo, for the Machine Learning Engineer role. Day 2 is usually
+the arena for companies that are new participants in the placements, and sometimes these
+opportunities are on-par or even better than the previous day. BizReach was one such
+company, and the job description was exactly what I had hoped for!
+
+I called up a senior who was working in Mercari, Tokyo (I had also called him up the
+previous night, since I was furious Mercari was only looking for circuit branch students),
+and asked him some tips for interviewing with Japanese people. His input really helped
+me refocus my mind on this new opportunity. After some modest revision and self pep-talk,
+I called it a night.
+
 <p align="center">
-  <img src="free_pizzaaa.jpg" alt="Pizza Treats"/>
+  <img src="thanos_meme.png" alt="Placement Meme"/>
 </p>
+
+The next day, when I showed up for the interviews, and I was surprised to see only a few
+candidates lined up. I had a quick judgmental glance at the candidates, and narcissitically
+reassured myself. I knew I was a slight bit overconfident, but in such a situation, it
+really helped me to not ponder on my nerves. I ran simulations of my plan in my head while
+I waited.
+
+I was already impressed at how punctual the Japanese were at taking interviews. Each
+interview went on for a total maximum of 30-minutes, with two exact 15-minute segments.
+The first part was basically a 3-on-1 technical interview, involving a CV runthrough
+and some behavioral questions, whereas the second part was a coding round.
+
+My interview began at 1830hrs, and I went inside and greeted them, saying "Konnichiwa" 
+(hello, in Japanese). They were delighted, and started talking in Japanese to test/tease me.
+I told them liked watching anime with subtitles, and I liked to pick up a few words here
+and there. I was happy with how the mood was from that point - light and cheery. They
+introduced themselves as Takeuchi-san (CTO), Ikawa-san (VP of Engineering) and Dat-san
+(my future team lead). 
+
+In the first part, I was mainly asked in detail about my thesis project, with some questions
+about the image segmentation pipeline, and also my ROSE Lab internship. Other than 
+well-prepared answers to possible questions to my resume, I was quick to emphasize on my
+experience working in an Asian working environment as well as my knowledge about Japan
+during the behavioral questions. In general, I felt our interaction was positive and I was
+optimistic when I began the coding part. There were two questions of easy/medium difficulty,
+involving array manipulation and 2-pointers. I was easily able to work through them and
+write clean code in Python, which was the programming language I was most comfortable with
+as well as the language with which I was expected to work with if I were selected.
+
+I left at exactly 1900hrs after asking a few more questions I had about the company and the
+role, and was told to wait outside for about an hour. At 2000hrs, all 3 interviewers came
+outside, and announced the three names they selected - and I was so relieved when I heard mine!
+The interviewers left promptly after taking some pictures with us outside the venue. I called
+up my parents and my friends and shared the news. It was one of the happiest nights of my
+life, and I did no injustice to celebrating that feeling! It was the result of hard work
+and meticulous planning, and most of all - being my genuine self.
+
+```
+```
