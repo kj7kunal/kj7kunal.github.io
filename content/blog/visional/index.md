@@ -25,6 +25,11 @@ for cross-team communication.
 
 - <a href="#company">About Visional</a>
 - <a href="#projects">My Projects</a>
+  - <a href="#p1">Financial Document OCR</a>
+  - <a href="#p2">Research: Japanese handwritten OCR</a>
+  - <a href="#p3">Employee Slack Analytics</a>
+  - <a href="#p4">HeadHunter Recommendation</a>
+  - <a href="#p5">Security Bug Report Classification</a>
 - <a href="#selected">How I got selected</a>
   - <a href="#preparation">Interview Preparation</a>
   - <a href="#placements">Placement Interviews</a>
@@ -80,8 +85,80 @@ AI features in production environments to drive business solutions.
 
 <h2 id="projects">My Projects</h2>
 
-Most of the work involves Natural Language Processing, however, I have been able to apply
-my Computer Vision skills to a few projects.
+As an engineer in the AI team, I have to actively communicate requirements and decisions on
+various ML pipelines with multiple service teams simultaneously. I usually have 1-2 
+service-related projects and an independent research project in a single half-year term.
+
+From my experience, I believe that the engineers working in the AI Team at Visional switch
+frequently between the roles and responsibilities of a **Data Scientist**, an **ML Engineer**,
+as well as a **Research Scientist** for different projects undertaken at a time.
+
+An average ML project includes the following:
+
+- understanding the requirements of the service teams
+- analyzing data to optimize and improve services
+- developing custom data models, algorithms and full-stack systems
+- collaborating with service teams to deploy the AI features in production
+- considering evaluation metrics/systems to quantify/monitor outcomes
+
+The projects require a good understanding of ML techniques, algorithms and statistics. Most
+of the work also involves Natural Language Processing techniques. I have also been able to
+apply my Computer Vision skills to a few projects.
+
+Following are few of the projects I have worked on so far, in chronological order.
+
+<h3 id="p1">Financial Document OCR</h3>
+
+[BizReach Succeed](https://br-succeed.jp/service) provides an M&A platform to match companies
+looking for succession with potential buyers. As part of their services, they have to analyze
+financial documents, which are most often personally handed over as hard-copies by the clients.
+These documents are then scanned and the data is manually entered into spreadsheets for
+financial analysis typically resulting in business valuations.
+
+Since Succeed is a relatively small team, the manual data-entry efforts can take upto
+**100hrs/month**. Data-entry basically involves entering tabular data into spreadsheet. This
+tabular data is mostly present within PDF scans. Current OCR systems are well equipped to
+detect text in an image, however, they fail to preserve spatial information such as table cells. 
+
+I developed an **OCR system** capable of **preserving tabular structure** within the image.
+The system was built using [OpenCV](https://pypi.org/project/opencv-python/) and
+[Google Vision API](https://cloud.google.com/vision/docs/ocr) in **Python**, and deployed
+using **Docker**, **Terraform** and **AWS**. Some text post-processing was implemented using
+a dictionary of Japanese financial terms.
+
+The pipeline roughly consists of the following steps:
+- Parsing OCR request from AWS SQS and AWS S3
+- Getting page images from PDF and fixing text orientation
+- Table detection and extraction from page image
+- OCR Text Detection request to Google Vision API
+- Alignment of Google Vision API annotations
+- Proofreading result text using a dictionary
+- Save output XLS workbook to AWS S3
+
+<p align="center">
+  <img src="focr.png" alt="Financial Document OCR"/>
+</p>
+
+<h3 id="p2">Research: Japanese handwritten OCR</h3>
+
+Pioneered OCR research for the AI team, achieving a 44% lower CER (character error rate) than Google
+Vision API on handwritten Japanese text, by implementing CRNN architecture in PyTorch and devising domain augmentation methods.
+In the process of publishing the methodology and results
+
+<h3 id="p3">Employee Slack Analytics</h3>
+
+Built a GUI in Vue.js and Python for internal HR to visualize activity and messaging trends on BizReach Slack
+workspace, featuring conversation topic transitions, wordclouds and matching similar users, using NLP techniques like LDA
+
+<h3 id="p4">HeadHunter Recommendation</h3>
+
+Achieved 25% hit rate (offline evaluation) using implicit library’s ALS collaborative filtering model on
+the BizReach candidate-job access log data for demonstration of the proposed BizReach headhunter recommendation project
+
+<h3 id="p5">Security Bug Report Classification</h3>
+
+Achieved 0.81 F-score classifying bug reports using a bigram model trained over NVD Descriptions and
+CVE related tweets. Learned how to build tools using NER, Scrapy, Elasticsearch and nltk
 
 ```
 ```
@@ -125,10 +202,10 @@ placement portal, and waited anxiously for the placement process to start.
 
 Reality hit hard on Day 1, when I found out some companies I was hoping to be shortlisted
 in had actually used the "circuit branch" constraint, and I was only able to sit in 2 of
-the 6 companies I applied for that day. My interview with Airbus went well, but I
-eventually apologized and pulled out, since their Embedded Software Engineer role was not
-something I was very keen about. I was not able to perform well in the Capital One analyst
-interview, since I had not prepared for the "Case Interview" style at all. In summary,
+the 6 companies I applied for that day. My first interview went well, but I eventually
+apologized and pulled out, since their Embedded Software Engineer role was not
+something I was very keen about. I was not able to perform well my second interview, for an
+analyst position, since I had not prepared for the "Case Interview" style at all. In summary,
 Day 1 was a complete bust because of the restrictions on the placement process, and I was
 disappointed with the limited options I had.
 
