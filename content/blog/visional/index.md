@@ -25,7 +25,7 @@ for cross-team communication.
 
 - <a href="#company">About Visional</a>
 - <a href="#projects">My Projects</a>
-  - <a href="#p1">Financial Document OCR</a>
+  - <a href="#p1">Financial Document OCR System</a>
   - <a href="#p2">Research: Japanese handwritten OCR</a>
   - <a href="#p3">Employee Slack Analytics</a>
   - <a href="#p4">HeadHunter Recommendation</a>
@@ -105,9 +105,9 @@ The projects require a good understanding of ML techniques, algorithms and stati
 of the work also involves Natural Language Processing techniques. I have also been able to
 apply my Computer Vision skills to a few projects.
 
-Following are few of the projects I have worked on so far, in chronological order.
+Following are few of the projects I have worked on so far.
 
-<h3 id="p1">Financial Document OCR</h3>
+<h3 id="p1">Financial Document OCR System</h3>
 
 [BizReach Succeed](https://br-succeed.jp/service) provides an M&A platform to match companies
 looking for succession with potential buyers. As part of their services, they have to analyze
@@ -141,9 +141,44 @@ The pipeline roughly consists of the following steps:
 
 <h3 id="p2">Research: Japanese handwritten OCR</h3>
 
-Pioneered OCR research for the AI team, achieving a 44% lower CER (character error rate) than Google
-Vision API on handwritten Japanese text, by implementing CRNN architecture in PyTorch and devising domain augmentation methods.
-In the process of publishing the methodology and results
+In many ways, hand-filled forms are still a part of Japan's official processes. For instance,
+our company requires candidates to fill out their details for registration. Since it is
+imperative that we make no mistakes while entering the details into our systems, this information
+is then manually filled by the operator. However, to me, it looked like an opportunity to explore and further research on Japanese
+handwritten OCR systems for the AI team. 
+
+The research focusses on the address field in the BizReach registration forms, and aims to
+harness the structure present in addresses to explore domain augmentation methods. A 
+[list of Japanese addresses](http://jusyo.jp/index.html) distributed by Japan Post was used
+to synthetically generate the train dataset. The textual addresses were transformed into
+address images using character images available in the [ETL](http://etlcdb.db.aist.go.jp/)
+and [EMNIST](https://www.nist.gov/itl/products-and-services/emnist-dataset) datasets.
+Data augmentation was introduced to account for variances in handwriting:
+
+- shape of characters
+- spacing between characters (narrow or wide)
+- rotation of characters (straight or slant)
+- size of characters (big or small)
+- stroke strength of characters (thick or thin)
+
+<p align="center">
+  <img src="hocr_sent.png" alt="Sentence Image"/>
+</p>
+
+The [**Convolutional Recurrent Neural Network** (CRNN)](https://arxiv.org/abs/1507.05717)
+architecture was chosen. The end-to-end model, that combines CNN (image feature extraction),
+RNN (sequence recogntion) and CTC loss, was implemented in **PyTorch**.
+
+The lexicon-free model was able to achieve a **44% lower CER (character error rate) than the
+[Google Vision API](https://cloud.google.com/vision/docs/handwriting)** on a test set of actual
+handwritten Japanese addresses. Currently, I am trying to improve the CER further using
+lexicon-based algorithms, and simultaneously documenting the methodology and results aimed at a
+future publication.
+
+<p align="center">
+  <img src="hocr_cer.png" alt="CRNN Result CER"/>
+</p>
+
 
 <h3 id="p3">Employee Slack Analytics</h3>
 
