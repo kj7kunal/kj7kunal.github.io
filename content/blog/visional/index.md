@@ -182,8 +182,34 @@ future publication.
 
 <h3 id="p3">Employee Slack Analytics</h3>
 
-Built a GUI in Vue.js and Python for internal HR to visualize activity and messaging trends on BizReach Slack
-workspace, featuring conversation topic transitions, wordclouds and matching similar users, using NLP techniques like LDA
+The [HRMOS](https://hrmos.co/) team develops a variety of HR-Tech services, such as employee
+databases, attendance logging and performance tracking systems. Their focus is the improvement
+of productivity within client business teams. 
+
+Each company has data on their employees which can be leveraged using AI to measure, in an
+abstract sense, the productivity of the employees. This data is usually available within the
+employee database of the company and has a well-defined structure to it. In recent years,
+Slack, Workplace, Teams, etc have gained preference over emails, especially in the tech
+industry. 
+
+**Public conversations** can be viewed as unconventional sources of data, which can
+be processed using NLP techniques to quantify productivity. For instance, messages and
+replies can be considered entities that signal a connection link between two employees.
+Frequency of interactions on public channels can signal the degree of involvement of a
+certain employee in a certain topic.
+
+I built a simple GUI in **Vue.js** and **Python**, and deployed it using **Docker** for
+internal HR to visualize activity and messaging trends on the Visional Slack workspace.
+**Japanese text processing** using [MeCab](https://taku910.github.io/mecab/) tagger and
+[NEologd](https://github.com/neologd/mecab-ipadic-neologd#overview) dictionary were used
+to clean the unstructured conversational data. The following are some of the features have
+been implemented in the GUI:
+
+- Conversation topic transitions, to visualize the change over time in underlying topics
+of conversation, discovered using **LDA topic modeling**
+- Interactive User/Channel wordclouds, to visualize a summarized history of conversation
+keywords
+- Matching similar users, based on high topic probabilities in conversations
 
 <h3 id="p4">HeadHunter Recommendation</h3>
 
