@@ -25,7 +25,7 @@ module.exports = {
       {
         name: 'Visional Inc. (formerly BizReach Inc.)',
         description: 'Machine Learning Engineer, October 2019 - Present',
-        link: 'https://www.visional.inc/ja/index.html',
+        link: '/blog/visional',
       },
       {
         name: 'Nanyang Technological University, Singapore',
