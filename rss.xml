@@ -1,4 +1,359 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kunal Jain | Machine Learning Engineer]]></title><description><![CDATA[Machine Learning Engineer currently in Tokyo, Japan]]></description><link>https://kj7kunal.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 09 Oct 2021 20:03:52 GMT</lastBuildDate><item><title><![CDATA[Summer Internship at NTU Singapore]]></title><description><![CDATA[Having worked on 3 ML projects in my fourth year, I really wanted to take up the
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kunal Jain | Machine Learning Engineer]]></title><description><![CDATA[Machine Learning Engineer currently in Tokyo, Japan]]></description><link>https://kj7kunal.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 16 Oct 2021 19:00:54 GMT</lastBuildDate><item><title><![CDATA[My first Full-Time Job - A Look Back]]></title><description><![CDATA[I have been working with Visional Inc., based in
+Tokyo, Japan, since October 2019. This was my first job after graduation, and I have been…]]></description><link>https://kj7kunal.github.io/blog/visional/</link><guid isPermaLink="false">https://kj7kunal.github.io/blog/visional/</guid><pubDate>Fri, 01 Oct 2021 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I have been working with &lt;a href=&quot;https://www.visional.inc/ja/index.html&quot;&gt;Visional Inc.&lt;/a&gt;, based in
+Tokyo, Japan, since October 2019. This was my first job after graduation, and I have been
+working as an ML/AI Engineer in the AI Team. As it is my &lt;strong&gt;second work anniversary&lt;/strong&gt;, I
+think it would be worthwhile to look back and reflect on my journey so far.&lt;/p&gt;
+&lt;p&gt;My work mainly involves the development of end-to-end Machine Learning workflows as well as
+their deployment in the various services and products offered by the company.&lt;/p&gt;
+&lt;p&gt;I also contribute to Machine Learning research undertaken by the AI team, and had initiated
+and led the research and development of an OCR system for Japanese handwritten addresses.&lt;/p&gt;
+&lt;p&gt;I have limited work proficiency in Japanese, so I prefer to use English as much as possible.
+I am able to use English for work within the AI team, but often need to switch to Japanese
+for cross-team communication. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#company&quot;&gt;About Visional&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#projects&quot;&gt;My Projects&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#p1&quot;&gt;Financial Document OCR System&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#p2&quot;&gt;Research: Japanese handwritten OCR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#p3&quot;&gt;Employee Slack Analytics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#p4&quot;&gt;HeadHunter Recommendation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#p5&quot;&gt;Security Bug Report Classification&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#experience&quot;&gt;My Experience&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#selected&quot;&gt;How I got selected&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#preparation&quot;&gt;Interview Preparation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#placements&quot;&gt;Placement Interviews&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;company&quot;&gt;About Visional&lt;/h2&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin: 0 0 30px;&quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/e750cc63f74625ca0094f46ebeacaf20/8a8a2/visional_way.jpg&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAID/9oADAMBAAIQAxAAAAFKH0zLx1L/xAAbEAABBAMAAAAAAAAAAAAAAAABAAMSEwIhMv/aAAgBAQABBQK0E2bkU902p5L/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEv/aAAgBAwEBPwFT/8QAFREBAQAAAAAAAAAAAAAAAAAAABL/2gAIAQIBAT8Bpb//xAAYEAADAQEAAAAAAAAAAAAAAAAAEDEBEf/aAAgBAQAGPwK8KsVP/8QAGxABAAIDAQEAAAAAAAAAAAAAAQAhETFxQVH/2gAIAQEAAT8hUAzDqeFrxqJ45dRPYlCvkIP/2gAMAwEAAgADAAAAENzv/8QAFxEBAQEBAAAAAAAAAAAAAAAAEQABUf/aAAgBAwEBPxBwYcv/xAAWEQEBAQAAAAAAAAAAAAAAAAARAAH/2gAIAQIBAT8Q3Qyv/8QAGxABAAMBAQEBAAAAAAAAAAAAAQARITFBkaH/2gAIAQEAAT8QNDUWQf0gDS6gOOdYZlVDRIMUq7o+vk6ki3W97AFC+E//2Q==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;Visional&quot; title=&quot;Visional&quot; src=&quot;/static/e750cc63f74625ca0094f46ebeacaf20/1c72d/visional_way.jpg&quot; srcset=&quot;/static/e750cc63f74625ca0094f46ebeacaf20/a80bd/visional_way.jpg 148w,
+/static/e750cc63f74625ca0094f46ebeacaf20/1c91a/visional_way.jpg 295w,
+/static/e750cc63f74625ca0094f46ebeacaf20/1c72d/visional_way.jpg 590w,
+/static/e750cc63f74625ca0094f46ebeacaf20/a8a14/visional_way.jpg 885w,
+/static/e750cc63f74625ca0094f46ebeacaf20/8a8a2/visional_way.jpg 1008w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;Established in April 2009, BizReach has been operating a variety of Internet services
+that support the future of work in Japan with a mission that roughly translates into
+“creating a society where everyone can believe in their own potential”. The company,
+headquartered in (Shibuya) Tokyo, has regional offices in Osaka, Nagoya, Fukuoka, Shizuoka,
+and Hiroshima.&lt;/p&gt;
+&lt;p&gt;Visional was born in February 2020, when Bizreach Inc. shifted to a group management
+structure. The company’s main focus is primarily in the HR Tech and SaaS business that promote
+digital transformation (DX) of industry and support the improvement of productivity in Japan.
+The group broadly has a heirarchical structure with the following products and services:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.visional.inc/ja/index.html&quot;&gt;Visional Corporation&lt;/a&gt;, the holding company,
+supports the group management&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.bizreach.co.jp/&quot;&gt;Bizreach Corporation&lt;/a&gt;, responsible for the management of
+the original HR Tech and SaaS businesses&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.bizreach.jp/&quot;&gt;Bizreach&lt;/a&gt;, a job-change website that connects companies with
+human resources with immediate availability&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.careertrek.com/&quot;&gt;CareerTrek&lt;/a&gt;, a job search site for young graduates&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://hrmos.co/&quot;&gt;HRMOS&lt;/a&gt;, a human resources management cloud platform&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://br-campus.jp/&quot;&gt;Campus&lt;/a&gt;, an alumni network service for career consultation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.visional.inc/ja/visional-incubation.html&quot;&gt;Visional Incubation Corporation&lt;/a&gt;,
+responsible for new business development and acquisitions&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://br-succeed.jp/&quot;&gt;Succeed&lt;/a&gt;, an M&amp;#x26;A platform for business succession&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://yamory.io/&quot;&gt;Yamory&lt;/a&gt;, security vulnerability management cloud for IT systems&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bizhint.jp/&quot;&gt;BizHint&lt;/a&gt;, a website providing “business tips” in the form of
+keywords, case studies and solutions&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://binar.jp/&quot;&gt;BINAR&lt;/a&gt;, a career change platform for highly specialized IT Engineers&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jp.stanby.com/&quot;&gt;StanBy&lt;/a&gt;, a job-search engine jointly owned with Yahoo Japan&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Each of the products have their own specific engineering teams that follow custom Agile
+software development life cycles (SDLCs) they are comfortable with. &lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;AI Team&lt;/strong&gt; is a team of around 20 ML/AI engineers that collaborate with one or more of the
+above mentioned teams to understand their business requirements, and leverage data to deploy
+AI features in production environments to drive business solutions.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;projects&quot;&gt;My Projects&lt;/h2&gt;
+&lt;p&gt;As an engineer in the AI team, I have to actively communicate requirements and decisions on
+various ML pipelines with multiple service teams simultaneously. I usually have 1-2
+service-related projects and an independent research project in a single half-year term.&lt;/p&gt;
+&lt;p&gt;From my experience, I believe that the engineers working in the AI Team at Visional switch
+frequently between the roles and responsibilities of a &lt;strong&gt;Data Scientist&lt;/strong&gt;, an &lt;strong&gt;ML Engineer&lt;/strong&gt;,
+as well as a &lt;strong&gt;Research Scientist&lt;/strong&gt; for different projects undertaken at a time.&lt;/p&gt;
+&lt;p&gt;An average ML project includes the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;understanding the requirements of the service teams&lt;/li&gt;
+&lt;li&gt;analyzing data to optimize and improve services&lt;/li&gt;
+&lt;li&gt;developing custom data models, algorithms and full-stack systems&lt;/li&gt;
+&lt;li&gt;collaborating with service teams to deploy the AI features in production&lt;/li&gt;
+&lt;li&gt;considering evaluation metrics/systems to quantify/monitor outcomes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The projects require a good understanding of ML techniques, algorithms and statistics. Most
+of the work also involves Natural Language Processing techniques. I have also been able to
+apply my Computer Vision skills to a few projects.&lt;/p&gt;
+&lt;p&gt;Following are few of the projects I have worked on so far.&lt;/p&gt;
+&lt;h3 id=&quot;p1&quot;&gt;Financial Document OCR System&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://br-succeed.jp/service&quot;&gt;BizReach Succeed&lt;/a&gt; provides an M&amp;#x26;A platform to match companies
+looking for succession with potential buyers. As part of their services, they have to analyze
+financial documents, which are most often personally handed over as hard-copies by the clients.
+These documents are then scanned and the data is manually entered into spreadsheets for
+financial analysis typically resulting in business valuations.&lt;/p&gt;
+&lt;p&gt;Since Succeed is a relatively small team, the manual data-entry efforts can take upto
+&lt;strong&gt;100hrs/month&lt;/strong&gt;. Data-entry basically involves entering tabular data into spreadsheet. This
+tabular data is mostly present within PDF scans. Current OCR systems are well equipped to
+detect text in an image, however, they fail to preserve spatial information such as table cells. &lt;/p&gt;
+&lt;p&gt;I developed an &lt;strong&gt;OCR system&lt;/strong&gt; capable of &lt;strong&gt;preserving tabular structure&lt;/strong&gt; within the image.
+The system was built using &lt;a href=&quot;https://pypi.org/project/opencv-python/&quot;&gt;OpenCV&lt;/a&gt; and
+&lt;a href=&quot;https://cloud.google.com/vision/docs/ocr&quot;&gt;Google Vision API&lt;/a&gt; in &lt;strong&gt;Python&lt;/strong&gt;, and deployed
+using &lt;strong&gt;Docker&lt;/strong&gt;, &lt;strong&gt;Terraform&lt;/strong&gt; and &lt;strong&gt;AWS&lt;/strong&gt;. Some text post-processing was implemented using
+a dictionary of Japanese financial terms.&lt;/p&gt;
+&lt;p&gt;The pipeline roughly consists of the following steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Parsing OCR request from AWS SQS and AWS S3&lt;/li&gt;
+&lt;li&gt;Getting page images from PDF and fixing text orientation&lt;/li&gt;
+&lt;li&gt;Table detection and extraction from page image&lt;/li&gt;
+&lt;li&gt;OCR Text Detection request to Google Vision API&lt;/li&gt;
+&lt;li&gt;Alignment of Google Vision API annotations&lt;/li&gt;
+&lt;li&gt;Proofreading result text using a dictionary&lt;/li&gt;
+&lt;li&gt;Save output XLS workbook to AWS S3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin: 0 0 30px;&quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/a1bcd07a05bdf262fc28224f19e40278/37114/focr.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 45.27027027027027%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAABYlAAAWJQFJUiTwAAABZElEQVQoz02S226DQAxE+f8/y1uA5SWV8lSaBiqSAOEOrs+kREVarfFlPPZsNM+zretqy7LYNE062PiHYXj/c4/jKD/2um6WZZkdDgcrf0rLv3L7vl4tInnbNhU9n08V8f8qHN2/ur1a3w8e79wGfFYOgHEcG9/j8fCc3iLYNU1jRVEocLvdBCZWDk7x52euKbqu98JaTYifTidL01R2XdfWtu0LsOs6q6pKRff73UYfdXF7EstZzSgijziAmzcPIRMgBGDHhBHUQb/6/ASgDtjg3eqycNDF8jzXPjm9g9KkLUoLcWJJkqiOKYmLIYCXy0WOnensi++100kxCmhGLt/kOw1psOPxqL3DXoC7oiTue+BGSfwcktktI7Vt4+Cti2K+ww/LQpCfhu8dgqxR/5TegVCZ8arqpgYoTRE+cs/ns5TeCQAa7UygDTj3/3eHAKjLu5unRSuQKE4xOLv92TABk/wCSCG1nwOV0pgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;Financial Document OCR&quot; title=&quot;Financial Document OCR&quot; src=&quot;/static/a1bcd07a05bdf262fc28224f19e40278/fcda8/focr.png&quot; srcset=&quot;/static/a1bcd07a05bdf262fc28224f19e40278/12f09/focr.png 148w,
+/static/a1bcd07a05bdf262fc28224f19e40278/e4a3f/focr.png 295w,
+/static/a1bcd07a05bdf262fc28224f19e40278/fcda8/focr.png 590w,
+/static/a1bcd07a05bdf262fc28224f19e40278/efc66/focr.png 885w,
+/static/a1bcd07a05bdf262fc28224f19e40278/c83ae/focr.png 1180w,
+/static/a1bcd07a05bdf262fc28224f19e40278/37114/focr.png 2300w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;/p&gt;
+&lt;h3 id=&quot;p2&quot;&gt;Research: Japanese handwritten OCR&lt;/h3&gt;
+&lt;p&gt;In many ways, hand-filled forms are still a part of Japan’s official processes. For instance,
+our company requires candidates to fill out their details for registration. Since it is
+imperative that we make no mistakes while entering the details into our systems, this information
+is then manually filled by the operator. However, to me, it looked like an opportunity to explore and further research on Japanese
+handwritten OCR systems for the AI team. &lt;/p&gt;
+&lt;p&gt;The research focusses on the address field in the BizReach registration forms, and aims to
+harness the structure present in addresses to explore domain augmentation methods. A
+&lt;a href=&quot;http://jusyo.jp/index.html&quot;&gt;list of Japanese addresses&lt;/a&gt; distributed by Japan Post was used
+to synthetically generate the train dataset. The textual addresses were transformed into
+address images using character images available in the &lt;a href=&quot;http://etlcdb.db.aist.go.jp/&quot;&gt;ETL&lt;/a&gt;
+and &lt;a href=&quot;https://www.nist.gov/itl/products-and-services/emnist-dataset&quot;&gt;EMNIST&lt;/a&gt; datasets.
+Data augmentation was introduced to account for variances in handwriting:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;shape of characters&lt;/li&gt;
+&lt;li&gt;spacing between characters (narrow or wide)&lt;/li&gt;
+&lt;li&gt;rotation of characters (straight or slant)&lt;/li&gt;
+&lt;li&gt;size of characters (big or small)&lt;/li&gt;
+&lt;li&gt;stroke strength of characters (thick or thin)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin: 0 0 30px;&quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/c43fe12e2dd8fa820d1e6f547436e982/cb93d/hocr_sent.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 10.81081081081081%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAfElEQVQI1x2OOwrFIBREs/8lZQEKCoJRMVgI0SB+CisJJMU83i2mmc9htjEGnHMIIZC896i1opSC67pgjIG1FjlnpJRwHAf1zvNE7x0xRvK/7yNtay0K5pxordH4vm8C/Mf7voNzDiklwRljEEJAa40xOpRSdOh5Hrzvix+kFo/fqTM7MAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;Sentence Image&quot; title=&quot;Sentence Image&quot; src=&quot;/static/c43fe12e2dd8fa820d1e6f547436e982/fcda8/hocr_sent.png&quot; srcset=&quot;/static/c43fe12e2dd8fa820d1e6f547436e982/12f09/hocr_sent.png 148w,
+/static/c43fe12e2dd8fa820d1e6f547436e982/e4a3f/hocr_sent.png 295w,
+/static/c43fe12e2dd8fa820d1e6f547436e982/fcda8/hocr_sent.png 590w,
+/static/c43fe12e2dd8fa820d1e6f547436e982/efc66/hocr_sent.png 885w,
+/static/c43fe12e2dd8fa820d1e6f547436e982/c83ae/hocr_sent.png 1180w,
+/static/c43fe12e2dd8fa820d1e6f547436e982/cb93d/hocr_sent.png 2304w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;https://arxiv.org/abs/1507.05717&quot;&gt;&lt;strong&gt;Convolutional Recurrent Neural Network&lt;/strong&gt; (CRNN)&lt;/a&gt;
+architecture was chosen. The end-to-end model, that combines CNN (image feature extraction),
+RNN (sequence recogntion) and CTC loss, was implemented in &lt;strong&gt;PyTorch&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The lexicon-free model was able to achieve a &lt;strong&gt;44% lower CER (character error rate) than the
+&lt;a href=&quot;https://cloud.google.com/vision/docs/handwriting&quot;&gt;Google Vision API&lt;/a&gt;&lt;/strong&gt; on a test set of actual
+handwritten Japanese addresses. Currently, I am trying to improve the CER further using
+lexicon-based algorithms, and simultaneously documenting the methodology and results aimed at a
+future publication.&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin: 0 0 30px;&quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/7b7d457b3595fa4f7980ade8951acec4/f5aa5/hocr_cer.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 14.18918918918919%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAhUlEQVQI14WOWQrFIBRD3f/6WvCrSP2oHUFRtIPkkWzgCcEp9yQmhIDjOKR93zEMA6ZpwrqucM5hnmftMUac5ylfzhnP86C1Jt33jfd9cV0XDCEcppHwcRwFIWDbNoUsy6K/UgpqrdLXP4Go3rsC+G6892rEIZ6ttWqUUlI6TWzEAN7/rR86F+QgGo9j2gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;CRNN Result CER&quot; title=&quot;CRNN Result CER&quot; src=&quot;/static/7b7d457b3595fa4f7980ade8951acec4/fcda8/hocr_cer.png&quot; srcset=&quot;/static/7b7d457b3595fa4f7980ade8951acec4/12f09/hocr_cer.png 148w,
+/static/7b7d457b3595fa4f7980ade8951acec4/e4a3f/hocr_cer.png 295w,
+/static/7b7d457b3595fa4f7980ade8951acec4/fcda8/hocr_cer.png 590w,
+/static/7b7d457b3595fa4f7980ade8951acec4/efc66/hocr_cer.png 885w,
+/static/7b7d457b3595fa4f7980ade8951acec4/c83ae/hocr_cer.png 1180w,
+/static/7b7d457b3595fa4f7980ade8951acec4/f5aa5/hocr_cer.png 2312w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;/p&gt;
+&lt;h3 id=&quot;p3&quot;&gt;Employee Slack Analytics&lt;/h3&gt;
+&lt;p&gt;The &lt;a href=&quot;https://hrmos.co/&quot;&gt;HRMOS&lt;/a&gt; team develops a variety of HR-Tech services, such as employee
+databases, attendance logging and performance tracking systems. Their focus is the improvement
+of productivity within client business teams. &lt;/p&gt;
+&lt;p&gt;Each company has data on their employees which can be leveraged using AI to measure, in an
+abstract sense, the productivity of the employees. This data is usually available within the
+employee database of the company and has a well-defined structure to it. In recent years,
+Slack, Workplace, Teams, etc have gained preference over emails, especially in the tech
+industry. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Public conversations&lt;/strong&gt; can be viewed as unconventional sources of data, which can
+be processed using NLP techniques to quantify productivity. For instance, messages and
+replies can be considered entities that signal a connection link between two employees.
+Frequency of interactions on public channels can signal the degree of involvement of a
+certain employee in a certain topic.&lt;/p&gt;
+&lt;p&gt;I built a simple GUI in &lt;strong&gt;Vue.js&lt;/strong&gt; and &lt;strong&gt;Python&lt;/strong&gt;, and deployed it using &lt;strong&gt;Docker&lt;/strong&gt; for
+internal HR to visualize activity and messaging trends on the Visional Slack workspace.
+&lt;strong&gt;Japanese text processing&lt;/strong&gt; using &lt;a href=&quot;https://taku910.github.io/mecab/&quot;&gt;MeCab&lt;/a&gt; tagger and
+&lt;a href=&quot;https://github.com/neologd/mecab-ipadic-neologd#overview&quot;&gt;NEologd&lt;/a&gt; dictionary were used
+to clean the unstructured conversational data. The following are some of the features have
+been implemented in the GUI:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Conversation topic transitions, to visualize the change over time in underlying topics
+of conversation, discovered using &lt;strong&gt;LDA topic modeling&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Interactive User/Channel wordclouds, to visualize a summarized history of conversation
+keywords&lt;/li&gt;
+&lt;li&gt;Matching similar users, based on high topic probabilities in conversations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;p4&quot;&gt;HeadHunter Recommendation&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.bizreach.jp/&quot;&gt;BizReach&lt;/a&gt;, Visional’s primary service, is a job-change website that
+connects individuals with recruiters and companies through job listings. Other than job search
+results, the website’s homepage also recommends job listings to the candidates on the basis of
+their preferences, past activity and searches. From point of view of the recruiters, BizReach
+aims to recommend candidates that are most likely to be scouted by them. &lt;/p&gt;
+&lt;p&gt;The HeadHunter recommendation feature was proposed by the AI team, with the aim to increase
+scouting rate for headhunters. The feature was developed to assist existing recommendation
+systems by using &lt;strong&gt;implicit feedback&lt;/strong&gt; datasets like candidate-job access log data for newly
+registered candidates, for whom there is insufficient scout data. The same data could be
+used to recommend candidates to recruiters who had posted the jobs.&lt;/p&gt;
+&lt;p&gt;I was involved in the assessment of the effectiveness of using access log data for the problem
+and comparing the performance of various recommendation models in offline testing.
+A 25% hit rate was obtained using &lt;a href=&quot;https://implicit.readthedocs.io/en/latest/quickstart.html&quot;&gt;Implicit&lt;/a&gt;’s
+&lt;a href=&quot;https://implicit.readthedocs.io/en/latest/als.html&quot;&gt;Alternating Least Squares&lt;/a&gt; &lt;strong&gt;collaborative
+filtering&lt;/strong&gt; model for demonstration of the proposed project.&lt;/p&gt;
+&lt;h3 id=&quot;p5&quot;&gt;Security Bug Report Classification&lt;/h3&gt;
+&lt;p&gt;Publicly disclosed cybersecurity vulnerabilities are assigned a
+&lt;a href=&quot;https://www.cve.org/About/Overview&quot;&gt;Common Vulnerabilities and Exposures (CVE)&lt;/a&gt; ID, and
+the &lt;a href=&quot;https://nvd.nist.gov/&quot;&gt;National Vulnerability Database&lt;/a&gt; performs analysis on CVEs by
+aggregating data points from the description, references supplied and any supplemental
+data that can be found publicly at that time.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://yamory.io/&quot;&gt;Yamory&lt;/a&gt; develops a security vulnerability management cloud for IT systems.
+The vulnerability database used by yamory consists of information analyzed and evaluated manually
+by a dedicated security analyst. To build this database, analysts have to scour multiple sources
+like tweets, bug report websites, security articles, etc. &lt;/p&gt;
+&lt;p&gt;We developed a system to scrape data from such sources and classify them as security vulnerability
+reports. Tweets mentioning a CVE ID were scraped and stored and analyzed using &lt;strong&gt;Elasticsearch&lt;/strong&gt;
+whereas &lt;strong&gt;Scrapy&lt;/strong&gt; was used to scrape bug reports from active bug reporting websites.
+&lt;strong&gt;Named Entity Recognition&lt;/strong&gt; was used to identify software names within the descriptions.
+A 0.81 F-score was achieved in classifying bug reports using a &lt;strong&gt;bigram language model&lt;/strong&gt;
+trained over NVD/CVE Descriptions as ground truth. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;experience&quot;&gt;My Experience&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;selected&quot;&gt;How I got selected&lt;/h2&gt;
+&lt;h3 id=&quot;preparation&quot;&gt;Interview Preparation&lt;/h3&gt;
+&lt;p&gt;After &lt;a href=&quot;/blog/ntu-intern&quot;&gt;my internship with ROSE Lab&lt;/a&gt; in the summer of 2018,
+I immediately started to prepare for job interviews in the
+&lt;a href=&quot;https://www.shiksha.com/b-tech/articles/iit-kharagpur-placements-blogId-20045#:~:text=placements%202018%20below.-,IIT%20Kharagpur%20placements,-are%20conducted%20for&quot;&gt;IIT Kharagpur Placement Season 2018&lt;/a&gt;.
+Placements are a time of extensive planning and preparation, and depending on their
+targeted companies, students choose from various preparation strategies to get through. &lt;/p&gt;
+&lt;p&gt;Fresh from a very interesting internship, I was determined to pursue a Machine Learning
+/ Software Engineering role, even though my major in Aerospace Engineering put me at a
+fair disadvantage compared to students of “circuit” (CS, EE, MA, etc) branches. In a batch
+of over 1000 applicants, companies had to apply such constraints in order to make the
+shortlist really “short”. This meant, that I would not be able to sit for the tests for
+these companies, even though I was fairly confident in my skills. On top of this, the rules
+restricted us from accepting more than one job offer in the entire season.&lt;/p&gt;
+&lt;p&gt;Keeping in mind the above constraints, I decided to keep my preparation very general and
+open to multiple opportunities. From information gathered from seniors as well as
+company introductory talks, I understood that most of the tests involved similar formats.
+On the basis of this information, my preparation included brushing up on:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Analytical/Probability skills: &lt;a href=&quot;https://mbapreponline.files.wordpress.com/2013/07/fifty_challenging_problems_in__2.pdf&quot;&gt;Fifty Challenging Problems in Probability with Solutions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Machine Learning theory: my notes from online courses on Coursera such as the
+&lt;a href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt;Machine Learning course (Stanford University)&lt;/a&gt;
+and the &lt;a href=&quot;https://www.coursera.org/specializations/deep-learning&quot;&gt;Deep Learning Specialization (DeepLearning.AI)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Data Structures/Algorithms: Practice questions on &lt;a href=&quot;https://www.interviewbit.com/&quot;&gt;InterviewBit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This way, I was able to prepare fairly well for both software and data science roles. &lt;/p&gt;
+&lt;p&gt;Parallely, I drafted a one-page resume showcasing my projects and my internships, and got
+it reviewed by a lot of friends and seniors. After a few revisions, I submitted it to the
+placement portal, and waited anxiously for the placement process to start.&lt;/p&gt;
+&lt;h3 id=&quot;placements&quot;&gt;Placement Interviews&lt;/h3&gt;
+&lt;p&gt;Reality hit hard on Day 1, when I found out some companies I was hoping to be shortlisted
+in had actually used the “circuit branch” constraint, and I was only able to sit in 2 of
+the 6 companies I applied for that day. My first interview went well, but I eventually
+apologized and pulled out, since their Embedded Software Engineer role was not
+something I was very keen about. I was not able to perform well my second interview, for an
+analyst position, since I had not prepared for the “Case Interview” style at all. In summary,
+Day 1 was a complete bust because of the restrictions on the placement process, and I was
+disappointed with the limited options I had.&lt;/p&gt;
+&lt;p&gt;Later that night, however, I was happy to find out that I cleared the shortlist for
+BizReach Inc., based in Tokyo, for the Machine Learning Engineer role. Day 2 is usually
+the arena for companies that are new participants in the placements, and sometimes these
+opportunities are on-par or even better than the previous day. BizReach was one such
+company, and the job description was exactly what I had hoped for!&lt;/p&gt;
+&lt;p&gt;I called up a senior who was working in Mercari, Tokyo (I had also called him up the
+previous night, since I was furious Mercari was only looking for circuit branch students),
+and asked him some tips for interviewing with Japanese people. His input really helped
+me refocus my mind on this new opportunity. After some modest revision and self pep-talk,
+I called it a night.&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin: 0 0 30px;&quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/b8282d589667f72957dc389589b5e6aa/cb1ac/thanos_meme.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 39.86486486486486%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAACSklEQVQozx2R20vTARzFf1imzs01t6W7ud8u6laba9M50ZykDnVTKXQS3WBiJEW5QsgmokZrmdVLRhdcyYiCLg+Fac7Nyoqilwh6qD8h6rH3T786j+ccDud7vgIS8psfWFnPs5bL82o9x+t378m9ecvLtSyrEv8PP3/9ZnllVeI3WcnmyErebH7jv76W2+D58grfvv9A+PLkFvn0PC8WUqRTSe5cTrKUmiGTmmYxOcXDa7PkMre5O59kbmqCzNUZFlMJrs9OsjB7nvSlBDcvnGNhepx0MoFwv9fAjR4zc111HHRaCOkVDFo1xGrUDNlUjHp0jNUbiJhLiYgKxlsNnGzW4dVsw60QaK8U2FMh0KwW2G8sQPg62cCzIy4WBgIc9TloNyqJOoyc8YvEAzYSbU7mwy4eHG9jaThAzKej32vmVKeTHscOatTFuCvleCoURO3bEf48DrIes3Iv6uFYo0cKLKfXomXMa2CqtYoroWoy0V2cbbVy2GviQKONkMtAtyhjwKmkq1ZJva6EOqlx2CSTNkxY+XTaztNDDuItdXSKlXSYygmLKiLVKi52V5MfdXGi2UibSZrBX01sr5Nooxm3poigoZiOKpk0QSE9RilwsU/H5zEr2WEb8SaLJGoJSjv61DIaKmR02lWM+LRELHJEQSBkUDLUZCPWIlKrLMFYWoBdsQVRXoBP8guPolqyIxo+JqqYkB40GDDTt1vDPr+W0bBOaqNhryinoawQt3or/TuVxIJ64iE9YU8ZfksJDlMxelWRdHopfwEAXz6sJSqtVAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;Placement Meme&quot; title=&quot;Placement Meme&quot; src=&quot;/static/b8282d589667f72957dc389589b5e6aa/fcda8/thanos_meme.png&quot; srcset=&quot;/static/b8282d589667f72957dc389589b5e6aa/12f09/thanos_meme.png 148w,
+/static/b8282d589667f72957dc389589b5e6aa/e4a3f/thanos_meme.png 295w,
+/static/b8282d589667f72957dc389589b5e6aa/fcda8/thanos_meme.png 590w,
+/static/b8282d589667f72957dc389589b5e6aa/efc66/thanos_meme.png 885w,
+/static/b8282d589667f72957dc389589b5e6aa/c83ae/thanos_meme.png 1180w,
+/static/b8282d589667f72957dc389589b5e6aa/cb1ac/thanos_meme.png 1936w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;The next day, when I showed up for the interviews, and I was surprised to see only a few
+candidates lined up. I had a quick judgmental glance at the candidates, and narcissitically
+reassured myself. I knew I was a slight bit overconfident, but in such a situation, it
+really helped me to not ponder on my nerves. I ran simulations of my plan in my head while
+I waited.&lt;/p&gt;
+&lt;p&gt;I was already impressed at how punctual the Japanese were at taking interviews. Each
+interview went on for a total maximum of 30-minutes, with two exact 15-minute segments.
+The first part was basically a 3-on-1 technical interview, involving a CV runthrough
+and some behavioral questions, whereas the second part was a coding round.&lt;/p&gt;
+&lt;p&gt;My interview began at 1830hrs, and I went inside and greeted them, saying “Konnichiwa”
+(hello, in Japanese). They were delighted, and started talking in Japanese to test/tease me.
+I told them liked watching anime with subtitles, and I liked to pick up a few words here
+and there. I was happy with how the mood was from that point - light and cheery. They
+introduced themselves as Takeuchi-san (CTO), Ikawa-san (VP of Engineering) and Dat-san
+(my future team lead). &lt;/p&gt;
+&lt;p&gt;In the first part, I was mainly asked in detail about my thesis project, with some questions
+about the image segmentation pipeline, and also my ROSE Lab internship. Other than
+well-prepared answers to possible questions to my resume, I was quick to emphasize on my
+experience working in an Asian working environment as well as my knowledge about Japan
+during the behavioral questions. In general, I felt our interaction was positive and I was
+optimistic when I began the coding part. There were two questions of easy/medium difficulty,
+involving array manipulation and 2-pointers. I was easily able to work through them and
+write clean code in Python, which was the programming language I was most comfortable with
+as well as the language with which I was expected to work with if I were selected.&lt;/p&gt;
+&lt;p&gt;I left at exactly 1900hrs after asking a few more questions I had about the company and the
+role, and was told to wait outside for about an hour. At 2000hrs, all 3 interviewers came
+outside, and announced the three names they selected - and I was so relieved when I heard mine!
+The interviewers left promptly after taking some pictures with us outside the venue. I called
+up my parents and my friends and shared the news. It was one of the happiest nights of my
+life, and I did no injustice to celebrating that feeling! It was the result of hard work
+and meticulous planning, and most of all - being my genuine self.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Summer Internship at NTU Singapore]]></title><description><![CDATA[Having worked on 3 ML projects in my fourth year, I really wanted to take up the
 challenge of collaborating within a distinguished research…]]></description><link>https://kj7kunal.github.io/blog/ntu-intern/</link><guid isPermaLink="false">https://kj7kunal.github.io/blog/ntu-intern/</guid><pubDate>Tue, 01 Sep 2020 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Having worked on 3 ML projects in my fourth year, I really wanted to take up the
 challenge of collaborating within a distinguished research group, preferably abroad.
 A foreign training or FT, as per my university lingo, was considered a prestigious
@@ -12,24 +367,32 @@ backgrounds with similar interests to freely exchange ideas and experiences.&lt;
 &lt;a href=&quot;https://www.ntu.edu.sg/index&quot;&gt;Nanyang Technological University, Singapore&lt;/a&gt;,
 as not only did the lab’s research focus align with my interests, I would also be
 able to gain work experience in &lt;a href=&quot;https://www.topuniversities.com/university-rankings/asian-university-rankings/2018&quot;&gt;one of the top universities in Asia&lt;/a&gt;.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Contents
-
-- How I got selected
-  - Resume
-  - Application Process
-  - Interview Call
-
-- The Lab
-
-- The Project
-  - Objectives
-  - Motivation
-  - Implementation
-  - Result
-
-- My Experience&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;How I got selected&lt;/h2&gt;
-&lt;h3&gt;Resume&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#selected&quot;&gt;How I got selected&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#resume&quot;&gt;Resume&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#application&quot;&gt;Application Process&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#interview&quot;&gt;Interview Call&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#lab&quot;&gt;The Lab&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#project&quot;&gt;The Project&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#objectives&quot;&gt;Objectives&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#motivation&quot;&gt;Motivation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#implementation&quot;&gt;Implementation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#result&quot;&gt;Result&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#experience&quot;&gt;My Experience&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;selected&quot;&gt;How I got selected&lt;/h2&gt;
+&lt;h3 id=&quot;resume&quot;&gt;Resume&lt;/h3&gt;
 &lt;p&gt;In my fourth year, I started to diverge my career away from aerospace engineering,
 to focus on my minor in Computer Science, especially in the areas of
 Machine Learning and Artificial Intelligence. As semester projects, I was able
@@ -55,7 +418,7 @@ Coursera such as the &lt;a href=&quot;https://www.coursera.org/learn/machine-lea
 and the &lt;a href=&quot;https://www.coursera.org/specializations/deep-learning&quot;&gt;Deep Learning Specialization (DeepLearning.AI)&lt;/a&gt;
 taught by Prof. Andrew Ng, to improve my knowledge of basic ML/DL techniques
 through theory and coding assignments.&lt;/p&gt;
-&lt;h3&gt;Application Process&lt;/h3&gt;
+&lt;h3 id=&quot;application&quot;&gt;Application Process&lt;/h3&gt;
 &lt;p&gt;The application process was pretty straightforward. Since I was mainly focussed on
 getting research experience, I had compiled a list of around 30-40 research labs
 that I wanted to work with and emailed their respective POCs.
@@ -69,7 +432,7 @@ I was very surprised to have received a positive reply from them, as it was in t
 top 10 of my list, which was basically an ambitious tier for me.&lt;/p&gt;
 &lt;p&gt;After exchanging a few emails, we scheduled an hour-long interview call a week later,
 and I was asked to prepare a short presentation about 1~2 of my best projects.&lt;/p&gt;
-&lt;h3&gt;Interview Call&lt;/h3&gt;
+&lt;h3 id=&quot;interview&quot;&gt;Interview Call&lt;/h3&gt;
 &lt;p&gt;I sent my presentation 2 days in advance of the interview call. On the Skype call, I
 connected with the Deputy Director, &lt;a href=&quot;https://sg.linkedin.com/in/dennissng&quot;&gt;Dr Dennis Sng&lt;/a&gt;,
 who oversaw projects undertaken by the ROSE Lab, &lt;a href=&quot;https://warwick.ac.uk/fac/sci/dcs/people/xuuldl/&quot;&gt;Dr Lin Shan&lt;/a&gt;,
@@ -82,11 +445,11 @@ and why I was interested in Machine Learning, which I was also prepared to answe
 &lt;p&gt;I got the acceptance mail a week after the interview call, and I was super excited
 to start the visa process!&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;The Lab&lt;/h2&gt;
-&lt;p&gt;The &lt;a href=&quot;https://www.ntu.edu.sg/rose&quot;&gt;Rapid-Rich Object Search (ROSE) Lab&lt;/a&gt; is a joint
+&lt;h2 id=&quot;lab&quot;&gt;The Lab&lt;/h2&gt;
+The [Rapid-Rich Object Search (ROSE) Lab](https://www.ntu.edu.sg/rose) is a joint
 collaboration between NTU Singapore and Peking University, China. Its vision is to
 create the largest collection of structured domain object database in Asia, and to
-further image-based object search applications.&lt;/p&gt;
+further image-based object search applications.
 &lt;p&gt;The lab conducts research in the areas of computer vision, image processing, and
 pattern recognition. It aims to develop scalable and robust mobile object search
 services/applications involving areas of research like object recognition &amp;#x26; retrieval,
@@ -111,8 +474,8 @@ object search technology. &lt;/p&gt;
     &lt;/span&gt;
 &lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;The Project&lt;/h2&gt;
-&lt;h3&gt;Objectives&lt;/h3&gt;
+&lt;h2 id=&quot;project&quot;&gt;The Project&lt;/h2&gt;
+&lt;h3 id=&quot;objectives&quot;&gt;Objectives&lt;/h3&gt;
 &lt;p&gt;The project was a collaboration between ROSE Lab and the
 &lt;a href=&quot;https://www.dsta.gov.sg/home&quot;&gt;Defence Science and Technology Agency (DSTA) Singapore&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The goal was to build a new dataset for Person Re-Identification (Person Re-ID) with
@@ -140,7 +503,7 @@ initial test dataset, which would later be benchmarked by existing Person Re-ID 
 I worked closely with &lt;a href=&quot;https://warwick.ac.uk/fac/sci/dcs/people/xuuldl/&quot;&gt;Dr Lin Shan&lt;/a&gt;,
 a PhD student who was leading the Re-ID project, as part of a two year secondment
 under EU IDENTITY project between University of Warwick and NTU Singapore.&lt;/p&gt;
-&lt;h3&gt;Motivation&lt;/h3&gt;
+&lt;h3 id=&quot;motivation&quot;&gt;Motivation&lt;/h3&gt;
 &lt;p&gt;Person Re-ID is defined as the problem of matching people across disjoint camera views
 in a multi-camera system. It is an important task in the field of intelligent security.
 A Re-ID system should be able to keep track of subjects (who are on a certain “watch-list”)
@@ -203,7 +566,7 @@ realistic surveillance setting, having secured access to public CCTV cameras:&lt
 high accuracy, but led to a smaller dataset and longer time to create one. Since I had
 the fortune of working on the project in 2018, I decided to automate Person Detection
 using Machine Learning.&lt;/p&gt;
-&lt;h3&gt;Implementation&lt;/h3&gt;
+&lt;h3 id=&quot;implementation&quot;&gt;Implementation&lt;/h3&gt;
 &lt;p&gt;After the literature reviews, I drafted a roadmap for the project with my mentor,
 which resulted the following to be implemented.&lt;/p&gt;
 &lt;h4&gt;Dataset collection strategy: NTU ReID WebApp&lt;/h4&gt;
@@ -288,7 +651,7 @@ scripts are available in this &lt;a href=&quot;https://github.com/kj7kunal/Perso
 &lt;p align=&quot;center&quot;&gt;
   &lt;img src=&quot;/dae77eeedf2912c3b123f7771464ebb2/person_track.gif&quot; alt=&quot;Person Tracking demo&quot;&gt;
 &lt;/p&gt;
-&lt;h3&gt;Result&lt;/h3&gt;
+&lt;h3 id=&quot;result&quot;&gt;Result&lt;/h3&gt;
 &lt;p&gt;The new Rose-IDentification-Outdoor (Re-ID-Outdoor) dataset was collected and
 annotated. The dataset was collected from 50 real surveillance cameras in NTU
 and came with privacy consideration from all participants (volunteers in the campus).
@@ -312,9 +675,8 @@ the thesis for ease of writing this blog.&lt;/p&gt;
 /static/dc33986bf61d0e9dded6c3da5c8a9bfe/5ab15/result.png 2446w&quot; sizes=&quot;(max-width: 590px) 100vw, 590px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
     &lt;/span&gt;
 &lt;/p&gt;
-```
-```
-&lt;h2&gt;My Experience&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;experience&quot;&gt;My Experience&lt;/h2&gt;
 &lt;p&gt;As it was my first time going abroad, I was super excited to fly to Singapore as soon
 as my fourth year ended. I had a list of action items sorted out for my first week
 after talking to my lab’s POC, to settle in the new place.&lt;/p&gt;
@@ -416,28 +778,37 @@ for the field I was working in - Machine Learning and Artificial Intelligence!&l
 would get to work for &lt;a href=&quot;https://www.isro.gov.in/&quot;&gt;my country’s national space agency&lt;/a&gt;
 and be able to further ongoing theoretical research on ways to tackle the Kessler syndrome.&lt;/p&gt;
 &lt;p&gt;In this internship, I designed mathematical models and simulations for physical objects interacting in space.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Contents
-
-- How I got selected
-  - Resume
-  - Application Process
-  - Interview Call
-
-- The Project
-  - Objectives
-  - Motivation
-  - Implementation
-  - Result
-
-- My Experience&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;How I got selected&lt;/h2&gt;
-&lt;h3&gt;Resume&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#selected&quot;&gt;How I got selected&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#resume&quot;&gt;Resume&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#application&quot;&gt;Application Process&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#interview&quot;&gt;Interview Call&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#project&quot;&gt;The Project&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#objectives&quot;&gt;Objectives&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#motivation&quot;&gt;Motivation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#implementation&quot;&gt;Implementation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#result&quot;&gt;Result&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#experience&quot;&gt;My Experience&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;selected&quot;&gt;How I got selected&lt;/h2&gt;
+&lt;h3 id=&quot;resume&quot;&gt;Resume&lt;/h3&gt;
 &lt;p&gt;Well, other than being enrolled in an Aerospace Engineering degree at one of the most
 prominent institutes of the country, the strongest point on my resume was a
 successful 3-month internship at &lt;a href=&quot;https://www.teamindus.in/&quot;&gt;Team Indus&lt;/a&gt; in the summer of 2016. Team Indus is a private for-profit aerospace company that was all geared up at
 winning the &lt;a href=&quot;https://www.xprize.org/prizes/google-lunar/competing-teams&quot;&gt;Google Lunar X Prize competition&lt;/a&gt;. I had designed some mathematical models and simulations for thruster
 misalignment estimation during various burn phases, mainly in MATLAB.&lt;/p&gt;
-&lt;h3&gt;Application Process&lt;/h3&gt;
+&lt;h3 id=&quot;application&quot;&gt;Application Process&lt;/h3&gt;
 &lt;p&gt;The application process was tricky. I could not find an “open positions” page
 online. And if you have ever been to the ISRO website, it’s really hard to find
 what you’re looking for. No, my best friend here, was networking.&lt;/p&gt;
@@ -448,15 +819,15 @@ and through a bit of facebooking, I found one student with a close mutual friend
 I soon scheduled a call with her, and she turned out be a really interesting person.
 We talked about her project which was based on robotics, as well as her university life.
 She set me up for a call with her mentor, who was also a graduate from her university.&lt;/p&gt;
-&lt;h3&gt;Interview Call&lt;/h3&gt;
+&lt;h3 id=&quot;interview&quot;&gt;Interview Call&lt;/h3&gt;
 &lt;p&gt;My call with my mentor, &lt;a href=&quot;https://twitter.com/arallapalli&quot;&gt;Mr Aditya R.&lt;/a&gt;, basically involved
 a CV runthrough, an extensive discussion about my work at Team Indus, and a free-talk
 about my interests and projects at IIT Kharagpur. To my relief, he said he was looking
 for interns and my resume matched his requirements. More luckily, I got to choose between
 2 projects to work on!&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;The Project&lt;/h2&gt;
-&lt;h3&gt;Objectives&lt;/h3&gt;
+&lt;h2 id=&quot;project&quot;&gt;The Project&lt;/h2&gt;
+&lt;h3 id=&quot;objectives&quot;&gt;Objectives&lt;/h3&gt;
 &lt;p&gt;The goal of the project was to simulate active space debris removal using tether-net
 connected to satellites in formation. There were 3 main concepts involved:&lt;/p&gt;
 &lt;ul&gt;
@@ -467,7 +838,7 @@ distributed mechanical system.&lt;/li&gt;
 &lt;li&gt;Contact dynamics. The collective behaviour of the net and the satellites in formation
 during and after debris contact phases.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Motivation&lt;/h3&gt;
+&lt;h3 id=&quot;motivation&quot;&gt;Motivation&lt;/h3&gt;
 &lt;p&gt;Among many things, space is also the most dangerous junkyard Earth has created.
 If you have seen the 2013 film Gravity, the accident that caused the astronauts
 to break off from the ship was due to the debris in space.&lt;/p&gt;
@@ -484,7 +855,7 @@ including unusable orbits or communication blackouts.&lt;/p&gt;
 &lt;p&gt;A number of cleanup efforts have been explored/proposed in recent years - robotic
 grappling arms, harpoons, deploying nets, electrodynamic tethers, ground-based lasers, etc.&lt;/p&gt;
 &lt;p&gt;This project combined swarm satellites and tether-nets for Active Space Debris Removal.&lt;/p&gt;
-&lt;h3&gt;Implementation&lt;/h3&gt;
+&lt;h3 id=&quot;implementation&quot;&gt;Implementation&lt;/h3&gt;
 &lt;p&gt;Simulations for the various components were developed in MATLAB and working code was
 replicated in C++ for faster experimentation. A C++ library implementation for MATLAB’s
 matrix/vector manipulation was developed which reduced simulation time by 5 times
@@ -516,13 +887,13 @@ rigid bodies as kinematic pairs (joints, springs and dampers).&lt;/p&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;img src=&quot;/78cec2f8f2e2f6f685a876d7d812cd0c/net_lpm.gif&quot; alt=&quot;Lumped parameter model&quot;&gt;
 &lt;/p&gt;
-&lt;h3&gt;Result&lt;/h3&gt;
+&lt;h3 id=&quot;result&quot;&gt;Result&lt;/h3&gt;
 &lt;p&gt;The results of this research were drafted into a research paper and accepted for
 &lt;a href=&quot;https://iafastro.directory/iac/archive/browse/IAC-18/A6/IP/48269/&quot;&gt;Interactive Presentation in the 69th International Astronautical Congress 2018&lt;/a&gt;
 in Bremen, Germany. However, due to lack of sponsorship and funds, I was not able
 to attend the conference.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;My Experience&lt;/h2&gt;
+&lt;h2 id=&quot;experience&quot;&gt;My Experience&lt;/h2&gt;
 &lt;p&gt;As an aerospace engineering student, I was very enthusiastic about working at the
 ISRO Satellite Centre, and I was very excited to fly to Bangalore as soon as my
 summer vacation started.&lt;/p&gt;
