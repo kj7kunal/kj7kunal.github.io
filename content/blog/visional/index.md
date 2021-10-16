@@ -30,10 +30,10 @@ for cross-team communication.
   - <a href="#p3">Employee Slack Analytics</a>
   - <a href="#p4">HeadHunter Recommendation</a>
   - <a href="#p5">Security Bug Report Classification</a>
+- <a href="#experience">My Experience</a>
 - <a href="#selected">How I got selected</a>
   - <a href="#preparation">Interview Preparation</a>
   - <a href="#placements">Placement Interviews</a>
-- <a href="#experience">My Experience</a>
 
 ```
 ```
@@ -213,13 +213,49 @@ keywords
 
 <h3 id="p4">HeadHunter Recommendation</h3>
 
-Achieved 25% hit rate (offline evaluation) using implicit library’s ALS collaborative filtering model on
-the BizReach candidate-job access log data for demonstration of the proposed BizReach headhunter recommendation project
+[BizReach](https://www.bizreach.jp/), Visional's primary service, is a job-change website that
+connects individuals with recruiters and companies through job listings. Other than job search
+results, the website's homepage also recommends job listings to the candidates on the basis of
+their preferences, past activity and searches. From point of view of the recruiters, BizReach
+aims to recommend candidates that are most likely to be scouted by them. 
+
+The HeadHunter recommendation feature was proposed by the AI team, with the aim to increase
+scouting rate for headhunters. The feature was developed to assist existing recommendation
+systems by using **implicit feedback** datasets like candidate-job access log data for newly
+registered candidates, for whom there is insufficient scout data. The same data could be
+used to recommend candidates to recruiters who had posted the jobs.
+
+I was involved in the assessment of the effectiveness of using access log data for the problem
+and comparing the performance of various recommendation models in offline testing. 
+A 25% hit rate was obtained using [Implicit](https://implicit.readthedocs.io/en/latest/quickstart.html)'s
+[Alternating Least Squares](https://implicit.readthedocs.io/en/latest/als.html) **collaborative
+filtering** model for demonstration of the proposed project.
 
 <h3 id="p5">Security Bug Report Classification</h3>
 
-Achieved 0.81 F-score classifying bug reports using a bigram model trained over NVD Descriptions and
-CVE related tweets. Learned how to build tools using NER, Scrapy, Elasticsearch and nltk
+Publicly disclosed cybersecurity vulnerabilities are assigned a 
+[Common Vulnerabilities and Exposures (CVE)](https://www.cve.org/About/Overview) ID, and
+the [National Vulnerability Database](https://nvd.nist.gov/) performs analysis on CVEs by
+aggregating data points from the description, references supplied and any supplemental
+data that can be found publicly at that time.
+
+[Yamory](https://yamory.io/) develops a security vulnerability management cloud for IT systems.
+The vulnerability database used by yamory consists of information analyzed and evaluated manually
+by a dedicated security analyst. To build this database, analysts have to scour multiple sources
+like tweets, bug report websites, security articles, etc. 
+
+We developed a system to scrape data from such sources and classify them as security vulnerability
+reports. Tweets mentioning a CVE ID were scraped and stored and analyzed using **Elasticsearch**
+whereas **Scrapy** was used to scrape bug reports from active bug reporting websites. 
+**Named Entity Recognition** was used to identify software names within the descriptions.
+A 0.81 F-score was achieved in classifying bug reports using a **bigram language model**
+trained over NVD/CVE Descriptions as ground truth. 
+
+```
+```
+
+<h2 id="experience">My Experience</h2>
+
 
 ```
 ```
@@ -322,55 +358,3 @@ up my parents and my friends and shared the news. It was one of the happiest nig
 life, and I did no injustice to celebrating that feeling! It was the result of hard work
 and meticulous planning, and most of all - being my genuine self.
 
-```
-```
-
-<h2 id="experience">My Experience</h2>
-
-As an aerospace engineering student, I was very enthusiastic about working at the
-ISRO Satellite Centre, and I was very excited to fly to Bangalore as soon as my
-summer vacation started.
-
-Since I was an "unofficial" intern, I was not given any stipend, and I had to cut
-my costs by staying at my uncle's place - about an hour of bus travel each day.
-But also because of that, I had the benefits of working flexibly in terms of
-hours and place of work.
-
-My first week at ISAC, my mentor introduced me to the team at the Control
-Dynamics and Simulation Group, who were mostly graduates from IIST. They were
-really friendly, and talking to them was like talking to any senior from college.
-There were 3 more interns from different universities, who had their own
-stories of how they got their internships.
-
-I usually started work at 10AM and ended work around 4PM. My mentor and I synced
-up twice each week and discussed work updates every day. It motivated me to stay
-on track. Since I could be flexible, I sometimes used to work from cafes near my
-place instead of going to office. My mentor was super approachable, and I could
-call him up in the middle of the night to discuss a sudden idea I had. I also
-synced up with the group's project director, [Dr Vinod Kumar](https://www.siliconindia.com/profiles/dr-vinod-kumar-XEac3AFM.html), a few times, who told me about his long
-journey at ISRO.
-
-I enjoyed such 1on1 sessions. They helped me connect with the team better. I also
-loved the two _chai breaks_, where employees used to line up for free tea/coffee
-and free talk. In some of these, my mentor and the other team members used to
-take us for tours of the Satellite Centre. It was unbelievable seeing the mission
-control for the recently launched [GSAT-9](https://en.wikipedia.org/wiki/South_Asia_Satellite)
-and [GSAT-11](https://en.wikipedia.org/wiki/GSAT-11) in development, right in front of our eyes!
-
-However, amongst all things shiny, there were things that stood out
-that I could not help feeling irritated about. Offices were similar to old Indian
-government offices desperately in need of an upgrade. Some of the PCs we used to
-work on were still equipped with age-old hardware like CRT monitors. My team's
-office was a room divided into cubicles, which my mentor said made him feel
-claustrophobic at times. I used to see more progress when I was working on my
-laptop from a cafe than when I was working in a no-window office all day.
-
-I learned a lot talking to my colleagues. The engineers/scientists shared a lot
-of career insight, which had helped me gear up into changing my career in the
-coming months. I discussed about some ML projects I worked on in college, and 
-I learned how it was applied in projects at ISRO. Discussions that could not be
-completed over _chai breaks_ were continued the next day or free pizza treats
-after work!
-
-```
-```
