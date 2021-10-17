@@ -1,5 +1,5 @@
 ---
-title: My first Full-Time Job - A Look Back
+title: A look back at my first full time job
 date: '2021-10-01T12:00:00.00Z'
 description: '2 years as an ML/AI Engineer at Visional Inc.'
 ---
