@@ -1,4 +1,5 @@
 import { Link } from 'gatsby';
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 import get from 'lodash/get';
 import React from 'react';
 
@@ -8,7 +9,6 @@ import { FaTwitter } from "@react-icons/all-files/fa/FaTwitter";
 import { FaBlog } from "@react-icons/all-files/fa/FaBlog";
 import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope";
 import { FaFileDownload } from "@react-icons/all-files/fa/FaFileDownload";
-
 
 import profileImg from '../../images/profile.jpg';
 
@@ -89,16 +89,24 @@ const Header = ({ metadata = {}, noBlog = false }) => {
         <ul className={classes.list}>
           {github && (
             <li className={classes.item}>
-              <a className={classes.icon} href={github}>
+              <OutboundLink 
+                className={classes.icon} 
+                href={github} 
+                eventLabel="github"
+              >
                 <FaGithub />
-              </a>
+              </OutboundLink>
             </li>
           )}
           {linkedin && (
             <li className={classes.item}>
-              <a className={classes.icon} href={linkedin}>
+              <OutboundLink 
+                className={classes.icon} 
+                href={linkedin}
+                eventLabel="linkedin"
+              >
                 <FaLinkedin />
-              </a>
+              </OutboundLink>
             </li>
           )}
           {mail && (
@@ -112,12 +120,13 @@ const Header = ({ metadata = {}, noBlog = false }) => {
           )}
           {twitter && (
             <li className={classes.item}>
-              <a
+              <OutboundLink
                 className={classes.icon}
                 href={`https://twitter.com/${twitter}`}
+                eventLabel="twitter"
               >
                 <FaTwitter />
-              </a>
+              </OutboundLink>
             </li>
           )}
           {!noBlog && (
@@ -129,9 +138,13 @@ const Header = ({ metadata = {}, noBlog = false }) => {
           )}
           {resume && (
             <li className={classes.item}>
-              <a className={classes.icon} href={resume}>
+              <OutboundLink 
+                className={classes.icon} 
+                href={resume}
+                eventLabel="resume"
+              >
                 <FaFileDownload />
-              </a>
+              </OutboundLink>
             </li>
           )}
         </ul>
