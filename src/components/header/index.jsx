@@ -92,6 +92,7 @@ const Header = ({ metadata = {}, noBlog = false }) => {
               <OutboundLink 
                 className={classes.icon} 
                 href={github} 
+                target="_blank"
                 eventLabel="github"
               >
                 <FaGithub />
@@ -103,6 +104,7 @@ const Header = ({ metadata = {}, noBlog = false }) => {
               <OutboundLink 
                 className={classes.icon} 
                 href={linkedin}
+                target="_blank"
                 eventLabel="linkedin"
               >
                 <FaLinkedin />
@@ -123,6 +125,7 @@ const Header = ({ metadata = {}, noBlog = false }) => {
               <OutboundLink
                 className={classes.icon}
                 href={`https://twitter.com/${twitter}`}
+                target="_blank"
                 eventLabel="twitter"
               >
                 <FaTwitter />
@@ -141,6 +144,7 @@ const Header = ({ metadata = {}, noBlog = false }) => {
               <OutboundLink 
                 className={classes.icon} 
                 href={resume}
+                target="_blank"
                 eventLabel="resume"
               >
                 <FaFileDownload />
