@@ -7,7 +7,7 @@ import SummaryItem from '../summary-item';
 const SectionBlog = ({ posts }) => {
   return (
     <Section title="Latest Posts">
-      {posts.map((post) => (
+      {posts.slice(0, 3).map((post) => (
         <SummaryItem
           key={post.node.fields.slug}
           name={post.node.frontmatter.title}
@@ -16,7 +16,7 @@ const SectionBlog = ({ posts }) => {
           internal
         />
       ))}
-      {posts.length >= 5 && (
+      {posts.length >= 3 && (
         <Link className="text-gray-500 text-sm hover:text-blue-500" to="/blog">
           View all posts &rarr;
         </Link>
