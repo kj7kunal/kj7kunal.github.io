@@ -129,6 +129,7 @@ Before we go any forward, just in case, I will introduce some basic prerequisite
   - Heavy size (in GBs)
   - Has to boot-up entire OS (in minutes)
   - Structure:
+
     ```
     - Hardware Infra 
       - Hypervisor (or virtual machine monitor/VMM -> similar to emulator)
@@ -137,11 +138,13 @@ Before we go any forward, just in case, I will introduce some basic prerequisite
           - Libraries/Dependencies
           - OS
     ```
+
 - Containers 
   - Low resource utilization
   - Lightweight (in MBs)
   - Low boot-up time (in seconds)
   - Structure:
+  
     ```
     - Hardware Infra 
       - OS
@@ -150,6 +153,7 @@ Before we go any forward, just in case, I will introduce some basic prerequisite
             - Applications services
             - Libraries/Dependencies
     ``` 
+
 <p align="center">
   <img src="https://images.contentstack.io/v3/assets/blt300387d93dabf50e/bltb6200bc085503718/5e1f209a63d1b6503160c6d5/containers-vs-virtual-machines.jpg" width="600" alt="VM vs Containers"/>
 </p>
