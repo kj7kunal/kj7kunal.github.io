@@ -1,4 +1,943 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kunal Jain | Machine Learning Engineer]]></title><description><![CDATA[Machine Learning Engineer currently in Tokyo, Japan]]></description><link>https://kj7kunal.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 21 Oct 2021 11:52:49 GMT</lastBuildDate><item><title><![CDATA[A look back at my first full time job]]></title><description><![CDATA[I have been working with Visional Inc., based in
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kunal Jain | Machine Learning Engineer]]></title><description><![CDATA[Machine Learning Engineer currently in Tokyo, Japan]]></description><link>https://kj7kunal.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 09 Feb 2022 19:43:47 GMT</lastBuildDate><item><title><![CDATA[Docker Basics]]></title><description><![CDATA[As a software developer, especially an ML Engineer working in a cross-functioning team, I have come to understand the importance of creating…]]></description><link>https://kj7kunal.github.io/blog/docker-basics/</link><guid isPermaLink="false">https://kj7kunal.github.io/blog/docker-basics/</guid><pubDate>Sat, 11 Dec 2021 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;As a software developer, especially an ML Engineer working in a cross-functioning team, I have come to understand the importance of creating reproducible code, that can be transferred from your dev machine to the staging or production environment with minimal required settings. &lt;/p&gt;
+&lt;p&gt;Docker is one of the most popular tools used to containerize and deploy applications. It makes building, deploying and managing applications extremely simple. It does this by using something called containers, which allow the developer to package up an application with all the parts it needs, with their own set of software, libraries and configuration file associated with them. Not only is each container isolated from other containers, they are easily reproducible entities that allow for easy abstraction during testing and deployment.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://12factor.net/&quot;&gt;The Twelve-Factor App&lt;/a&gt; comes up with a general guide of basic requirements any developer who builds, deploys or manages applications which run as a service should follow. And using Docker means you’re already satisfying the majority of them.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#why&quot;&gt;Why do you need docker?&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#devops&quot;&gt;DevOps in Industry&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#prerequisite&quot;&gt;Basic Prerequisites&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#os&quot;&gt;Operating System&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#containers&quot;&gt;Containers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#docker&quot;&gt;Docker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#vm&quot;&gt;VMs vs Containers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#using&quot;&gt;Using Docker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#commands&quot;&gt;Docker Commands&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#docker-run&quot;&gt;docker run command&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#ports&quot;&gt;ports&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#volumes&quot;&gt;volumes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#envvars&quot;&gt;environment variables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#docker-ps&quot;&gt;Container related commands&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#docker-images&quot;&gt;Image related commands&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#docker-inspect&quot;&gt;Monitoring commands&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#containerize&quot;&gt;Containerising an application&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#guide&quot;&gt;“Setup Guide Translation”&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#dockerfile&quot;&gt;Dockerfile&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#instructions&quot;&gt;Instructions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#docker-build&quot;&gt;Building an image&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#docker-compose&quot;&gt;docker-compose&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#example&quot;&gt;Example Application&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#more&quot;&gt;Further Reading&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;why&quot;&gt;Why do you need docker?&lt;/h2&gt;
+&lt;p&gt;Any fully functioning web-app is comprised of multiple constituent services. For example an end-to-end application stack might consist of the following components:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Web server (eg. Node.js)&lt;/li&gt;
+&lt;li&gt;Database (eg. mongoDB, sql)&lt;/li&gt;
+&lt;li&gt;Frontend/Messaging (eg. Redis)&lt;/li&gt;
+&lt;li&gt;Orchestration tool (eg. Ansible)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Before Docker came around, when you wanted to test your code on a different machine, you had to carefully read a big setup manual and install all the required dependencies on each machine before being able to modify or run it. Moreover, different stack require compatibility with the underlying OS and different services require different versions of dependencies to be installed, which are themselves OS dependent. Therefore, these installations clutter up your dev machine and it surely is not a reproducible environment. For example, if two systems use different versions of the same dependency, then there could be a dependency collision.&lt;/p&gt;
+&lt;p&gt;Further, when applications are updated, the associated architecture might require minor or major changes. Architecture changes require dependency/compatibility checks, and new dependencies might collide with older dependencies, which leads to what is called the &lt;code class=&quot;language-text&quot;&gt;compatibility matrix&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;And in a cross-functioning setting like my team, where different product teams have their own dev, staging and production environments, and each product team sets their own priorities for different projects, these dependency collisions might have led to delays in deployments and the requirement of modifications to support certain dependency versions. Does upgrading the production machines to the latest distribution add value or money to the company? No. From the outset, the opposite is true: it costs time and thus, money. Thankfully, instead of frustrating code modifications, we use Docker to address all these issues.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The main purpose of Docker is to package and containerise applications, and to ship them, and run them anywhere, any number of times you want.&lt;/strong&gt; It provides a &lt;code class=&quot;language-text&quot;&gt;containerised&lt;/code&gt; solution for developing, building and shipping an application: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Separate libraries and dependencies for each service&lt;/li&gt;
+&lt;li&gt;All within same VM and OS, but within isolated environments (containers)&lt;/li&gt;
+&lt;li&gt;Easily installable with just a docker run command&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;devops&quot;&gt;DevOps in Industry&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Traditional&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dev team develops applications&lt;/li&gt;
+&lt;li&gt;Hands over to Ops team to deploy and manage in PRD environment&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dev team provides a guide of information to Ops team&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Basic setup on host&lt;/li&gt;
+&lt;li&gt;Prerequisite libraries and dependencies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ops team can easily face issues due to&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Incorrect/incomplete instructions from Dev team&lt;/li&gt;
+&lt;li&gt;Mistakes in following instructions&lt;/li&gt;
+&lt;li&gt;Dev and Ops have to work together to resolve issues&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;With Docker&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Dockerfile is analogous to the Dev guide in traditional DevOps&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(Dev + Ops) work hand in hand to create the Dockerfile&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Dockerfile is used to create the image for the application&lt;/li&gt;
+&lt;li&gt;Since this image already runs on dev system, it is supposed to work on any other host that has Docker installed&lt;/li&gt;
+&lt;li&gt;Ops deploys the application using the image and manages PRD environment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Docker transforms Dev + Ops -&gt; DevOps&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Every application can be containerised&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the future, it is very probable that no one will need to install anything &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Just use docker to run a container for the image&lt;/li&gt;
+&lt;li&gt;Stop the container when it’s no longer required&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;prerequisite&quot;&gt;Basic Prerequisites&lt;/h2&gt;
+&lt;p&gt;Before we go any forward, just in case, I will introduce some basic prerequisites in brief bullet points. If you need more information, please go wild on google.&lt;/p&gt;
+&lt;h3 id=&quot;os&quot;&gt;Operating System&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Any OS consists of 2 parts: the OS Kernel and Application Softwares&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Kernel_Layout.svg/1920px-Kernel_Layout.svg.png&quot; width=&quot;200&quot; alt=&quot;OS Components&quot;&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;OS kernel interacts with underlying hardware and is machine-dependent eg. Linux, Windows, MacOS&lt;/li&gt;
+&lt;li&gt;Application softwares like user interfaces, compilers, etc., differentiate the OS into different flavours. eg. ubuntu, fedora, Debian, SUSE are different flavours of the OS which uses the Linux kernel&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;containers&quot;&gt;Containers&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Completely isolated environments with their own processes for services, own network interfaces and own mounts&lt;/li&gt;
+&lt;li&gt;Different containers share the same OS kernel&lt;/li&gt;
+&lt;li&gt;Setting up containers can be hard since they are basically very low level code&lt;/li&gt;
+&lt;li&gt;Not meant to host a standalone OS (unlike VMs)&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Life of a container is straightforward:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;install required dependencies over the OS kernel&lt;/li&gt;
+&lt;li&gt;run a specific task/process/command (servers, databases, computation, analysis tasks)&lt;/li&gt;
+&lt;li&gt;finish the task&lt;/li&gt;
+&lt;li&gt;clean up and exit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;docker&quot;&gt;Docker&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Docker uses LXC (Linux containers), but containers can be LXD, LXCFS, etc&lt;/li&gt;
+&lt;li&gt;Has powerful tools for setting up containers easily for end users that abstract the low level code for setting up and managing containers&lt;/li&gt;
+&lt;li&gt;Docker can run containers based on a different flavoured OS on any OS, as long as they share the same kernel&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;vm&quot;&gt;VMs vs Containers&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;VM &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;High resource utilization&lt;/li&gt;
+&lt;li&gt;Heavy size (in GBs)&lt;/li&gt;
+&lt;li&gt;Has to boot-up entire OS (in minutes)&lt;/li&gt;
+&lt;li&gt;Structure:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;- Hardware Infra 
+  - Hypervisor (or virtual machine monitor/VMM -&gt; similar to emulator)
+    - VMs
+      - Application services
+      - Libraries/Dependencies
+      - OS&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Containers &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Low resource utilization&lt;/li&gt;
+&lt;li&gt;Lightweight (in MBs)&lt;/li&gt;
+&lt;li&gt;Low boot-up time (in seconds)&lt;/li&gt;
+&lt;li&gt;Structure:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;- Hardware Infra 
+  - OS
+    - Docker installed on the OS
+      - Containers
+        - Applications services
+        - Libraries/Dependencies&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;https://images.contentstack.io/v3/assets/blt300387d93dabf50e/bltb6200bc085503718/5e1f209a63d1b6503160c6d5/containers-vs-virtual-machines.jpg&quot; width=&quot;600&quot; alt=&quot;VM vs Containers&quot;&gt;
+&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;using&quot;&gt;Using Docker&lt;/h2&gt;
+&lt;p&gt;Here is a simple process for using Docker:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install Docker Engine on your host&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Containerised applications readily available on dockerhub (public docker registry) as &lt;code class=&quot;language-text&quot;&gt;images&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Most common OSes, databases, services, tools, etc are available&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;docker run &amp;lt;image name&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Runs an instance (container) of an image&lt;/li&gt;
+&lt;li&gt;Each run command creates a new instance (new container)&lt;/li&gt;
+&lt;li&gt;If one instance breaks, destroy it and launch new instance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Docker Image&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Package/template used to create one or more containers&lt;/li&gt;
+&lt;li&gt;Containers are basically instances of image that are isolated and have their own environment that runs the services/processes defined in the image&lt;/li&gt;
+&lt;li&gt;Containers based on the same image may run differently depending on the values supplied during the docker run command &lt;a href=&quot;#docker-run&quot;&gt;(see below for options)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;commands&quot;&gt;Docker Commands&lt;/h2&gt;
+&lt;p&gt;Following is a description of commonly used docker commands. Again, it is presented in a bullet-point summary&lt;/p&gt;
+&lt;h3 id=&quot;docker-run&quot;&gt;docker run&lt;/h3&gt; 
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;docker run &amp;lt;image name&gt;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Base command to run a container instance of an image&lt;/li&gt;
+&lt;li&gt;Looks for image&lt;/li&gt;
+&lt;li&gt;Checks locally first&lt;/li&gt;
+&lt;li&gt;If no local image, searches docker hub and pulls that image&lt;/li&gt;
+&lt;li&gt;Runs container in &lt;/li&gt;
+&lt;li&gt;attached state&lt;/li&gt;
+&lt;li&gt;non-interactive mode&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;docker run &amp;#x3C;image name&gt;&lt;code class=&quot;language-text&quot;&gt;:&amp;lt;image tag&gt;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Specifies version of image to run&lt;/li&gt;
+&lt;li&gt;eg. docker run redis:4.0 -&gt; pulls latest 4.0 image&lt;/li&gt;
+&lt;li&gt;Specify short or long tags as per requirement&lt;/li&gt;
+&lt;li&gt;If tag is not supplied, docker pulls latest available image&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;docker run &amp;#x3C;image name&gt; &lt;code class=&quot;language-text&quot;&gt;&amp;lt;command&gt;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If image does not run any service by default (eg. ubuntu), append a command so container doesn’t exit immediately&lt;/li&gt;
+&lt;li&gt;Examples&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;docker run ubuntu sleep 100&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;runs an instance of ubuntu OS -&gt; sleeps for 100s -&gt; exits&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;docker run python:3.6 cat /etc/\&lt;/em&gt;release**&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Runs an instance of python:3.6 image -&gt; outputs OS information -&gt; exits  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;docker run &lt;code class=&quot;language-text&quot;&gt;-d&lt;/code&gt; &amp;#x3C;image name&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Runs instance in background (detached mode)&lt;/li&gt;
+&lt;li&gt;So we can use the host terminal for other commands&lt;/li&gt;
+&lt;li&gt;If -d is not specified (attached mode), need to open a new terminal or explicitly exit (ctrl + c) the container&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;docker attach &amp;lt;container_id/name&gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Reattaches detached container to terminal console to view outputs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;docker run &lt;code class=&quot;language-text&quot;&gt;-it&lt;/code&gt; &amp;#x3C;image name&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;i&lt;/code&gt;: Runs container in interactive mode &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Maps the STDIN of host to the docker container&lt;/li&gt;
+&lt;li&gt;Necessary if service asks for input from the user (interactive mode)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;t&lt;/code&gt;: Attaches host’s terminal to container&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Able to use STDOUT of host to output container outputs&lt;/li&gt;
+&lt;li&gt;Necessary if service has to show prompt to the user (in interactive mode)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;s id=&quot;ports&quot;&gt;&lt;/s&gt;&lt;strong&gt;docker run &lt;code class=&quot;language-text&quot;&gt;-p &amp;lt;free port on docker host&gt;:&amp;lt;container’s listening port&gt;&lt;/code&gt; &amp;#x3C;image name&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Maps ports on localhost to listen to container ports&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Each container within the docker host has it’s own internal IP where it can be accessed&lt;/li&gt;
+&lt;li&gt;Internal IP can only be accessed inside the docker host&lt;/li&gt;
+&lt;li&gt;External users can use the IP of the docker host but with a &lt;strong&gt;free port&lt;/strong&gt; on the docker host mapped to the container’s port&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;eg. 80:5000 means port 80 on docker host is mapped to listen to port 5000 on the container service&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Multiple instances of applications (same or different) can be mapped to different ports on the docker host. Example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;docker run -p 80:5000 web_app&lt;/li&gt;
+&lt;li&gt;docker run -p 8000:5000 web_app&lt;/li&gt;
+&lt;li&gt;docker run -p 3306:3306 mysql:2.3 (3306 is mysql’s default port)&lt;/li&gt;
+&lt;li&gt;docker run -p 8306:3306 mysql&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;s id=&quot;volumes&quot;&gt;&lt;/s&gt;&lt;strong&gt;docker run &lt;code class=&quot;language-text&quot;&gt;-v &amp;lt;directory on docker host&gt;:&amp;lt;container’s directory&gt;&lt;/code&gt; &amp;#x3C;image name&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Maps directories on localhost to the container directories&lt;/li&gt;
+&lt;li&gt;Docker containers have their own isolated filesystems&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Services may create and store data within the containers&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;eg. mysql stores databases and tables in /var/lib/mysql&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;If container is deleted, this storage is deleted with the container&lt;/li&gt;
+&lt;li&gt;To persist the data, you need to mount an external directory on the docker host to a directory inside the container&lt;/li&gt;
+&lt;li&gt;eg. &lt;em&gt;/opt/datadir:/var/lib/mysql&lt;/em&gt; means &lt;em&gt;/opt/datadir&lt;/em&gt; on docker host is mounted as &lt;em&gt;/var/lib/mysql&lt;/em&gt; on the container&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;More general command:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker run \
+--mount type=&amp;lt;bind or volume&gt;,source=&amp;lt;directory on docker host&gt;,target=&amp;lt;container’s directory&gt; \
+\&amp;lt;image name&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;docker volume create d_v&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;creates persistent volume in &lt;em&gt;/var/lib/docker/volumes/d_v&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;d_v:/var/lib/mysql&lt;/em&gt; means &lt;em&gt;/var/lib/docker/volumes/d_v&lt;/em&gt; on docker host is mounted as &lt;em&gt;/var/lib/mysql&lt;/em&gt; on the container&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;s id=&quot;envvars&quot;&gt;&lt;/s&gt;&lt;strong&gt;docker run &lt;code class=&quot;language-text&quot;&gt;-e &amp;lt;ENV_VAR&gt;=&amp;lt;value&gt;&lt;/code&gt; &amp;#x3C;image name&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Runs container with specified value of environment variable&lt;/li&gt;
+&lt;li&gt;Can run multiple containers with different environment variable values in the same docker host&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;docker-ps&quot;&gt;Container related commands&lt;/h3&gt; 
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;docker ps&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lists all running containers and basic information&lt;/li&gt;
+&lt;li&gt;Container ID: random id for the container assigned by docker&lt;/li&gt;
+&lt;li&gt;Image: name of the image used to run the container&lt;/li&gt;
+&lt;li&gt;Command: command specified by the image&lt;/li&gt;
+&lt;li&gt;Created: time elapsed after creation of container&lt;/li&gt;
+&lt;li&gt;Status: how much time the container has been “up”, “exited”, etc&lt;/li&gt;
+&lt;li&gt;Ports: ports being listened to by the instance&lt;/li&gt;
+&lt;li&gt;Names: random name for the container assigned by docker&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;docker ps -a&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Lists all running and previously exited containers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;docker stop &amp;lt;container_id/name&gt; [container_id/name...]&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Shows container name on success and exits container&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;docker rm &amp;lt;container_id/name&gt; [container_id/name...]&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Removes exited containers from storage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;docker exec &amp;lt;container_id/name&gt; &amp;lt;command&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Runs a command on a running container&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;eg. docker exec hoge_hoge cat /etc/hosts&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lists the contents of the /etc/hosts file (localhost, etc)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;docker-images&quot;&gt;Image related commands&lt;/h3&gt; 
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;docker images&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lists all available images on host docker and basic information&lt;/li&gt;
+&lt;li&gt;Repository: image name&lt;/li&gt;
+&lt;li&gt;Tag: image version (default: latest)&lt;/li&gt;
+&lt;li&gt;Image ID: docker assigned random id&lt;/li&gt;
+&lt;li&gt;Created: when created/pulled to local&lt;/li&gt;
+&lt;li&gt;Size: storage size&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;docker rmi &amp;lt;image name&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;deletes image from local&lt;/li&gt;
+&lt;li&gt;MUST STOP all dependent containers before removing image&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;docker pull &amp;lt;image name&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pulls image from docker hub and stores on host&lt;/li&gt;
+&lt;li&gt;DOES NOT run container&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;docker-inspect&quot;&gt;Monitoring commands&lt;/h3&gt; 
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;docker inspect &amp;lt;container_id/name&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lists details of the container such as state, mounts, config, network settings, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;docker log &amp;lt;container_id/name&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;View the logs written to the STDOUT of a detached container &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;docker history &amp;lt;image name&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;History of image build&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;containerize&quot;&gt;Containerising an application&lt;/h2&gt;
+&lt;p&gt;There are three levels of understanding when we containerize an application. As a summary, think of it this way:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You’re a developer who is happy with your code, and now wants the ops team to deploy it on the staging/production environment. You can easily send them a &lt;code class=&quot;language-text&quot;&gt;detailed explanation of the build steps in English&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;But its the 2020s, so instead you translate that traditional “guide book” into sequential instructions in a Dockerfile. It defines how a service is run. A &lt;code class=&quot;language-text&quot;&gt;docker image can be *built* from this Dockerfile&lt;/code&gt; that will containerize the service you built&lt;/li&gt;
+&lt;li&gt;If your application stack consists of multiple services running parallely, you create a Dockerfile for each service or use an existing image from the docker registry. Instead of writing down run instructions for each service, you compile these instructions into a &lt;code class=&quot;language-text&quot;&gt;docker-compose.yml file that puts together options for all the constituent services&lt;/code&gt; and can be used to bring up entire the application stack.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;guide&quot;&gt;&quot;Setup Guide Translation&quot;&lt;/h3&gt;
+&lt;p&gt;The first step to containerizing any service or application is to understand what we are containerising or what application are we creating the image for and how it is ‘built’&lt;/p&gt;
+&lt;p&gt;Traditionally the instructions would have answered the question: &lt;code class=&quot;language-text&quot;&gt;What would you do if you want to deploy it manually? (eg. simple web app)&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1. Decide OS (eg. Ubuntu)
+2. Update OS source repos (eg. apt-get update)
+3. Install dependencies (eg. apt-get install) (eg. Python)
+4. Install application dependencies (eg. pip install)
+5. Copy source code of the application to the specified path inside the running container (eg. /opt)
+6. Finally, run the service (eg. Using the flask command)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To build a docker image, we need to translate these instructions into a set of commands called the &lt;code class=&quot;language-text&quot;&gt;Dockerfile&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;FROM Ubuntu 
+RUN apt-get update
+RUN apt-get install python
+RUN pip install flask flask-mysql
+COPY . /opt/src
+ENTRYPOINT FLASK_APP=/opt/src/app.py flask run&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;dockerfile&quot;&gt;Dockerfile&lt;/h3&gt;
+&lt;p&gt;A Dockerfile is a text file written in &lt;code class=&quot;language-text&quot;&gt;&amp;lt;INSTRUCTION&gt; &amp;lt;argument&gt;&lt;/code&gt; format that docker can understand. &lt;/p&gt;
+&lt;p&gt;&lt;span id=&quot;instructions&quot;&gt;Following are few of the required instructions Docker may require to build an image:&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;FROM&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Defines the Base OS or Base image &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Every docker image must have exactly one FROM clause&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Examples&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;FROM Ubuntu&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;FROM python:3.6&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;RUN&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Instructs docker to run commands on base images&lt;/li&gt;
+&lt;li&gt;Used to install dependencies&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;RUN apt-get update
+RUN apt-get install python
+RUN pip install flask flask-mysql&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;COPY&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Copies local files onto the docker image&lt;/li&gt;
+&lt;li&gt;Places source code from local to required path inside container&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;COPY . /opt/src
+COPY ../data /opt/data&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;ENTRYPOINT&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Specifies the command that runs when image is run as a container&lt;/li&gt;
+&lt;li&gt;Format&lt;/li&gt;
+&lt;li&gt;Shell format -&gt; &lt;code class=&quot;language-text&quot;&gt;ENTRYPOINT command&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;JSON array format -&gt; &lt;code class=&quot;language-text&quot;&gt;ENTRYPOINT [“command”]&lt;/code&gt; (preferred)&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Examples&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;ENTRYPOINT FLASK_APP=/opt/src/app.py flask run&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;ENTRYPOINT [&quot;python&quot;, &quot;app.py&quot;]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;Anything specified on the command line while using docker run will get &lt;strong&gt;appended to the end and run as command&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Example Dockerfile (ubuntu-sleeper)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;FROM Ubuntu
+ENTRYPOINT [“sleep”]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;docker run ubuntu-sleeper 10&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;sleep 10 will be executed at container startup&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It is recommended to supply a default param1 in case user forgets to supply it during docker run&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Always use JSON Array format for this&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Example Dockerfile (ubuntu-sleeper-default)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;FROM Ubuntu
+ENTRYPOINT [“sleep”]
+CMD [“5”]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;docker run ubuntu-sleeper-default&lt;/em&gt; -&gt; sleeps for 5s&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;docker run ubuntu-sleeper-default 10&lt;/em&gt; -&gt; overrides command and sleeps for 10s&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Overriding ENTRYPOINT&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;docker run --entrypoint command2 ubuntu-sleeper 10&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;CMD&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Defines the program that will be run within the container when it starts&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Format&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Shell format -&gt; &lt;code class=&quot;language-text&quot;&gt;CMD command1 param1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;JSON array format -&gt; &lt;code class=&quot;language-text&quot;&gt;CMD [“command1”, “param1”]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;CMD [“command1”, “param1”]&lt;/code&gt; is equivalent to &lt;code class=&quot;language-text&quot;&gt;ENTRYPOINT[“command1”] CMD[“param1”]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Examples (base images)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# for nginx image
+CMD [“nginx”] &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# for ubuntu image
+CMD [“bash”]
+
+# Not a process -&gt; bash shell that listens for inputs from a terminal, and exits immediately if no terminal (by default, no terminal)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Example (custom image)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Dockerfile to run &lt;em&gt;sleep 5&lt;/em&gt; on ubuntu image &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;FROM Ubuntu
+CMD sleep 5&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Overriding CMD&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Overriding Param1 (use ENTRYPOINT)&lt;/li&gt;
+&lt;li&gt;Dockerfile: &lt;em&gt;FROM Ubuntu ENTRYPOINT [“sleep”]&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;docker run ubuntu 10&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Overriding entire CMD&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;docker run ubuntu sleep 10&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Command line &lt;code class=&quot;language-text&quot;&gt;command2 param2&lt;/code&gt; will &lt;strong&gt;replace&lt;/strong&gt; any CMD specified in Dockerfile&lt;/li&gt;
+&lt;li&gt;However, this is &lt;strong&gt;not recommended&lt;/strong&gt; as it doesn’t look very good&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;EXPOSE&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;WORKDIR&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span id=&quot;docker-build&quot;&gt;Once the Dockerfile has been written, we can build the image and push it to the docker registry&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;docker build &amp;lt;root directory of Dockerfile&gt; -t &amp;lt;image name&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Builds your image using the Dockerfile and makes the image locally available on the host system&lt;/li&gt;
+&lt;li&gt;You can see the various steps involved and the result of each task&lt;/li&gt;
+&lt;li&gt;Images are built &lt;em&gt;layer by layer&lt;/em&gt; following the Dockerfile sequentially&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Current layer only stores changes from the previous layer&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Image size depends on last layer&lt;/li&gt;
+&lt;li&gt;All layers are cached&lt;/li&gt;
+&lt;li&gt;Layers cached as intermediate containers&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Helps in restarting build from the last step where the build fails&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can see ”---&gt; Using cache” in log for some steps&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In case new steps are added/updated to Dockerfile, rebuilding the image only needs to run the updated tasks&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Since source code is added after dependencies, updated source code does not need to reinstall dependencies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;docker build &lt;code class=&quot;language-text&quot;&gt;-f &amp;lt;path to Dockerfile&gt;&lt;/code&gt; -t &amp;#x3C;image name&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use -f to specify path to Dockerfile&lt;/li&gt;
+&lt;li&gt;Else need to provide context directory (root of Dockerfile)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;docker push &amp;lt;image name&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Push to public dockerhub registry&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;docker-compose&quot;&gt;docker-compose&lt;/h3&gt;
+&lt;p&gt;The &lt;code class=&quot;language-text&quot;&gt;docker-compose.yml&lt;/code&gt; file is a set of configurations defined in yaml file format that puts together a complex application running multiple services and options specific to run them.&lt;/p&gt;
+&lt;p&gt;Once all the images have been built, and the docker-compose file is written, the entire application can be brought up using a single command:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker-compose up&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;So far, there are three formats available, in which the docker-compose file can be written:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Version 1 (default version, no need to specify)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Very basic&lt;/li&gt;
+&lt;li&gt;Cannot change to a different network&lt;/li&gt;
+&lt;li&gt;attaches to default bridge network and needs to use links for communication between containers&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;HAVE&lt;/em&gt; to mention applications in a &lt;em&gt;sequential&lt;/em&gt; yaml format&lt;/li&gt;
+&lt;li&gt;the order you would run them using docker run&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Version 2&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Need to specify the version at the top of the file for versions 2+ (default 1)&lt;/li&gt;
+&lt;li&gt;Encapsulates stack information into an outer “services” dictionary&lt;/li&gt;
+&lt;li&gt;Automatically creates a new dedicated bridge network for the application&lt;/li&gt;
+&lt;li&gt;No need for links, since all the container names are application-specific&lt;/li&gt;
+&lt;li&gt;Specifies a startup order using depends_on&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;s_2: depends_on: s_1&lt;/code&gt; -&gt; s&lt;em&gt;2 will only start after s&lt;/em&gt;1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Version 3&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Latest as of today&lt;/li&gt;
+&lt;li&gt;Structure similar to version 2&lt;/li&gt;
+&lt;li&gt;Adds support for Docker Swarm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Following is a template for a version 3 docker-compose.yml file:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;version: &quot;3[.x]&quot;
+services:
+  &amp;lt;container name&gt;
+    build:
+      context: &amp;lt;relative path of directory containing Dockerfile OR git repository url&gt;
+      dockerfile: &amp;lt;path to alternate Dockerfile&gt;
+      args:
+        ... &amp;lt;env vars and values valid during build&gt;
+    image: &amp;lt;image name&gt;
+    ports:
+      - “&amp;lt;host port1&gt;:&amp;lt;container port1&gt;”
+      - “&amp;lt;host port2&gt;:&amp;lt;container port2&gt;”
+    volumes:
+      - &amp;lt;volume mounting name&gt;:&amp;lt;container directory&gt;
+      - &amp;lt;bind mounting path&gt;:&amp;lt;container directory&gt;
+    networks:
+      - &amp;lt;network name&gt;
+    depends_on:
+      - &amp;lt;other container name&gt;
+    deploy:
+      ...
+  ...
+networks:
+  &amp;lt;network name&gt;:
+  frontend:
+  backend:
+  ...
+volumes:
+  &amp;lt;volume mounting name&gt;:
+  db-data:
+  ...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;example&quot;&gt;Example Application: Setting up a Voting App&lt;/h3&gt;
+&lt;p&gt;Designing and containerizing a voting app is a very popular example to illustrate docker to a beginner. The architecture looks something like this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A &lt;code class=&quot;language-text&quot;&gt;python&lt;/code&gt; (flask) voting app collects votes from users&lt;/li&gt;
+&lt;li&gt;The votes are stored first in an in-memory queue implemented using &lt;code class=&quot;language-text&quot;&gt;redis&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A worker application based on &lt;code class=&quot;language-text&quot;&gt;.NET&lt;/code&gt; framework then collects the queued votes&lt;/li&gt;
+&lt;li&gt;The queued votes are stored in a &lt;code class=&quot;language-text&quot;&gt;PostgreSQL&lt;/code&gt; database&lt;/li&gt;
+&lt;li&gt;A &lt;code class=&quot;language-text&quot;&gt;node.js&lt;/code&gt; result app queries the database and displays the running result&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/docker/labs/master/beginner/images/bd3-architecture.png&quot; width=&quot;600&quot; alt=&quot;VM vs Containers&quot;&gt;
+&lt;/p&gt;
+&lt;p&gt;Assuming we have already built the images, then to bring up the application, we can either use a series of docker run commands or use docker-compose. &lt;/p&gt;
+&lt;p&gt;The following docker run commands have to be implemented sequentially:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;First, deploy data layers&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;docker run -d —name=redis redis&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;docker run -d —name=db postgres:9.4&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Then, run application services&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;docker run -d —name=vote -p 5000:80 —link redis:redis voting-app&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This web server has a Web UI instance running on port 80&lt;/li&gt;
+&lt;li&gt;Publish it to port 5000 to access it from outside host&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Voting-App source code searches for a Redis service named &lt;code class=&quot;language-text&quot;&gt;redis&lt;/code&gt;: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;redis = Redis(host=“redis”, db=0, socket_timeout=5)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;Need to link container redis to the required service (host=“redis”)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;docker run -d —name=result -p 5001:80 —link db:db result-app&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This web server has a Web UI instance running on port 80&lt;/li&gt;
+&lt;li&gt;Publish it to port 5001 to access it from outside host &lt;em&gt;(5000 is occupied)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Result-App source code searches for a PostgreSQL service named &lt;code class=&quot;language-text&quot;&gt;db&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;pg.connect(‘postgres://postgres@db/postgres&apos;, function(err, client, done) {callback(err, client)}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;Need to link container db to the required service (“db”)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Finally, deploy the worker&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;docker run -d —name=worker —link redis:redis —link db:db worker&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Worker source code looks for &lt;code class=&quot;language-text&quot;&gt;redis&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;db&lt;/code&gt; containers:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Jedis redis = connectToRedis(“redis”)
+Connection dbConn = connectToDB(“db”)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;Need to link both data layer containers to worker service&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now that we can deploy the application using docker run commands, it is very easy to translate the above to docker-compose.yml &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;version: &quot;1&quot; # no need to specify
+redis:
+  image: redis
+db:
+  image: postgres:9.4
+vote:
+  image: voting-app
+  ports:
+    - 5000:80
+  links:
+    - redis
+result:
+  image: result-app
+  ports:
+    - 5001:80
+  links:
+    - db
+worker:
+  image: worker
+  links:
+    - redis
+    - db&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;version: &quot;3&quot;
+services:
+  redis:
+    image: redis:alpine
+    networks:
+      - frontend
+  db:
+    image: postgres:9.4
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    networks:
+      - backend
+  vote:
+    image: voting-app
+    ports:
+      - 5000:80
+    networks:
+      - frontend
+    depends_on:
+      - redis
+  result:
+    image: result-app
+    ports:
+      - 5001:80
+    networks:
+      - backend
+    depends_on:
+      - db
+  worker:
+    image: worker
+    networks:
+      - frontend
+      - backend
+
+networks:
+  frontend:
+  backend:
+
+volumes:
+  db-data:&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And of course, to bring up the application, type in a single command: &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker-compose up&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Congratulations! Your first containerized application is up and running on your localhost.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;more&quot;&gt;Further Reading&lt;/h2&gt;
+&lt;p&gt;Here are some topics that can be explored next, when delving deeper into how Docker works, to be even closer to the “real” environment your code runs in:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Networks and links&lt;/li&gt;
+&lt;li&gt;Docker Swarm&lt;/li&gt;
+&lt;li&gt;Kubernetes (k8s)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Obviously this is far too much for this article, so let me just link to a few “distributions” of k8s:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;minikube: &lt;a href=&quot;https://kubernetes.io/docs/setup/learning-environment/minikube/&quot;&gt;https://kubernetes.io/docs/setup/learning-environment/minikube/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;k3s: &lt;a href=&quot;https://k3s.io/&quot;&gt;https://k3s.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;kind: &lt;a href=&quot;https://github.com/kubernetes-sigs/kind&quot;&gt;https://github.com/kubernetes-sigs/kind&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;mircok8s: &lt;a href=&quot;https://microk8s.io/&quot;&gt;https://microk8s.io/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Diwali 2021 AQI Data Visualization]]></title><description><![CDATA[Lorem ipsum dolor sit amet consectetur adipisicing elit As I was visiting my home in Delhi during Diwali 2021, I was very much looking…]]></description><link>https://kj7kunal.github.io/blog/aqi-dataviz/</link><guid isPermaLink="false">https://kj7kunal.github.io/blog/aqi-dataviz/</guid><pubDate>Mon, 08 Nov 2021 12:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit&lt;/h2&gt;
+&lt;p&gt;As I was visiting my home in Delhi during Diwali 2021, I was very much looking forward
+to celebrate the festival of lights together with my family after almost 7 years!&lt;/p&gt;
+&lt;p&gt;Diwali is a festival celebrated all over India and holds significance for Hindus, Jains,
+Sikhs and Buddhists. For example, for Hindus, it is said to mark the return of Lord Rama to
+Ayodhya, after his 14-year exile and defeat of King Ravana. Since they returned on
+a new moon night (Amavasya), the citizens of Ayodhya lit diyas all over to illuminate the
+city in their jubilant welcome. &lt;/p&gt;
+&lt;p&gt;As is the nature of history, traditions evolve. Since then, modern India looks to
+celebrate the festival of lights with as much pomp and glamour as one can imagine. Fireworks
+are lit all over the world as part of celebrations, and they have always been quite
+a pleasing sight for the eyes. &lt;/p&gt;
+&lt;p&gt;However, as pleasing as it is, a look at the statistics quickly   &lt;/p&gt;
+&lt;p&gt;population of 1.3B Indian people collectively celebrate Diwali by bursting
+crackers and fireworks. &lt;/p&gt;
+&lt;p&gt;A &lt;a href=&quot;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6625239/&quot;&gt;2019 study&lt;/a&gt; conducted by
+researchers in Pune shows that a person can be exposed to anywhere between 4.8 and
+64.5 PPM of PM 2.5 within a few minutes.
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Air_quality_guideline&quot;&gt;WHO’s air quality guidelines&lt;/a&gt;
+recommend an average of 0.025 PPM as safe.&lt;/p&gt;
+&lt;p&gt;Japan has a long history of firework viewing festivals (hanabi), and I had the fortune of
+going to two such events before COVID-19 unfortunately put a stop to them. &lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin: 0 0 30px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/04fd963e3e5a465c84a4c4d5014f320f/c08c5/mountain.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAYCBAX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABtxwC4YBfE//EABkQAAMBAQEAAAAAAAAAAAAAAAABERIhIv/aAAgBAQABBQKI8zhpmmU//8QAFxEBAAMAAAAAAAAAAAAAAAAAAAERIf/aAAgBAwEBPwG4Y//EABYRAAMAAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPwGMjP/EABcQAQEBAQAAAAAAAAAAAAAAAAAxARD/2gAIAQEABj8CXFXv/8QAGhAAAwADAQAAAAAAAAAAAAAAAAERITFRkf/aAAgBAQABPyHjB7sArWELrb0rtsvp/9oADAMBAAIAAwAAABDgD//EABgRAAIDAAAAAAAAAAAAAAAAAAARITFR/9oACAEDAQE/EIaHg//EABURAQEAAAAAAAAAAAAAAAAAAABh/9oACAECAQE/ELKP/8QAHBABAAICAwEAAAAAAAAAAAAAAQARYYEhMXGR/9oACAEBAAE/EAgokLbbjHD4Q3F7hdabR7i9ZlfZ/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Mountain&quot;
+        title=&quot;Mountain&quot;
+        src=&quot;/static/04fd963e3e5a465c84a4c4d5014f320f/1c72d/mountain.jpg&quot;
+        srcset=&quot;/static/04fd963e3e5a465c84a4c4d5014f320f/a80bd/mountain.jpg 148w,
+/static/04fd963e3e5a465c84a4c4d5014f320f/1c91a/mountain.jpg 295w,
+/static/04fd963e3e5a465c84a4c4d5014f320f/1c72d/mountain.jpg 590w,
+/static/04fd963e3e5a465c84a4c4d5014f320f/c08c5/mountain.jpg 640w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Aliquam aliquid rem facere dolorum consectetur consequatur distinctio &lt;a href=&quot;https://github.com/RyanFitzgerald/devfolio&quot;&gt;mollitia id modi repellendus&lt;/a&gt; vero quae dolorem commodi soluta voluptates iusto nobis est dolore provident, porro veritatis placeat nemo impedit! Asperiores culpa delectus hic qui saepe, ipsum quia, exercitationem repellendus magni soluta sit suscipit laborum ducimus.&lt;/p&gt;
+&lt;h2&gt;Asperiores culpa delectus hic qui saepe&lt;/h2&gt;
+&lt;h3&gt;Facere labore velit ad autem&lt;/h3&gt;
+&lt;p&gt;Vitae veritatis quae eius quis vel soluta cumque? Facere labore velit ad autem. Nisi recusandae ducimus molestiae error ipsa quaerat, dignissimos suscipit similique itaque sunt provident quasi minus ut porro. Optio modi harum &lt;em&gt;dolore necessitatibus exercitationem&lt;/em&gt; blanditiis magni error ipsum, odit deleniti eligendi facilis, nesciunt delectus sit nostrum porro quam accusamus excepturi labore sequi maiores soluta?&lt;/p&gt;
+&lt;h3&gt;Porro veritatis placeat nemo impedit&lt;/h3&gt;
+&lt;p&gt;Veritatis et praesentium totam neque earum commodi nesciunt dolor quibusdam incidunt non, ex dicta molestias omnis maiores, maxime velit perferendis tenetur aut porro nostrum, suscipit soluta necessitatibus deserunt nobis. Minus rem dicta eos exercitationem illum consequatur consectetur praesentium voluptas. Dolor inventore quasi necessitatibus odio eaque doloribus.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Repudiandae iusto et iure pariatur aliquid, quisquam, non sed culpa, dignissimos recusandae facilis. Debitis hic, quaerat recusandae ad id, quis nisi perspiciatis quo aliquid natus similique.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Illum esse recusandae facere ipsam fugiat est eaque ducimus facilis provident, distinctio cum aut corporis officiis quo fugit, similique temporibus inventore quidem tempora commodi saepe dicta! Numquam fugiat quibusdam aut ut, voluptatibus accusamus &lt;strong&gt;repellendus quas minus consequuntur&lt;/strong&gt; possimus! Est eaque nesciunt, reiciendis voluptate placeat aspernatur doloremque unde cum et architecto suscipit quam facere corrupti nihil odit eum minima voluptatem nobis.&lt;/p&gt;
+&lt;h2&gt;Voluptatibus accusamus repellendus quas minus&lt;/h2&gt;
+&lt;p&gt;Ipsum quod, ut animi mollitia ipsam repellat, dolore voluptate quibusdam quasi reiciendis necessitatibus odio ea nostrum illo explicabo? Ducimus, in repudiandae. Ratione dolore sequi in animi obcaecati incidunt reprehenderit illo repellat atque aperiam, praesentium eligendi! Sed voluptas voluptatem sunt distinctio pariatur ullam? Laudantium laboriosam.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Numquam fugiat quibusdam aut ut&lt;/li&gt;
+&lt;li&gt;Soluta necessitatibus deserunt nobis&lt;/li&gt;
+&lt;li&gt;Illum esse recusandae facere ipsam&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit inventore sunt, consequatur omnis tempore ullam natus.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Numquam fugiat quibusdam aut ut&lt;/li&gt;
+&lt;li&gt;Soluta necessitatibus deserunt nobis&lt;/li&gt;
+&lt;li&gt;Illum esse recusandae facere ipsam&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit inventore sunt, consequatur omnis tempore ullam natus, porro odit aut, atque asperiores repudiandae corporis quidem esse eos provident velit perferendis magni fugit eum quisquam eligendi. Atque distinctio iure aliquam veniam inventore, soluta est, cum accusantium possimus illum quasi eveniet sed amet ipsa culpa vel in delectus laboriosam repellendus totam. Facere.&lt;/p&gt;
+&lt;h2&gt;Suscipit soluta necessitatibus deserunt nobi&lt;/h2&gt;
+&lt;p&gt;Minus rem dicta eos exercitationem illum consequatur consectetur praesentium voluptas. Dolor inventore quasi necessitatibus odio eaque doloribus.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; helloWorld &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;World&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;Hello &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;name&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token function&quot;&gt;helloWorld&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;helloWorld&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;John Doe&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Numquam fugiat quibusdam aut ut, voluptatibus accusamus repellendus quas minus consequuntur possimus!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[A look back at my first full time job]]></title><description><![CDATA[I have been working with Visional Inc., based in
 Tokyo, Japan, since October 2019. This was my first job after graduation, and I have been…]]></description><link>https://kj7kunal.github.io/blog/visional/</link><guid isPermaLink="false">https://kj7kunal.github.io/blog/visional/</guid><pubDate>Fri, 01 Oct 2021 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I have been working with &lt;a href=&quot;https://www.visional.inc/ja/index.html&quot;&gt;Visional Inc.&lt;/a&gt;, based in
 Tokyo, Japan, since October 2019. This was my first job after graduation, and I have been
 working as an ML/AI Engineer in the AI Team. As it is my &lt;strong&gt;second work anniversary&lt;/strong&gt;, I
@@ -38,7 +977,7 @@ for cross-team communication. &lt;/p&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin: 0 0 30px;&quot;&gt;
       &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/e750cc63f74625ca0094f46ebeacaf20/8a8a2/visional_way.jpg&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
-    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAID/9oADAMBAAIQAxAAAAFKH0zLx1L/xAAbEAABBAMAAAAAAAAAAAAAAAABAAMSEwIhMv/aAAgBAQABBQK0E2bkU902p5L/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEv/aAAgBAwEBPwFT/8QAFREBAQAAAAAAAAAAAAAAAAAAABL/2gAIAQIBAT8Bpb//xAAYEAADAQEAAAAAAAAAAAAAAAAAEDEBEf/aAAgBAQAGPwK8KsVP/8QAGxABAAIDAQEAAAAAAAAAAAAAAQAhETFxQVH/2gAIAQEAAT8hUAzDqeFrxqJ45dRPYlCvkIP/2gAMAwEAAgADAAAAENzv/8QAFxEBAQEBAAAAAAAAAAAAAAAAEQABUf/aAAgBAwEBPxBwYcv/xAAWEQEBAQAAAAAAAAAAAAAAAAARAAH/2gAIAQIBAT8Q3Qyv/8QAGxABAAMBAQEBAAAAAAAAAAAAAQARITFBkaH/2gAIAQEAAT8QNDUWQf0gDS6gOOdYZlVDRIMUq7o+vk6ki3W97AFC+E//2Q==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQAD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAID/9oADAMBAAIQAxAAAAFKG1zLx1L/xAAbEAABBAMAAAAAAAAAAAAAAAABAAMSEwIhMv/aAAgBAQABBQK0E2bkU902p5L/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEv/aAAgBAwEBPwFT/8QAFREBAQAAAAAAAAAAAAAAAAAAABL/2gAIAQIBAT8Bpb//xAAYEAADAQEAAAAAAAAAAAAAAAAAEDEBEf/aAAgBAQAGPwK8KsVP/8QAHBAAAgICAwAAAAAAAAAAAAAAASEAETFBEFFx/9oACAEBAAE/ISQAuBxNDOsQjpaahH2iBdcD/9oADAMBAAIAAwAAABDsL//EABcRAQEBAQAAAAAAAAAAAAAAABEAAVH/2gAIAQMBAT8QcGHL/8QAFhEBAQEAAAAAAAAAAAAAAAAAEQAB/9oACAECAQE/EN0Mr//EABsQAQADAQEBAQAAAAAAAAAAAAEAETEhQZGh/9oACAEBAAE/EDQ1FkH9IA6XUBjNYZVKhokGOVejr6+TUkW633YAUP4T/9k=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
   &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;Visional&quot; title=&quot;Visional&quot; src=&quot;/static/e750cc63f74625ca0094f46ebeacaf20/1c72d/visional_way.jpg&quot; srcset=&quot;/static/e750cc63f74625ca0094f46ebeacaf20/a80bd/visional_way.jpg 148w,
 /static/e750cc63f74625ca0094f46ebeacaf20/1c91a/visional_way.jpg 295w,
 /static/e750cc63f74625ca0094f46ebeacaf20/1c72d/visional_way.jpg 590w,
@@ -464,7 +1403,7 @@ pertaining to the dissemination of knowledge on vision-based AI, particularly in
 object search technology. &lt;/p&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin: 0 0 30px;&quot;&gt;
-      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 53.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQCAwX/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhADEAAAAa2lWAzyZZ//xAAbEAACAQUAAAAAAAAAAAAAAAABAgADERIUMv/aAAgBAQABBQKmmR1lhSxWFjH7/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGBAAAgMAAAAAAAAAAAAAAAAAAAERIDH/2gAIAQEABj8Cg2jP/8QAGRABAQADAQAAAAAAAAAAAAAAAQARMVGh/9oACAEBAAE/IQFSmeDsSmdW5MHLey//2gAMAwEAAgADAAAAEOw//8QAFxEAAwEAAAAAAAAAAAAAAAAAARARQf/aAAgBAwEBPxATV//EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAECAQE/EGf/xAAcEAEBAQABBQAAAAAAAAAAAAABEQAhMWFxgZH/2gAIAQEAAT8QRmDVfXfchXUSRnjHMNJyZIxuSlgWF+5uX//Z&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 53.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQCAwX/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhADEAAAAa2lWAzyZZ//xAAbEAACAQUAAAAAAAAAAAAAAAABAgADERIUMv/aAAgBAQABBQKmmR1lhSxWFjH7/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGBAAAgMAAAAAAAAAAAAAAAAAAAERIDH/2gAIAQEABj8Cg2jP/8QAGhABAQADAQEAAAAAAAAAAAAAAQARMVEhof/aAAgBAQABPyEBUpng77EpnVuTBy32X//aAAwDAQACAAMAAAAQ7D//xAAXEQADAQAAAAAAAAAAAAAAAAABEBFB/9oACAEDAQE/EBNX/8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQIBAT8QZ//EABwQAQEBAAEFAAAAAAAAAAAAAAERACExYXGBkf/aAAgBAQABPxBGYNV9d9yFdRJI8Y5hpOTJGNyUMCwv3Ny//9k=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
   &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;ROSE Lab&quot; title=&quot;ROSE Lab&quot; src=&quot;/static/f05d908a55236f3fa8c430978c4bb1f4/1c72d/ROSELabDoor.jpg&quot; srcset=&quot;/static/f05d908a55236f3fa8c430978c4bb1f4/a80bd/ROSELabDoor.jpg 148w,
 /static/f05d908a55236f3fa8c430978c4bb1f4/1c91a/ROSELabDoor.jpg 295w,
 /static/f05d908a55236f3fa8c430978c4bb1f4/1c72d/ROSELabDoor.jpg 590w,
@@ -519,7 +1458,7 @@ in surveillance videos of multiple probable locations of re-appearance.&lt;/p&gt
 &lt;/ul&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 350px; margin: 0 0 30px;&quot;&gt;
-      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 64.86486486486486%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMBBf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAHsJ5BdBT//xAAcEAEAAgEFAAAAAAAAAAAAAAABAAIDERITISL/2gAIAQEAAQUC3aWVghWz7e5xUyT/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAWEQADAAAAAAAAAAAAAAAAAAABEBH/2gAIAQIBAT8BNX//xAAbEAACAQUAAAAAAAAAAAAAAAAAASECEBFBYf/aAAgBAQAGPwJ7OCm0yZqR/8QAGxABAAICAwAAAAAAAAAAAAAAAQARIUExUYH/2gAIAQEAAT8hERu7itRljVocIMbY3mcBIJoYK6n/2gAMAwEAAgADAAAAEKvv/8QAFREBAQAAAAAAAAAAAAAAAAAAAQD/2gAIAQMBAT8QWL//xAAWEQADAAAAAAAAAAAAAAAAAAAAATH/2gAIAQIBAT8QeBQ//8QAHRABAAICAgMAAAAAAAAAAAAAAQARITFBsXGBof/aAAgBAQABPxBQAZHDWvjG68aC9PmOj9ABr3DYgZhRuzmUYKDZeOoZyMZJQ13P/9k=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 64.86486486486486%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMBBf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAHsJ5BdBT//xAAcEAEAAgEFAAAAAAAAAAAAAAABAAIDERITISL/2gAIAQEAAQUC3aWVghWz7e5xUyT/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAWEQADAAAAAAAAAAAAAAAAAAABEBH/2gAIAQIBAT8BNX//xAAbEAACAQUAAAAAAAAAAAAAAAAAASECEBFBYf/aAAgBAQAGPwJ7OCm0yZqR/8QAGxABAAICAwAAAAAAAAAAAAAAAQARIUExUYH/2gAIAQEAAT8hEBu7itRljVocIMbY3mcBIJoYK6n/2gAMAwEAAgADAAAAELvv/8QAFREBAQAAAAAAAAAAAAAAAAAAAQD/2gAIAQMBAT8QWL//xAAWEQADAAAAAAAAAAAAAAAAAAAAATH/2gAIAQIBAT8QeBQ//8QAHRABAAMAAgMBAAAAAAAAAAAAAQARMSFBcYGxof/aAAgBAQABPxBUAZHTWfjG68aC8fMdH4AGvcMaAyUbZ3KIFBsvj5DPJ3EoZ9n/2Q==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
   &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;ReID system&quot; title=&quot;ReID system&quot; src=&quot;/static/b20075882272da83374658ea9f71803a/70ebb/reid_system.jpg&quot; srcset=&quot;/static/b20075882272da83374658ea9f71803a/a80bd/reid_system.jpg 148w,
 /static/b20075882272da83374658ea9f71803a/1c91a/reid_system.jpg 295w,
 /static/b20075882272da83374658ea9f71803a/70ebb/reid_system.jpg 350w&quot; sizes=&quot;(max-width: 350px) 100vw, 350px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
@@ -864,7 +1803,7 @@ and allowed easy code porting.&lt;/p&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 576px; margin: 0 0 30px;&quot;&gt;
       &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/f28b120c63c9e77f643cab5ac1f70c54/533c1/satellite_swarm.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
-    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 70.27027027027026%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsTAAALEwEAmpwYAAAByklEQVQoz2NgQAIiIiI8PDxABhMTE5BkAwMGgoCFhYWRkRHIEBYWZmVlZWZmFhISAjKI0gzUIyIszMfHp6ampq+vLyAgADQOUzMjDKDrZ2dn9/T0jIqKio6OtrS0hIhgtRlFv6SkpLS0NJBhYmIC1BkUFBQSEgL0P9DnQM1AJ0CMgHDRjQM6UlFRUVBQUFVVNSIiAqg5JiZGRUWFCQyApgD9ApSys7Pz9fVtbGwsLS3j5+NDhBZQqby8vLe3d0pKSnh4uLW1NVAb3M9ARwKDEBgiMjIyQCPMzMyAPoJqZgVrBgavu7s70NtioqJoUcXNzQ00Gug1UVFRMTFx9AADSouKiHJycgIZEKsw4xloIlAc4heEfqCTxMXFgX7j5+dHjgyiEomsrKyGuoacrJyiohIbGzuSzewQLj4gKSmhpqqsoa4qJSWBLM7GBgwwVpBZIOMgCORuIAZxgMIc3EKiEoryyrqKqoaqmsbCYgoCwnJ8gtLcvGL8gpL8AuJsbHzMzFxAo4D+Q7d26bpjyzacXLn53IYdF3YeuLL/6I19R67vO3p9/9FrO/Zf2rjj1LI1B2fN39o5YVl22cSEzMaw2EJr50hZdRteEUUAvKdOCt8nmWEAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 70.27027027027026%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB1klEQVQoz2NgQAIiIiLc3NxABiMjI5BkAwMGgoCFhQWiQUhIiJWVlZmFWVhYGMggSrMwGPDz86mrqxvoGwgICLAwM2O1GWIHOmBnY/f08IyMjIyKirKwsACJsLNjtZkRDKAcSUlJaWlpIMPExCQ6OjoYDIAOYQZbDvQRxAigBiAD6BcUk4COVFBQEBQUVFVVjYiICAoKio2NVVFRAapmYmISFRFRU1MDStnZ2fn6+jY2NpaWlvHz8SFCS1VFFajfx8cnNTU1PDzcysoKqA0eYEBTgGr4+PhkZWXt7ezMzc2BPoJqZmVhAdojJCzk6enp7eUlJiYG1IkcVcD4k5eTB3pNRFhEVFQMPcyA0qIiopycnFxcXLjiGRJOTGCA0AmMVXFxcWAK4efnRw5MohKJnKyshrqGnJycoqISGxs73GZ2MIBxIQgDSEqIq6ooqaupSEmKI4sDo4UNHDEgfYwQBHI2EDMwMoH47FyCouLycko6iqoGKhpGgqLy/MKyvALSXDyifAISfPxirGw8zMzAgAC6nwnd2uUbTq7YeGb11gubdl/effj6oRO3Dx6/DSQPnbi1+9DVLbvPrVh3ZM7i7d2TVuZWTE7Mag6PL7ZxiZJTt+UTUQIApaVOatGkh38AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
   &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;Satellite swarm&quot; title=&quot;Satellite swarm&quot; src=&quot;/static/f28b120c63c9e77f643cab5ac1f70c54/533c1/satellite_swarm.png&quot; srcset=&quot;/static/f28b120c63c9e77f643cab5ac1f70c54/12f09/satellite_swarm.png 148w,
 /static/f28b120c63c9e77f643cab5ac1f70c54/e4a3f/satellite_swarm.png 295w,
 /static/f28b120c63c9e77f643cab5ac1f70c54/533c1/satellite_swarm.png 576w&quot; sizes=&quot;(max-width: 576px) 100vw, 576px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
@@ -935,7 +1874,7 @@ after work!&lt;/p&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin: 0 0 30px;&quot;&gt;
       &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/7291d20fb873e9d83312bd236408512f/47311/free_pizzaaa.jpg&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
-    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 82.43243243243244%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAQABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQBAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAA//aAAwDAQACEAMQAAABqYVejXPJD//EABsQAAICAwEAAAAAAAAAAAAAAAECAAMREiIj/9oACAEBAAEFAnTIp5qOuVPo2sLmf//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAEDAQE/AYf/xAAWEQADAAAAAAAAAAAAAAAAAAABECH/2gAIAQIBAT8BMX//xAAbEAEAAgMBAQAAAAAAAAAAAAABABECMZEhQf/aAAgBAQAGPwLxVjjl9mukKeyhpm2f/8QAHBAAAgMAAwEAAAAAAAAAAAAAAREAITFBUWGR/9oACAEBAAE/IaBB8muAQZ2TphgRYPIHmDWV8jqQqqf/2gAMAwEAAgADAAAAECTf/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAEh/9oACAEDAQE/ELDH/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQAhMf/aAAgBAgEBPxBPVrf/xAAcEAEAAwACAwAAAAAAAAAAAAABABEhMUFRkaH/2gAIAQEAAT8QVdsB9R6QbsaQqXYuoSow0xnMKA+nuL2tFch8oLYaFayf/9k=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 82.43243243243244%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAQABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQBAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAA//aAAwDAQACEAMQAAABqYVejXPJD//EABsQAAICAwEAAAAAAAAAAAAAAAECAAMREiIj/9oACAEBAAEFAnTIp5qOuVPo2sLmf//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAEDAQE/AYf/xAAWEQADAAAAAAAAAAAAAAAAAAABECH/2gAIAQIBAT8BMX//xAAbEAEAAgMBAQAAAAAAAAAAAAABABECMZEhQf/aAAgBAQAGPwLxVjjl9mukKeyhpm2f/8QAHBAAAgMAAwEAAAAAAAAAAAAAAREAITFBUWGR/9oACAEBAAE/IaBB8muAQZ2TphgRYPIHmDWV8jqQqqf/2gAMAwEAAgADAAAAECTf/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAEh/9oACAEDAQE/ELDH/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEhMf/aAAgBAgEBPxBnop//xAAcEAEAAwACAwAAAAAAAAAAAAABABEhMUFRkaH/2gAIAQEAAT8QVdsB9R6RbsaQqXYuoSow0xnMKA+nuL2tFch8oLYaFayf/9k=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
   &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;Pizza Treats&quot; title=&quot;Pizza Treats&quot; src=&quot;/static/7291d20fb873e9d83312bd236408512f/1c72d/free_pizzaaa.jpg&quot; srcset=&quot;/static/7291d20fb873e9d83312bd236408512f/a80bd/free_pizzaaa.jpg 148w,
 /static/7291d20fb873e9d83312bd236408512f/1c91a/free_pizzaaa.jpg 295w,
 /static/7291d20fb873e9d83312bd236408512f/1c72d/free_pizzaaa.jpg 590w,
@@ -958,7 +1897,7 @@ after work!&lt;/p&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAQCAQX/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgD/2gAMAwEAAhADEAAAAbcUeWzpMzdIM8A//8QAHBAAAgICAwAAAAAAAAAAAAAAAQIAAwQSETEy/9oACAEBAAEFAg4jXqIeSV1VWbbKVgZ1LmKWDz//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAVEQEBAAAAAAAAAAAAAAAAAAAQAf/aAAgBAgEBPwEh/8QAGhAAAgMBAQAAAAAAAAAAAAAAAAERISICEP/aAAgBAQAGPwIpElwNRiKNN+ctMR//xAAdEAEAAgMAAwEAAAAAAAAAAAABABEhMUFRYYGh/9oACAEBAAE/ISnvxMYqupsDn8lJb6ggosKHa3AVs3yO1cxEzZER1HwNT//aAAwDAQACAAMAAAAQLDAC/8QAGREAAwADAAAAAAAAAAAAAAAAAAERECFB/9oACAEDAQE/ENUqH3H/xAAXEQEBAQEAAAAAAAAAAAAAAAABABEx/9oACAECAQE/EDUkRy7nt//EABoQAQEBAQEBAQAAAAAAAAAAAAERACExQVH/2gAIAQEAAT8QHFv1XmNGMlHHXl2UPx+ZgE+rFdTAAQHthMZRSInx7musVD7y5lBSFQPOY0ZweG//2Q==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAQCAQX/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgD/2gAMAwEAAhADEAAAAbcUeWzpMzdIM8A//8QAHBAAAgICAwAAAAAAAAAAAAAAAQIAAwQSETEy/9oACAEBAAEFAg4jXqIeSV1VWbbKVgZ1LmKWDz//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAVEQEBAAAAAAAAAAAAAAAAAAAQAf/aAAgBAgEBPwEh/8QAGhAAAgMBAQAAAAAAAAAAAAAAAAECESEiEP/aAAgBAQAGPwIxFm0NVxWHTl5FpiP/xAAdEAEAAgMAAwEAAAAAAAAAAAABABEhMUFRYYGh/9oACAEBAAE/ISnvxMYqupsDn8lJb6ggosKHa3AVsXyO1cxEzZER1HwNT//aAAwDAQACAAMAAAAQLDAC/8QAGREAAwADAAAAAAAAAAAAAAAAAAERECFB/9oACAEDAQE/ENUqH3H/xAAXEQEBAQEAAAAAAAAAAAAAAAABABEx/9oACAECAQE/EDUkRy7nt//EABoQAQEBAQEBAQAAAAAAAAAAAAERACExQVH/2gAIAQEAAT8QHFv1XmNGMlDHXl2UPx+ZgE+rFdTAAQHthMRRSInx7musVD7y5lBSFQPOY0Q4PDf/2Q==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1003,7 +1942,7 @@ after work!&lt;/p&gt;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 66.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAYCBAX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABtxwC4YBfE//EABgQAAMBAQAAAAAAAAAAAAAAAAABERIi/9oACAEBAAEFAojmcmmaZT//xAAXEQEAAwAAAAAAAAAAAAAAAAAAAREh/9oACAEDAQE/Abhj/8QAFhEAAwAAAAAAAAAAAAAAAAAAAAER/9oACAECAQE/AYyM/8QAFxABAQEBAAAAAAAAAAAAAAAAADEBEP/aAAgBAQAGPwJcVV5//8QAGhAAAwEBAQEAAAAAAAAAAAAAAAERMVEhkf/aAAgBAQABPyHjB7eAqWC619K6xfT/2gAMAwEAAgADAAAAEOAP/8QAGBEAAgMAAAAAAAAAAAAAAAAAABEhMVH/2gAIAQMBAT8QhoeD/8QAFREBAQAAAAAAAAAAAAAAAAAAAGH/2gAIAQIBAT8Qoo//xAAcEAEAAgIDAQAAAAAAAAAAAAABABEhYTFxkYH/2gAIAQEAAT8QACiQttuMYfSZg94XHxtHmDtm17P/2Q==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 66.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAYCBAX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABtxwC4YBfE//EABkQAAMBAQEAAAAAAAAAAAAAAAABERIhIv/aAAgBAQABBQKI8zhpmmU//8QAFxEBAAMAAAAAAAAAAAAAAAAAAAERIf/aAAgBAwEBPwG4Y//EABYRAAMAAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPwGMjP/EABcQAQEBAQAAAAAAAAAAAAAAAAAxARD/2gAIAQEABj8CXFXv/8QAGhAAAwADAQAAAAAAAAAAAAAAAAERITFRkf/aAAgBAQABPyHjB7sArWELrb0rtsvp/9oADAMBAAIAAwAAABDgD//EABgRAAIDAAAAAAAAAAAAAAAAAAARITFR/9oACAEDAQE/EIaHg//EABURAQEAAAAAAAAAAAAAAAAAAABh/9oACAECAQE/ELKP/8QAHBABAAICAwEAAAAAAAAAAAAAAQARYYEhMXGR/9oACAEBAAE/EAgokLbbjHD4Q3F7hdabR7i9ZlfZ/9k=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
