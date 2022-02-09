@@ -35,6 +35,7 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
     "sanitize-html": ">=2.3.2",
+    "sharp": "^0.29.3",
     "trim": ">=0.0.3",
     "trim-newlines": ">=3.0.1"
   },
