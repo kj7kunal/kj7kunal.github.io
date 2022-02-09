@@ -19,7 +19,7 @@ module.exports = {
     // Optional: Email ID
     mail: `kjkunal7996@gmail.com`,
     // Content of the About Me section
-    about: `I'm a Machine Learning Engineer passionate about working in challenging and high-impact environments, and building automation pipelines that help save human time and effort. I take up side projects actively and like spending caffeinated lofi evenings working on them. I recently, and very reluctantly, started competitive programming for interviewing, but caved in to the benefits.`,
+    about: `I'm a Machine Learning Engineer passionate about working in challenging and high-impact environments, and building automation pipelines that help save human time and effort. I love investigating new cutting-edge technologies and spending caffeinated lofi evenings implementing them in my personal projects. In my free time, I like to go long-distance running, visit coffee shops or learn the piano!`,
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
