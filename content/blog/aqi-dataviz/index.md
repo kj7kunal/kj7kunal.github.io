@@ -11,30 +11,39 @@ to celebrate the festival of lights together with my family after almost 7 years
 ```
 ## Life Stages of The Firework
 
-- <a href="#history">Birth</a>
-- <a href="#present-day">Maturing</a>
-- <a href="#impact">Ignition</a>
-- <a href="#visualization">Illumination</a>
-- <a href="#discussion">Fading</a>
-- <a href="#footnote">Memory</a>
+- <a href="#birth">Birth</a>
+- <a href="#maturing">Maturing</a>
+- <a href="#ignition">Ignition</a>
+- <a href="#illumination">Illumination</a>
+- <a href="#fading">Fading</a>
+- <a href="#memory">Memory</a>
 
 ```
 ```
 
-## History
+<h2 id="birth">History</h2>
+
+*Birth*
+
 Diwali is a festival celebrated all over India and holds significance for Hindus, Jains,
 Sikhs and Buddhists. For example, for Hindus, it is said to mark the return of Lord Rama to
 Ayodhya, after his 14-year exile and defeat of King Ravana. Since they returned on
 a new moon night (Amavasya), the citizens of Ayodhya lit diyas all over to illuminate the
 city in their jubilant welcome. 
 
-## Present Day
+<h2 id="maturing">Present Day</h2>
+
+*Maturing*
+
 As is the nature of history, traditions evolve. Since then, modern India looks to
 celebrate the festival of lights with as much pomp and glamour as one can imagine. Fireworks
 are lit all over the world as part of celebrations, and they have always been quite
 a pleasing sight for the eyes. 
 
-## Impact
+<h2 id="ignition">Impact</h2>
+
+*Ignition*
+
 However, as pleasing as it is, a look at the statistics quickly reveals the environmental impact
 of Diwali celebrations. Fireworks produce high levels of air pollution, and the smoke and
 particulate matter can cause serious health issues, especially for those with pre-existing
@@ -49,7 +58,10 @@ researchers in Pune shows that a person can be exposed to anywhere between 4.8 a
 [WHO's air quality guidelines](https://en.wikipedia.org/wiki/Air_quality_guideline)
 recommend an average of 0.025 PPM as safe.
 
-## Visualization
+<h2 id="illumination">Visualization</h2>
+
+*Illumination*
+
 Now imagine a population of 1.408B Indian people collectively celebrate Diwali by bursting
 crackers and fireworks at the same time. 
 
@@ -70,16 +82,23 @@ _Here's one that zooms in on my city._
   <img src="https://i.redd.it/tixxtw94zwka1.gif" alt="Diwali PM2.5 in Delhi"/>
 </p>
 
-## Discussion
+<h2 id="fading">Discussion</h2>
+
+*Fading*
 
 **Data Source**: OpenAQ API &emsp; **Tools**: Python (pandas, matplotlib)
 
 What you saw above were the average hourly PM2.5 emissions before and after Diwali (04-11-2021).
 
+The larger "fireworks" seem to be on the day after Diwali. *Go figure.*
+
 I also [posted the dataviz in **r/dataisbeautiful**](https://www.reddit.com/r/dataisbeautiful/comments/qnyfng/oc_diwali_2021_in_india_pm25_levels_or_fireworks/) where I discussed about the inferences
 we could make from the visualization.
 
-## Footnote
+<h2 id="memory">Footnote</h2>
+
+*Memory*
+
 There have been several initiatives in recent years to encourage eco-friendly Diwali celebrations. 
 For example, people are now opting for handmade diyas or using electric lights instead of fireworks. 
 Some communities have even come together to organize Diwali celebrations that do not involve any fireworks at all.
