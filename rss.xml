@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kunal Jain | Machine Learning Engineer]]></title><description><![CDATA[Machine Learning Engineer currently in Tokyo, Japan]]></description><link>https://kj7kunal.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 28 Feb 2023 09:51:11 GMT</lastBuildDate><item><title><![CDATA[Docker Basics]]></title><description><![CDATA[As a software developer, especially an ML Engineer working in a cross-functioning team, I have come to understand the importance of creating…]]></description><link>https://kj7kunal.github.io/blog/docker-basics/</link><guid isPermaLink="false">https://kj7kunal.github.io/blog/docker-basics/</guid><pubDate>Sat, 11 Dec 2021 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;As a software developer, especially an ML Engineer working in a cross-functioning team, I have come to understand the importance of creating reproducible code, that can be transferred from your dev machine to the staging or production environment with minimal required settings. &lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kunal Jain | Machine Learning Engineer]]></title><description><![CDATA[Machine Learning Engineer currently in Tokyo, Japan]]></description><link>https://kj7kunal.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 28 Feb 2023 12:04:28 GMT</lastBuildDate><item><title><![CDATA[Docker Basics]]></title><description><![CDATA[As a software developer, especially an ML Engineer working in a cross-functioning team, I have come to understand the importance of creating…]]></description><link>https://kj7kunal.github.io/blog/docker-basics/</link><guid isPermaLink="false">https://kj7kunal.github.io/blog/docker-basics/</guid><pubDate>Sat, 11 Dec 2021 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;As a software developer, especially an ML Engineer working in a cross-functioning team, I have come to understand the importance of creating reproducible code, that can be transferred from your dev machine to the staging or production environment with minimal required settings. &lt;/p&gt;
 &lt;p&gt;Docker is one of the most popular tools used to containerize and deploy applications. It makes building, deploying and managing applications extremely simple. It does this by using something called containers, which allow the developer to package up an application with all the parts it needs, with their own set of software, libraries and configuration file associated with them. Not only is each container isolated from other containers, they are easily reproducible entities that allow for easy abstraction during testing and deployment.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://12factor.net/&quot;&gt;The Twelve-Factor App&lt;/a&gt; comes up with a general guide of basic requirements any developer who builds, deploys or manages applications which run as a service should follow. And using Docker means you’re already satisfying the majority of them.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -853,91 +853,78 @@ volumes:
 &lt;li&gt;k3s: &lt;a href=&quot;https://k3s.io/&quot;&gt;https://k3s.io/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;kind: &lt;a href=&quot;https://github.com/kubernetes-sigs/kind&quot;&gt;https://github.com/kubernetes-sigs/kind&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;mircok8s: &lt;a href=&quot;https://microk8s.io/&quot;&gt;https://microk8s.io/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Diwali 2021 AQI Data Visualization]]></title><description><![CDATA[Lorem ipsum dolor sit amet consectetur adipisicing elit As I was visiting my home in Delhi during Diwali 2021, I was very much looking…]]></description><link>https://kj7kunal.github.io/blog/aqi-dataviz/</link><guid isPermaLink="false">https://kj7kunal.github.io/blog/aqi-dataviz/</guid><pubDate>Mon, 08 Nov 2021 12:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit&lt;/h2&gt;
-&lt;p&gt;As I was visiting my home in Delhi during Diwali 2021, I was very much looking forward
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Diwali 2021 AQI Data Visualization]]></title><description><![CDATA[As I was visiting my home in Delhi during Diwali 2021, I was very much looking forward
+to celebrate the festival of lights together with my…]]></description><link>https://kj7kunal.github.io/blog/aqi-dataviz/</link><guid isPermaLink="false">https://kj7kunal.github.io/blog/aqi-dataviz/</guid><pubDate>Mon, 08 Nov 2021 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;As I was visiting my home in Delhi during Diwali 2021, I was very much looking forward
 to celebrate the festival of lights together with my family after almost 7 years!&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Life Stages of The Firework&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#birth&quot;&gt;Birth&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#maturing&quot;&gt;Maturing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#ignition&quot;&gt;Ignition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#illumination&quot;&gt;Illumination&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#fading&quot;&gt;Fading&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#memory&quot;&gt;Memory&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;birth&quot;&gt;History&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Birth&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Diwali is a festival celebrated all over India and holds significance for Hindus, Jains,
 Sikhs and Buddhists. For example, for Hindus, it is said to mark the return of Lord Rama to
 Ayodhya, after his 14-year exile and defeat of King Ravana. Since they returned on
 a new moon night (Amavasya), the citizens of Ayodhya lit diyas all over to illuminate the
 city in their jubilant welcome. &lt;/p&gt;
+&lt;h2 id=&quot;maturing&quot;&gt;Present Day&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Maturing&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;As is the nature of history, traditions evolve. Since then, modern India looks to
 celebrate the festival of lights with as much pomp and glamour as one can imagine. Fireworks
 are lit all over the world as part of celebrations, and they have always been quite
 a pleasing sight for the eyes. &lt;/p&gt;
-&lt;p&gt;However, as pleasing as it is, a look at the statistics quickly   &lt;/p&gt;
-&lt;p&gt;population of 1.3B Indian people collectively celebrate Diwali by bursting
-crackers and fireworks. &lt;/p&gt;
+&lt;h2 id=&quot;ignition&quot;&gt;Impact&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Ignition&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;However, as pleasing as it is, a look at the statistics quickly reveals the environmental impact
+of Diwali celebrations. Fireworks produce high levels of air pollution, and the smoke and
+particulate matter can cause serious health issues, especially for those with pre-existing
+respiratory problems.&lt;/p&gt;
+&lt;p&gt;Consequences of the celebration last all winter. The current AQI is deemed “SEVERE” - even
+healthy individuals can develop respiratory illnesses.&lt;/p&gt;
 &lt;p&gt;A &lt;a href=&quot;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6625239/&quot;&gt;2019 study&lt;/a&gt; conducted by
 researchers in Pune shows that a person can be exposed to anywhere between 4.8 and
 64.5 PPM of PM 2.5 within a few minutes.
 &lt;a href=&quot;https://en.wikipedia.org/wiki/Air_quality_guideline&quot;&gt;WHO’s air quality guidelines&lt;/a&gt;
 recommend an average of 0.025 PPM as safe.&lt;/p&gt;
-&lt;p&gt;Japan has a long history of firework viewing festivals (hanabi), and I had the fortune of
-going to two such events before COVID-19 unfortunately put a stop to them. &lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin: 0 0 30px;&quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/04fd963e3e5a465c84a4c4d5014f320f/c08c5/mountain.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 66.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAYCBAX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABtxwC4YBfE//EABkQAAMBAQEAAAAAAAAAAAAAAAABERIhIv/aAAgBAQABBQKI8zhpmmU//8QAFxEBAAMAAAAAAAAAAAAAAAAAAAERIf/aAAgBAwEBPwG4Y//EABYRAAMAAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPwGMjP/EABcQAQEBAQAAAAAAAAAAAAAAAAAxARD/2gAIAQEABj8CXFXv/8QAGhAAAwADAQAAAAAAAAAAAAAAAAERITFRkf/aAAgBAQABPyHjB7sArWELrb0rtsvp/9oADAMBAAIAAwAAABDgD//EABgRAAIDAAAAAAAAAAAAAAAAAAARITFR/9oACAEDAQE/EIaHg//EABURAQEAAAAAAAAAAAAAAAAAAABh/9oACAECAQE/ELKP/8QAHBABAAICAwEAAAAAAAAAAAAAAQARYYEhMXGR/9oACAEBAAE/EAgokLbbjHD4Q3F7hdabR7i9ZlfZ/9k=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Mountain&quot;
-        title=&quot;Mountain&quot;
-        src=&quot;/static/04fd963e3e5a465c84a4c4d5014f320f/1c72d/mountain.jpg&quot;
-        srcset=&quot;/static/04fd963e3e5a465c84a4c4d5014f320f/a80bd/mountain.jpg 148w,
-/static/04fd963e3e5a465c84a4c4d5014f320f/1c91a/mountain.jpg 295w,
-/static/04fd963e3e5a465c84a4c4d5014f320f/1c72d/mountain.jpg 590w,
-/static/04fd963e3e5a465c84a4c4d5014f320f/c08c5/mountain.jpg 640w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Aliquam aliquid rem facere dolorum consectetur consequatur distinctio &lt;a href=&quot;https://github.com/RyanFitzgerald/devfolio&quot;&gt;mollitia id modi repellendus&lt;/a&gt; vero quae dolorem commodi soluta voluptates iusto nobis est dolore provident, porro veritatis placeat nemo impedit! Asperiores culpa delectus hic qui saepe, ipsum quia, exercitationem repellendus magni soluta sit suscipit laborum ducimus.&lt;/p&gt;
-&lt;h2&gt;Asperiores culpa delectus hic qui saepe&lt;/h2&gt;
-&lt;h3&gt;Facere labore velit ad autem&lt;/h3&gt;
-&lt;p&gt;Vitae veritatis quae eius quis vel soluta cumque? Facere labore velit ad autem. Nisi recusandae ducimus molestiae error ipsa quaerat, dignissimos suscipit similique itaque sunt provident quasi minus ut porro. Optio modi harum &lt;em&gt;dolore necessitatibus exercitationem&lt;/em&gt; blanditiis magni error ipsum, odit deleniti eligendi facilis, nesciunt delectus sit nostrum porro quam accusamus excepturi labore sequi maiores soluta?&lt;/p&gt;
-&lt;h3&gt;Porro veritatis placeat nemo impedit&lt;/h3&gt;
-&lt;p&gt;Veritatis et praesentium totam neque earum commodi nesciunt dolor quibusdam incidunt non, ex dicta molestias omnis maiores, maxime velit perferendis tenetur aut porro nostrum, suscipit soluta necessitatibus deserunt nobis. Minus rem dicta eos exercitationem illum consequatur consectetur praesentium voluptas. Dolor inventore quasi necessitatibus odio eaque doloribus.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Repudiandae iusto et iure pariatur aliquid, quisquam, non sed culpa, dignissimos recusandae facilis. Debitis hic, quaerat recusandae ad id, quis nisi perspiciatis quo aliquid natus similique.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Illum esse recusandae facere ipsam fugiat est eaque ducimus facilis provident, distinctio cum aut corporis officiis quo fugit, similique temporibus inventore quidem tempora commodi saepe dicta! Numquam fugiat quibusdam aut ut, voluptatibus accusamus &lt;strong&gt;repellendus quas minus consequuntur&lt;/strong&gt; possimus! Est eaque nesciunt, reiciendis voluptate placeat aspernatur doloremque unde cum et architecto suscipit quam facere corrupti nihil odit eum minima voluptatem nobis.&lt;/p&gt;
-&lt;h2&gt;Voluptatibus accusamus repellendus quas minus&lt;/h2&gt;
-&lt;p&gt;Ipsum quod, ut animi mollitia ipsam repellat, dolore voluptate quibusdam quasi reiciendis necessitatibus odio ea nostrum illo explicabo? Ducimus, in repudiandae. Ratione dolore sequi in animi obcaecati incidunt reprehenderit illo repellat atque aperiam, praesentium eligendi! Sed voluptas voluptatem sunt distinctio pariatur ullam? Laudantium laboriosam.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Numquam fugiat quibusdam aut ut&lt;/li&gt;
-&lt;li&gt;Soluta necessitatibus deserunt nobis&lt;/li&gt;
-&lt;li&gt;Illum esse recusandae facere ipsam&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit inventore sunt, consequatur omnis tempore ullam natus.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Numquam fugiat quibusdam aut ut&lt;/li&gt;
-&lt;li&gt;Soluta necessitatibus deserunt nobis&lt;/li&gt;
-&lt;li&gt;Illum esse recusandae facere ipsam&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit inventore sunt, consequatur omnis tempore ullam natus, porro odit aut, atque asperiores repudiandae corporis quidem esse eos provident velit perferendis magni fugit eum quisquam eligendi. Atque distinctio iure aliquam veniam inventore, soluta est, cum accusantium possimus illum quasi eveniet sed amet ipsa culpa vel in delectus laboriosam repellendus totam. Facere.&lt;/p&gt;
-&lt;h2&gt;Suscipit soluta necessitatibus deserunt nobi&lt;/h2&gt;
-&lt;p&gt;Minus rem dicta eos exercitationem illum consequatur consectetur praesentium voluptas. Dolor inventore quasi necessitatibus odio eaque doloribus.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; helloWorld &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;name &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;World&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;Hello &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;name&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token function&quot;&gt;helloWorld&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token function&quot;&gt;helloWorld&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;John Doe&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Numquam fugiat quibusdam aut ut, voluptatibus accusamus repellendus quas minus consequuntur possimus!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[A look back at my first full time job]]></title><description><![CDATA[I have been working with Visional Inc., based in
+&lt;h2 id=&quot;illumination&quot;&gt;Visualization&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Illumination&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Now imagine a population of 1.408B Indian people collectively celebrate Diwali by bursting
+crackers and fireworks at the same time. &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Can’t? Well, that’s why I made this visualization!&lt;/em&gt; &lt;/p&gt;
+&lt;h3&gt;India&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Note: These are not fireworks.&lt;/em&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;https://i.redd.it/mm3r1dyboyx71.gif&quot; alt=&quot;Diwali PM2.5 in India&quot;&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;But they are.&lt;/em&gt;&lt;/p&gt;
+&lt;h3&gt;Delhi&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Here’s one that zooms in on my city.&lt;/em&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;https://i.redd.it/tixxtw94zwka1.gif&quot; alt=&quot;Diwali PM2.5 in Delhi&quot;&gt;
+&lt;/p&gt;
+&lt;h2 id=&quot;fading&quot;&gt;Discussion&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Fading&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Data Source&lt;/strong&gt;: OpenAQ API   &lt;strong&gt;Tools&lt;/strong&gt;: Python (pandas, matplotlib)&lt;/p&gt;
+&lt;p&gt;What you saw above were the average hourly PM2.5 emissions before and after Diwali (04-11-2021).&lt;/p&gt;
+&lt;p&gt;The larger “fireworks” seem to be on the day after Diwali. &lt;em&gt;Go figure.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I also &lt;a href=&quot;https://www.reddit.com/r/dataisbeautiful/comments/qnyfng/oc_diwali_2021_in_india_pm25_levels_or_fireworks/&quot;&gt;posted the dataviz in &lt;strong&gt;r/dataisbeautiful&lt;/strong&gt;&lt;/a&gt; where I discussed about the inferences
+we could make from the visualization.&lt;/p&gt;
+&lt;h2 id=&quot;memory&quot;&gt;Footnote&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Memory&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;There have been several initiatives in recent years to encourage eco-friendly Diwali celebrations.
+For example, people are now opting for handmade diyas or using electric lights instead of fireworks.
+Some communities have even come together to organize Diwali celebrations that do not involve any fireworks at all.&lt;/p&gt;
+&lt;p&gt;It’s important to remember that while it’s great to celebrate our traditions and culture, it’s equally
+important to be mindful of the impact that our actions have on the environment and the health of others.
+By choosing to celebrate Diwali in an eco-friendly and responsible way, we can still enjoy the
+festival while also preserving the planet for future generations.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[A look back at my first full time job]]></title><description><![CDATA[I have been working with Visional Inc., based in
 Tokyo, Japan, since October 2019. This was my first job after graduation, and I have been…]]></description><link>https://kj7kunal.github.io/blog/visional/</link><guid isPermaLink="false">https://kj7kunal.github.io/blog/visional/</guid><pubDate>Fri, 01 Oct 2021 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I have been working with &lt;a href=&quot;https://www.visional.inc/ja/index.html&quot;&gt;Visional Inc.&lt;/a&gt;, based in
 Tokyo, Japan, since October 2019. This was my first job after graduation, and I have been
 working as an ML/AI Engineer in the AI Team. As it is my &lt;strong&gt;second work anniversary&lt;/strong&gt;, I
