@@ -264,7 +264,7 @@ trained over NVD/CVE Descriptions as ground truth.
 
 <h3 id="preparation">Interview Preparation</h3>
 
-After [my internship with ROSE Lab](/blog/ntu-intern) in the summer of 2018,
+After [my internship with ROSE Lab](/blog/2018-ntu-intern) in the summer of 2018,
 I immediately started to prepare for job interviews in the 
 [IIT Kharagpur Placement Season 2018](https://www.shiksha.com/b-tech/articles/iit-kharagpur-placements-blogId-20045#:~:text=placements%202018%20below.-,IIT%20Kharagpur%20placements,-are%20conducted%20for).
 Placements are a time of extensive planning and preparation, and depending on their
