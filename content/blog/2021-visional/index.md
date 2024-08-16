@@ -256,6 +256,9 @@ trained over NVD/CVE Descriptions as ground truth.
 
 <h2 id="experience">My Experience</h2>
 
+<p align="center">
+  <img src="first_day.png" alt="Placement Meme"/>
+</p>
 
 ```
 ```
