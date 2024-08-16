@@ -34,7 +34,7 @@
     "react-dev-utils": ">=11.0.4",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
-    "sanitize-html": ">=2.3.2",
+    "sanitize-html": ">=2.13.0",
     "sharp": "^0.30.5",
     "trim": ">=0.0.3",
     "trim-newlines": ">=3.0.1"
