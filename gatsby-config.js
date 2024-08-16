@@ -25,17 +25,17 @@ module.exports = {
       {
         name: 'Visional Inc. (formerly BizReach Inc.)',
         description: 'Machine Learning Engineer, October 2019 - Present',
-        link: '/blog/visional',
+        link: '/blog/2024-visional',
       },
       {
         name: 'Nanyang Technological University, Singapore',
         description: 'Summer Research Internship, May 2018 - July 2018',
-        link: '/blog/ntu-intern',
+        link: '/blog/2018-ntu-intern',
       },
       {
         name: 'ISRO Satellite Centre, Bangalore',
         description: 'Summer Research Internship, May 2017 - July 2017',
-        link: '/blog/isro-intern',
+        link: '/blog/2017-isro-intern',
       },
     ],
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
