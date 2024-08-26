@@ -187,6 +187,8 @@ The system required **high cross-team collaboration** with product backend, fron
 and QA teams. I took the initiative to create the **first Datadog dashboard for the AI ​​team**, 
 making it easy to share weekly insights, respond to incidents, improving the flow of communication on the AI side.
 
+<p id="award"></p>
+
 **The business impact? A [40% improvement in our scout-reception KPIs](https://www.bizreach.co.jp/pressroom/pressrelease/2023/070601.html)!** 
 
 Oh, and the team received the **Best Project Team Award** at the BizReach Awards 2023. 
