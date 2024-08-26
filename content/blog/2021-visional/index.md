@@ -55,21 +55,18 @@ structure. The company's main focus is primarily in the HR Tech and SaaS busines
 digital transformation (DX) of industry and support the improvement of productivity in Japan.
 The group broadly has a heirarchical structure with the following products and services:
 
-- [Visional Corporation](https://www.visional.inc/ja/index.html), the holding company,
-supports the group management
-- [Bizreach Corporation](https://www.bizreach.co.jp/), responsible for the management of
-the original HR Tech and SaaS businesses
-  - [Bizreach](https://www.bizreach.jp/), a job-change website that connects companies with
-  human resources with immediate availability
+> [Visional Corporation](https://www.visional.inc/ja/index.html), the holding company, supports the group management
+
+> [Bizreach Corporation](https://www.bizreach.co.jp/), responsible for the management of the original HR Tech and SaaS businesses
+  - [Bizreach](https://www.bizreach.jp/), a job-change website that connects companies with human resources with immediate availability
   - [CareerTrek](https://www.careertrek.com/), a job search site for young graduates
   - [HRMOS](https://hrmos.co/), a human resources management cloud platform
   - [Campus](https://br-campus.jp/), an alumni network service for career consultation
-- [Visional Incubation Corporation](https://www.visional.inc/ja/visional-incubation.html),
-responsible for new business development and acquisitions
+
+> [Visional Incubation Corporation](https://www.visional.inc/ja/visional-incubation.html), responsible for new business development and acquisitions
   - [Succeed](https://br-succeed.jp/), an M&A platform for business succession
   - [Yamory](https://yamory.io/), security vulnerability management cloud for IT systems
-  - [BizHint](https://bizhint.jp/), a website providing "business tips" in the form of
-  keywords, case studies and solutions
+  - [BizHint](https://bizhint.jp/), a website providing "business tips" in the form of keywords, case studies and solutions
   - [BINAR](https://binar.jp/), a career change platform for highly specialized IT Engineers
   - [StanBy](https://jp.stanby.com/), a job-search engine jointly owned with Yahoo Japan
 
@@ -94,12 +91,11 @@ frequently between the roles and responsibilities of a **Data Scientist**, an **
 as well as a **Research Scientist** for different projects undertaken at a time.
 
 An average ML project includes the following:
-
-- understanding the requirements of the service teams
-- analyzing data to optimize and improve services
-- developing custom data models, algorithms and full-stack systems
-- collaborating with service teams to deploy the AI features in production
-- considering evaluation metrics/systems to quantify/monitor outcomes
+> - understanding the requirements of the service teams
+> - analyzing data to optimize and improve services
+> - developing custom data models, algorithms and full-stack systems
+> - collaborating with service teams to deploy the AI features in production
+> - considering evaluation metrics/systems to quantify/monitor outcomes
 
 The projects require a good understanding of ML techniques, algorithms and statistics. Most
 of the work also involves Natural Language Processing techniques. I have also been able to
@@ -127,13 +123,13 @@ using **Docker**, **Terraform** and **AWS**. Some text post-processing was imple
 a dictionary of Japanese financial terms.
 
 The pipeline roughly consists of the following steps:
-- Parsing OCR request from AWS SQS and AWS S3
-- Getting page images from PDF and fixing text orientation
-- Table detection and extraction from page image
-- OCR Text Detection request to Google Vision API
-- Alignment of Google Vision API annotations
-- Proofreading result text using a dictionary
-- Save output XLS workbook to AWS S3
+> - Parsing OCR request from AWS SQS and AWS S3
+> - Getting page images from PDF and fixing text orientation
+> - Table detection and extraction from page image
+> - OCR Text Detection request to Google Vision API
+> - Alignment of Google Vision API annotations
+> - Proofreading result text using a dictionary
+> - Save output XLS workbook to AWS S3
 
 <p align="center">
   <img src="focr.png" alt="Financial Document OCR"/>
@@ -155,11 +151,11 @@ address images using character images available in the [ETL](http://etlcdb.db.ai
 and [EMNIST](https://www.nist.gov/itl/products-and-services/emnist-dataset) datasets.
 Data augmentation was introduced to account for variances in handwriting:
 
-- shape of characters
-- spacing between characters (narrow or wide)
-- rotation of characters (straight or slant)
-- size of characters (big or small)
-- stroke strength of characters (thick or thin)
+> - shape of characters
+> - spacing between characters (narrow or wide)
+> - rotation of characters (straight or slant)
+> - size of characters (big or small)
+> - stroke strength of characters (thick or thin)
 
 <p align="center">
   <img src="hocr_sent.png" alt="Sentence Image"/>
@@ -205,11 +201,9 @@ internal HR to visualize activity and messaging trends on the Visional Slack wor
 to clean the unstructured conversational data. The following are some of the features have
 been implemented in the GUI:
 
-- Conversation topic transitions, to visualize the change over time in underlying topics
-of conversation, discovered using **LDA topic modeling**
-- Interactive User/Channel wordclouds, to visualize a summarized history of conversation
-keywords
-- Matching similar users, based on high topic probabilities in conversations
+> - Conversation topic transitions, to visualize the change over time in underlying topics of conversation, discovered using **LDA topic modeling**
+> - Interactive User/Channel wordclouds, to visualize a summarized history of conversation keywords
+> - Matching similar users, based on high topic probabilities in conversations
 
 <h3 id="p4">HeadHunter Recommendation</h3>
 
@@ -286,11 +280,9 @@ open to multiple opportunities. From information gathered from seniors as well a
 company introductory talks, I understood that most of the tests involved similar formats.
 On the basis of this information, my preparation included brushing up on:
 
-- Analytical/Probability skills: [Fifty Challenging Problems in Probability with Solutions](https://mbapreponline.files.wordpress.com/2013/07/fifty_challenging_problems_in__2.pdf)
-- Machine Learning theory: my notes from online courses on Coursera such as the
-[Machine Learning course (Stanford University)](https://www.coursera.org/learn/machine-learning)
-and the [Deep Learning Specialization (DeepLearning.AI)](https://www.coursera.org/specializations/deep-learning)
-- Data Structures/Algorithms: Practice questions on [InterviewBit](https://www.interviewbit.com/)
+> - Analytical/Probability skills: [Fifty Challenging Problems in Probability with Solutions](https://mbapreponline.files.wordpress.com/2013/07/fifty_challenging_problems_in__2.pdf)
+> - Machine Learning theory: my notes from online courses on Coursera such as the [Machine Learning course (Stanford University)](https://www.coursera.org/learn/machine-learning) and the [Deep Learning Specialization (DeepLearning.AI)](https://www.coursera.org/specializations/deep-learning)
+> - Data Structures/Algorithms: Practice questions on [InterviewBit](https://www.interviewbit.com/)
 
 This way, I was able to prepare fairly well for both software and data science roles. 
 
