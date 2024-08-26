@@ -55,32 +55,25 @@ and Hiroshima.</p>
 structure. The company’s main focus is primarily in the HR Tech and SaaS business that promote
 digital transformation (DX) of industry and support the improvement of productivity in Japan.
 The group broadly has a heirarchical structure with the following products and services:</p>
+<blockquote>
+<p><a href="https://www.visional.inc/ja/index.html">Visional Corporation</a>, the holding company, supports the group management</p>
+</blockquote>
+<blockquote>
+<p><a href="https://www.bizreach.co.jp/">Bizreach Corporation</a>, responsible for the management of the original HR Tech and SaaS businesses</p>
+</blockquote>
 <ul>
-<li><a href="https://www.visional.inc/ja/index.html">Visional Corporation</a>, the holding company,</li>
-</ul>
-<p>supports the group management</p>
-<ul>
-<li><a href="https://www.bizreach.co.jp/">Bizreach Corporation</a>, responsible for the management of</li>
-</ul>
-<p>the original HR Tech and SaaS businesses</p>
-<ul>
-<li><a href="https://www.bizreach.jp/">Bizreach</a>, a job-change website that connects companies with</li>
-</ul>
-<p>human resources with immediate availability</p>
-<ul>
+<li><a href="https://www.bizreach.jp/">Bizreach</a>, a job-change website that connects companies with human resources with immediate availability</li>
 <li><a href="https://www.careertrek.com/">CareerTrek</a>, a job search site for young graduates</li>
 <li><a href="https://hrmos.co/">HRMOS</a>, a human resources management cloud platform</li>
 <li><a href="https://br-campus.jp/">Campus</a>, an alumni network service for career consultation</li>
-<li><a href="https://www.visional.inc/ja/visional-incubation.html">Visional Incubation Corporation</a>,</li>
 </ul>
-<p>responsible for new business development and acquisitions</p>
+<blockquote>
+<p><a href="https://www.visional.inc/ja/visional-incubation.html">Visional Incubation Corporation</a>, responsible for new business development and acquisitions</p>
+</blockquote>
 <ul>
 <li><a href="https://br-succeed.jp/">Succeed</a>, an M&#x26;A platform for business succession</li>
 <li><a href="https://yamory.io/">Yamory</a>, security vulnerability management cloud for IT systems</li>
-<li><a href="https://bizhint.jp/">BizHint</a>, a website providing “business tips” in the form of</li>
-</ul>
-<p>keywords, case studies and solutions</p>
-<ul>
+<li><a href="https://bizhint.jp/">BizHint</a>, a website providing “business tips” in the form of keywords, case studies and solutions</li>
 <li><a href="https://binar.jp/">BINAR</a>, a career change platform for highly specialized IT Engineers</li>
 <li><a href="https://jp.stanby.com/">StanBy</a>, a job-search engine jointly owned with Yahoo Japan</li>
 </ul>
@@ -98,6 +91,7 @@ service-related projects and an independent research project in a single half-ye
 frequently between the roles and responsibilities of a <strong>Data Scientist</strong>, an <strong>ML Engineer</strong>,
 as well as a <strong>Research Scientist</strong> for different projects undertaken at a time.</p>
 <p>An average ML project includes the following:</p>
+<blockquote>
 <ul>
 <li>understanding the requirements of the service teams</li>
 <li>analyzing data to optimize and improve services</li>
@@ -105,6 +99,7 @@ as well as a <strong>Research Scientist</strong> for different projects undertak
 <li>collaborating with service teams to deploy the AI features in production</li>
 <li>considering evaluation metrics/systems to quantify/monitor outcomes</li>
 </ul>
+</blockquote>
 <p>The projects require a good understanding of ML techniques, algorithms and statistics. Most
 of the work also involves Natural Language Processing techniques. I have also been able to
 apply my Computer Vision skills to a few projects.</p>
@@ -125,6 +120,7 @@ The system was built using <a href="https://pypi.org/project/opencv-python/">Ope
 using <strong>Docker</strong>, <strong>Terraform</strong> and <strong>AWS</strong>. Some text post-processing was implemented using
 a dictionary of Japanese financial terms.</p>
 <p>The pipeline roughly consists of the following steps:</p>
+<blockquote>
 <ul>
 <li>Parsing OCR request from AWS SQS and AWS S3</li>
 <li>Getting page images from PDF and fixing text orientation</li>
@@ -134,6 +130,7 @@ a dictionary of Japanese financial terms.</p>
 <li>Proofreading result text using a dictionary</li>
 <li>Save output XLS workbook to AWS S3</li>
 </ul>
+</blockquote>
 <p align="center">
   <span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin: 0 0 30px;">
       <a class="gatsby-resp-image-link" href="/static/a1bcd07a05bdf262fc28224f19e40278/37114/focr.png" style="display: block" target="_blank" rel="noopener">
@@ -160,6 +157,7 @@ to synthetically generate the train dataset. The textual addresses were transfor
 address images using character images available in the <a href="http://etlcdb.db.aist.go.jp/">ETL</a>
 and <a href="https://www.nist.gov/itl/products-and-services/emnist-dataset">EMNIST</a> datasets.
 Data augmentation was introduced to account for variances in handwriting:</p>
+<blockquote>
 <ul>
 <li>shape of characters</li>
 <li>spacing between characters (narrow or wide)</li>
@@ -167,6 +165,7 @@ Data augmentation was introduced to account for variances in handwriting:</p>
 <li>size of characters (big or small)</li>
 <li>stroke strength of characters (thick or thin)</li>
 </ul>
+</blockquote>
 <p align="center">
   <span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin: 0 0 30px;">
       <a class="gatsby-resp-image-link" href="/static/c43fe12e2dd8fa820d1e6f547436e982/cb93d/hocr_sent.png" style="display: block" target="_blank" rel="noopener">
@@ -221,17 +220,13 @@ internal HR to visualize activity and messaging trends on the Visional Slack wor
 <a href="https://github.com/neologd/mecab-ipadic-neologd#overview">NEologd</a> dictionary were used
 to clean the unstructured conversational data. The following are some of the features have
 been implemented in the GUI:</p>
+<blockquote>
 <ul>
-<li>Conversation topic transitions, to visualize the change over time in underlying topics</li>
-</ul>
-<p>of conversation, discovered using <strong>LDA topic modeling</strong></p>
-<ul>
-<li>Interactive User/Channel wordclouds, to visualize a summarized history of conversation</li>
-</ul>
-<p>keywords</p>
-<ul>
+<li>Conversation topic transitions, to visualize the change over time in underlying topics of conversation, discovered using <strong>LDA topic modeling</strong></li>
+<li>Interactive User/Channel wordclouds, to visualize a summarized history of conversation keywords</li>
 <li>Matching similar users, based on high topic probabilities in conversations</li>
 </ul>
+</blockquote>
 <h3 id="p4">HeadHunter Recommendation</h3>
 <p><a href="https://www.bizreach.jp/">BizReach</a>, Visional’s primary service, is a job-change website that
 connects individuals with recruiters and companies through job listings. Other than job search
@@ -298,15 +293,13 @@ restricted us from accepting more than one job offer in the entire season.</p>
 open to multiple opportunities. From information gathered from seniors as well as
 company introductory talks, I understood that most of the tests involved similar formats.
 On the basis of this information, my preparation included brushing up on:</p>
+<blockquote>
 <ul>
 <li>Analytical/Probability skills: <a href="https://mbapreponline.files.wordpress.com/2013/07/fifty_challenging_problems_in__2.pdf">Fifty Challenging Problems in Probability with Solutions</a></li>
-<li>Machine Learning theory: my notes from online courses on Coursera such as the</li>
-</ul>
-<p><a href="https://www.coursera.org/learn/machine-learning">Machine Learning course (Stanford University)</a>
-and the <a href="https://www.coursera.org/specializations/deep-learning">Deep Learning Specialization (DeepLearning.AI)</a></p>
-<ul>
+<li>Machine Learning theory: my notes from online courses on Coursera such as the <a href="https://www.coursera.org/learn/machine-learning">Machine Learning course (Stanford University)</a> and the <a href="https://www.coursera.org/specializations/deep-learning">Deep Learning Specialization (DeepLearning.AI)</a></li>
 <li>Data Structures/Algorithms: Practice questions on <a href="https://www.interviewbit.com/">InterviewBit</a></li>
 </ul>
+</blockquote>
 <p>This way, I was able to prepare fairly well for both software and data science roles.</p>
 <p>Parallely, I drafted a one-page resume showcasing my projects and my internships, and got
 it reviewed by a lot of friends and seniors. After a few revisions, I submitted it to the
