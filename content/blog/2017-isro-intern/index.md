@@ -73,14 +73,16 @@ for interns and my resume matched his requirements. More luckily, I got to choos
 The goal of the project was to simulate active space debris removal using tether-net
 connected to satellites in formation. There were 3 main concepts involved:
 
-- Spacecraft formation flying. This topic is well explored and enough literature was
-available. It involved relative position control combined with orbital mechanics.
+**1. Spacecraft formation flying**: 
+This topic is well explored and enough literature was available.
+It involved relative position control combined with orbital mechanics.
 
-- Tether net modelling. The behaviour of the net had to be described as a spatially
-distributed mechanical system.
+**2. Tether net modelling**:
+The behaviour of the net had to be described as a spatially distributed mechanical system.
 
-- Contact dynamics. The collective behaviour of the net and the satellites in formation
-during and after debris contact phases.
+**3. Contact dynamics**:
+The collective behaviour of the net and the satellites in 
+formation during and after debris contact phases.
 
 <h3 id="motivation">Motivation</h3>
 
