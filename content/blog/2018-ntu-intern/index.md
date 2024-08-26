@@ -29,6 +29,7 @@ able to gain work experience in [one of the top universities in Asia](https://ww
   - <a href="#application">Application Process</a>
   - <a href="#interview">Interview Call</a>
 - <a href="#lab">The Lab</a>
+
 - <a href="#project">The Project</a>
   - <a href="#objectives">Objectives</a>
   - <a href="#motivation">Motivation</a>
@@ -48,20 +49,11 @@ to focus on my minor in Computer Science, especially in the areas of
 Machine Learning and Artificial Intelligence. As semester projects, I was able
 to work on some interesting applications of Machine Learning:
 
-- [Mental Workload Estimation](https://github.com/kj7kunal/ML_Project):
-As part of the Machine Learning course (CS60050), I trained various ML models to
-estimate mental workload of a subject playing the N-Back game while wearing an
-Emotiv BCI headset. The project included feature engineering using signal processing
-techniques and resulted in a comparitive study between various ML models such
-as Decision Trees, Random Forests and Neural Nets.
-- [Artistic Image Rendering](https://github.com/kj7kunal/Artistic_Image_Rendering):
-As part of the Deep Learning course (CS60048), I decided to implement neural
-image style transfer as described in the paper
-[_A Neural Algorithm of Artistic Style by Gatys et al_](https://arxiv.org/pdf/1508.06576v2.pdf).
-This gave me a good understanding of how CNNs propagate signals, and how we can
-use intermediate feature maps to extract representations of textures and color
-schemes from the lower layers, and of structure from the deeper layers. I also
-learned about designing custom loss functions for the given optimization problem.
+__Mental Workload Estimation__ [[Github]](https://github.com/kj7kunal/ML_Project)
+> As part of the Machine Learning course (CS60050), I trained various ML models to estimate mental workload of a subject playing the N-Back game while wearing an Emotiv BCI headset. The project included feature engineering using signal processing techniques and resulted in a comparitive study between various ML models such as Decision Trees, Random Forests and Neural Nets.
+
+__Artistic Image Rendering__ [[Github]](https://github.com/kj7kunal/Artistic_Image_Rendering)
+> As part of the Deep Learning course (CS60048), I decided to implement neural image style transfer as described in the paper [_A Neural Algorithm of Artistic Style by Gatys et al_](https://arxiv.org/pdf/1508.06576v2.pdf). This gave me a good understanding of how CNNs propagate signals, and how we can use intermediate feature maps to extract representations of textures and color schemes from the lower layers, and of structure from the deeper layers. I also learned about designing custom loss functions for the given optimization problem.
 
 Apart from curriculum coursework, I also independently took up online courses on 
 Coursera such as the [Machine Learning course (Stanford University)](https://www.coursera.org/learn/machine-learning)
@@ -144,12 +136,12 @@ The goal was to build a new dataset for Person Re-Identification (Person Re-ID) 
 the aim of simulating the real world application domain as much as possible. 
 The plan involved capturing data with:
 
-- Scene Invariance
-  - Wide range of locations covered using outdoor public surveillance cameras
-  - Various times of the day (morning/afternoon/evening)
-  - Different weather conditions (sunny/cloudy/rainy)
-- Clothing Invariance
-  - "Actors" advised to wear various types of clothing during data collection
+Scene Invariance
+> - Wide range of locations covered using outdoor public surveillance cameras
+> - Various times of the day (morning/afternoon/evening)
+> - Different weather conditions (sunny/cloudy/rainy)
+Clothing Invariance
+> - "Actors" advised to wear various types of clothing during data collection
 
 My responsibilities in the project were to create tools to automate extraction and
 annotation of target "actor" images from surveillance video frames, to populate the
@@ -166,12 +158,12 @@ A Re-ID system should be able to keep track of subjects (who are on a certain �
 in surveillance videos of multiple probable locations of re-appearance.
 
 It is an extremely challenging task due to a plethora of reasons:
-- Pose/viewing angle difference
-- Low Resolution CCTV footage
-- Crowded Areas
-- Occlusions
-- Algorithm inadequacies (Detection errors / Real-time requirement)
-- Unlimited/Open dataset task (Infinite number of classes for a classification problem)
+> - Pose/viewing angle difference
+> - Low Resolution CCTV footage
+> - Crowded Areas
+> - Occlusions
+> - Algorithm inadequacies (Detection errors / Real-time requirement)
+> - Unlimited/Open dataset task (Infinite number of classes for a classification problem)
 
 <p align="center">
   <img src="reid_system.jpeg" alt="ReID system"/>
@@ -189,9 +181,9 @@ I took a note of image sizes and attributes (such as gender, clothes, accessorie
 in these datasets. I found out that these datasets had small camera networks, therefore
 less variance in scenes. We were able to expand the network, as well as create a more
 realistic surveillance setting, having secured access to public CCTV cameras:
-- ~80 cameras spread over 34 locations in NTU Singapore Campus (thanks to NTU)
-- ~50 cameras spread over 23 locations in Singapore (thanks to DSTA)
-  - Orchard Road (Shopping Area), CBD (Business Area) and Civic District (Tourist Area)
+> - ~80 cameras spread over 34 locations in NTU Singapore Campus (thanks to NTU)
+> - ~50 cameras spread over 23 locations in Singapore (thanks to DSTA)
+>   - Orchard Road (Shopping Area), CBD (Business Area) and Civic District (Tourist Area)
 
 <p align="center">
   <img src="cctv.png" alt="CCTV footage"/>
@@ -219,15 +211,14 @@ It provided an easy interface for the volunteering “actors” in the dataset.
   <img src="daq_ntu.png" alt="Mobile WebApp"/>
 </p>
 
-- *Privacy-aware*: Only collected images of participants who accepted the privacy policy
-- *User-driven*: The actor could indicate when they were passing through the FOV of
-a given surveillance camera, reducing annotation effort:
-  - the web-app automatically recorded time-stamps which could be matched in the surveillance
-  videos to extract 1-min clips for the particular actor
-  - the actors enterred their own accurate appearance attributes into a form
-- *Collection Strategy*: The web-app would display active paths which could be walked
-on a particular day. This reduced the number of CCTV footage archives that had to
-be accessed in a day.
+**Privacy-aware**
+> Only collected images of participants who accepted the privacy policy
+**User-driven**
+> The actor could indicate when they were passing through the FOV of a given surveillance camera, reducing annotation effort:
+> - the web-app automatically recorded time-stamps which could be matched in the surveillance videos to extract 1-min clips for the particular actor
+> - the actors enterred their own accurate appearance attributes into a form
+**Collection Strategy** 
+> The web-app would display active paths which could be walked on a particular day. This reduced the number of CCTV footage archives that had to be accessed in a day.
 
 This approach proved to be an important USP of our system, since a year later, in 2019,
 due to controveries about privacy and consent, the DukeMTMC dataset was
@@ -239,39 +230,42 @@ and MSMT17 has to release a new version to mask up the faces of all pedestrians 
 From the previous step, we could obtain 1-min video clips of the actors in the scene.
 The next step was to extract the target actor's images from the video frames and
 annotate them with the IDs and attributes of the target actor. The proposed pipeline
-involved two main components - Person Detection and Person Retrieval.
+involved two main components - Person Detection (retrieval) and Target Extraction (ranking).
 
-The first task was to isolate regions corresponding to people within a video frame.
-A person detector was built using the [**YOLOv3 architecture**](https://pjreddie.com/darknet/yolo/)
-in **PyTorch**, and modified to return region proposals (bounding boxes) corresponding
-to the "Person" class. The YOLOv3 system was much faster than Deformable Part Models
-(DPM) used in Market-1501 and Faster-RCNN architecture used in MSMT17, and had a
-mAP of 57.9% on [COCO test-dev](https://paperswithcode.com/sota/object-detection-on-coco).
-For more details, I recommend you to read the paper,
-[YOLOv3: An Incremental Improvement](https://pjreddie.com/media/files/papers/YOLOv3.pdf),
-as it is a very interesting and fun read! 
+**[RETRIEVAL] Person Detection**
+> The first task was to isolate regions corresponding to people within a video frame.
+> A person detector was built using the [**YOLOv3 architecture**](https://pjreddie.com/darknet/yolo/)
+> in **PyTorch**, and modified to return region proposals (bounding boxes) corresponding to the "Person" class. 
+
+> The YOLOv3 system was much faster than Deformable Part Models
+> (DPM) used in Market-1501 and Faster-RCNN architecture used in MSMT17, and had a
+> mAP of 57.9% on [COCO test-dev](https://paperswithcode.com/sota/object-detection-on-coco).
+> For more details, I recommend you to read the paper,
+> [YOLOv3: An Incremental Improvement](https://pjreddie.com/media/files/papers/YOLOv3.pdf),
+> as it is a very interesting and fun read! 
 
 
-The YOLOv3 Person Detection system was able to achieve 10fps processing speed on a
-Nvidia GTX 1070 GPU, for detecting and annotating bounding boxes within the surveillance video.
+> The YOLOv3 Person Detection system was able to achieve 10fps processing speed on a
+> Nvidia GTX 1070 GPU, for detecting and annotating bounding boxes within the surveillance video.
 
 <p align="center">
   <img src="person_detect.gif" alt="Person Detection Demo"/>
 </p>
 
-The next step was to separate (retrieve) images of the target person from multiple YOLOv3
-detections. Since this was basically a simple tracking problem in a single video, we use
-a feature extraction with distance metric two-stage pipeline.
+**[RANKING] Target Extraction**
+> The next step was to rank the retrieved images, i.e., extract target person from the YOLOv3
+> detections. Since this was basically a simple tracking problem in a single video, we use
+> a feature extraction with distance metric two-stage pipeline.
 
-A [ResNet50 CNN (pre-trained on ImageNet)](https://pytorch.org/hub/pytorch_vision_resnet/)
-was used to extract robust feature representations of detected pedestrians. The user
-first had to select the target person image, called the probe/query image, and tracking
-was achieved by ranking the [cosine similarity score](https://en.wikipedia.org/wiki/Cosine_similarity#Definition)
-of the 2048-D feature embeddings (after the global max-pooling layer) between query
-and YOLOv3 detected images. 
+> A [ResNet50 CNN (pre-trained on ImageNet)](https://pytorch.org/hub/pytorch_vision_resnet/)
+> was used to extract robust feature representations of detected pedestrians. The user
+> first had to select the target person image, called the probe/query image, and tracking
+> was achieved by ranking the [cosine similarity score](https://en.wikipedia.org/wiki/Cosine_similarity#Definition)
+> of the 2048-D feature embeddings (after the global max-pooling layer) between query
+> and YOLOv3 detected images. 
 
-Since the video was continuous, a weighted average of the original query image and
-the detected target image tracked in the last frame was used as the new query image.
+> Since the video was continuous, a weighted average of the original query image and
+> the detected target image tracked in the last frame was used as the new query image.
 
 <p align="center">
   <img src="retrieval.png" alt="Retrieval flow"/>
