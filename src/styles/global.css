@@ -13,7 +13,6 @@
   --secondary-color: #6366f1;
   --dot-grid-color: #E5E7EB;
   --timeline-line-color: #D1D5DB;
-  --timeline-line-color: #D1D5DB;
   
   /* Fluid Typography Scale */
   --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
@@ -65,7 +64,6 @@ body {
   line-height: 1.6;
   overflow-x: hidden; /* Prevent horizontal scroll */
   font-family: 'Inter', sans-serif;
-  line-height: 1.6;
 }
 
 /* Responsive Container Override */
