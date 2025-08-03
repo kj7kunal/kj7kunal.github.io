@@ -1,0 +1,53 @@
+---
+// Navigation component
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-snow/90 dark:bg-midnight-indigo/90 backdrop-blur-sm border-b border-card-border-light dark:border-transparent">
+  <nav class="container-fluid flex justify-between items-center" style="padding: var(--space-sm) var(--space-md);">
+    <a href="/" class="text-fluid-xl font-bold gradient-text flex items-center space-fluid-xs">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-indigo-500 dark:text-soft-lilac" style="width: clamp(1.25rem, 2.5vw, 1.5rem); height: clamp(1.25rem, 2.5vw, 1.5rem);">
+        <path d="M10 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"></path>
+        <path d="M16 3l5 5"></path>
+        <path d="M14 21v-4.5a1.5 1.5 0 0 1 1.5-1.5h0A1.5 1.5 0 0 1 17 16.5V21"></path>
+      </svg>
+      Kunal Jain
+    </a>
+    
+    <!-- Social Icons -->
+    <div class="flex items-center space-fluid-md">
+      <a href="https://www.linkedin.com/in/kj7kunal" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-electric-teal transition-colors">
+        <svg viewBox="0 0 24 24" fill="currentColor" style="width: clamp(1.125rem, 2.25vw, 1.25rem); height: clamp(1.125rem, 2.25vw, 1.25rem);">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+        </svg>
+      </a>
+      
+      <a href="https://twitter.com/kj7kunal" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-electric-teal transition-colors">
+        <svg viewBox="0 0 24 24" fill="currentColor" style="width: clamp(1.125rem, 2.25vw, 1.25rem); height: clamp(1.125rem, 2.25vw, 1.25rem);">
+          <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+        </svg>
+      </a>
+      
+      <a href="https://github.com/kj7kunal" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-electric-teal transition-colors">
+        <svg viewBox="0 0 24 24" fill="currentColor" style="width: clamp(1.125rem, 2.25vw, 1.25rem); height: clamp(1.125rem, 2.25vw, 1.25rem);">
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+        </svg>
+      </a>
+      
+      <a href="mailto:kj7kunal@gmail.com" class="text-gray-600 dark:text-gray-400 hover:text-electric-teal transition-colors">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: clamp(1.125rem, 2.25vw, 1.25rem); height: clamp(1.125rem, 2.25vw, 1.25rem);">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+      </a>
+      
+      <button id="theme-toggle" class="p-fluid-sm rounded-full text-gray-600 dark:text-gray-400 hover:text-electric-teal transition-colors">
+        <svg id="theme-toggle-dark-icon" class="hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" style="width: clamp(1rem, 2vw, 1.125rem); height: clamp(1rem, 2vw, 1.125rem);">
+          <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+        </svg>
+        <svg id="theme-toggle-light-icon" class="hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" style="width: clamp(1rem, 2vw, 1.125rem); height: clamp(1rem, 2vw, 1.125rem);">
+          <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 5.05A1 1 0 003.636 6.464l.707.707a1 1 0 001.414-1.414l-.707-.707zM4 10a1 1 0 01-1-1V7a1 1 0 112 0v2a1 1 0 01-1 1zm4.95-4.95a1 1 0 011.414 0l.707.707a1 1 0 01-1.414 1.414l-.707-.707a1 1 0 010-1.414z"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+</header>

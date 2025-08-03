@@ -1,0 +1,53 @@
+---
+import { getCollection } from 'astro:content';
+
+// Get featured blog posts and ML posts
+const blogPosts = await getCollection('life');
+const expPosts = await getCollection('experiments');
+const mlPosts = await getCollection('ml');
+const allPosts = [...blogPosts, ...mlPosts, ...expPosts]
+  .filter(post => post.data.featured)
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+  .slice(0, 4);
+
+// Transform posts for display
+const zinePosts = allPosts.map((post, index) => ({
+  ...post,
+  category: post.collection === 'life' ? 'Life Columns' : 'ML Columns',
+  categoryColor: post.collection === 'life' ? 'indigo-500' : 'electric-teal',
+  size: index % 3 === 0 ? 'large' : 'small', // Make every 3rd post large
+  tags: post.data.tags?.slice(0, 2).map(tag => `#${tag}`) || []
+}));
+---
+
+<div class="w-full">
+  <div class="container-fluid">
+    <!-- Section Header -->
+    <div class="text-center mb-8 lg:mb-12">
+      <h2 class="text-fluid-4xl lg:text-fluid-6xl font-bold gradient-text mb-2 lg:mb-4">Digital Zine</h2>
+      <p class="text-fluid-base lg:text-fluid-xl text-gray-600 dark:text-snow/70">A collection of articles, life updates, and experiments.</p>
+      <a href="/blog" class="inline-block mt-4 lg:mt-6 text-blue-600 hover:text-blue-800 transition-colors text-fluid-sm lg:text-fluid-lg">
+        View all posts →
+      </a>
+    </div>
+    
+    <!-- Posts Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      {zinePosts.map((post) => (
+        <a href={`/blog/${post.slug}`} class={`card hover:scale-105 transition-transform cursor-pointer ${post.size === 'large' ? 'md:col-span-2 lg:col-span-2' : ''}`}>
+          <span class={`card-corner-accent border-${post.category === 'ML Columns' ? 'electric-teal' : 'soft-lilac'}`}></span>
+          <h4 class={`font-mono text-fluid-xs lg:text-fluid-sm uppercase text-${post.categoryColor} ${post.category === 'Life Columns' ? 'dark:text-soft-lilac' : ''} mb-2 lg:mb-fluid-sm`}>
+            {post.category}
+          </h4>
+          <h3 class="text-fluid-xl lg:text-fluid-3xl font-bold text-text-dark dark:text-snow mb-2 lg:mb-fluid-sm leading-tight">{post.data.title}</h3>
+          <p class="text-fluid-sm lg:text-fluid-lg text-gray-600 dark:text-snow/70 mb-4 lg:mb-fluid-md line-clamp-3">{post.data.description}</p>
+          <div class="flex flex-wrap gap-2">
+            {post.tags.map((tag) => (
+              <span class="tag">{tag}</span>
+            ))}
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</div>
