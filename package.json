@@ -7,8 +7,10 @@
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/mdx": "^4.3.3",
+    "@astrojs/partytown": "^2.1.4",
     "@astrojs/react": "^4.3.0",
-    "@astrojs/rss": "^4.0.9",
+    "@astrojs/rss": "^4.0.12",
+    "@astrojs/sitemap": "^3.4.2",
     "@astrojs/tailwind": "^6.0.2",
     "@tailwindcss/typography": "^0.5.16",
     "astro": "^5.12.8",
@@ -26,10 +28,13 @@
   },
   "keywords": [
     "kj7kunal",
+    "kunal jain",
     "portfolio",
     "personal",
     "website",
     "tech",
+    "japan",
+    "tokyo",
     "coding",
     "dev",
     "machine learning engineer",
@@ -37,7 +42,11 @@
     "ai",
     "ml engineer",
     "ai engineer",
-    "kunal jain"
+    "mlops",
+    "genai",
+    "chatgpt",
+    "claude",
+    "vibe coding"
   ],
   "license": "MIT",
   "scripts": {
@@ -46,7 +55,6 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "deploy": "npm run build && gh-pages -d dist",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,astro}\"",
     "setup": "npm install"
   },

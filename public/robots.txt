@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Allow all crawlers access to CSS and JS
+Allow: /_astro/
+Allow: /assets/
+
+# Sitemap location
+Sitemap: https://kj7kunal.github.io/sitemap-index.xml
+
+# Crawl-delay to be respectful to site resources
+Crawl-delay: 1

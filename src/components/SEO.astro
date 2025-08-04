@@ -1,0 +1,174 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  canonical?: string;
+  type?: 'website' | 'article';
+  publishedTime?: Date;
+  modifiedTime?: Date;
+  tags?: string[];
+  author?: string;
+  category?: string;
+  readingTime?: number;
+}
+
+const {
+  title,
+  description,
+  image = '/social.jpg',
+  canonical,
+  type = 'website',
+  publishedTime,
+  modifiedTime,
+  tags,
+  author = 'Kunal Jain',
+  category,
+  readingTime
+} = Astro.props;
+
+const canonicalURL = canonical || new URL(Astro.url.pathname, Astro.site);
+const socialImageURL = new URL(image, Astro.url);
+
+// Generate structured title for better SEO
+const siteTitle = 'Kunal Jain - ML Engineer';
+const fullTitle = title.includes(siteTitle) ? title : `${title} | ${siteTitle}`;
+
+// Create breadcrumb structured data
+const breadcrumbItems = [];
+breadcrumbItems.push({
+  "@type": "ListItem",
+  "position": 1,
+  "name": "Home",
+  "item": Astro.site
+});
+
+if (type === 'article' && category) {
+  breadcrumbItems.push({
+    "@type": "ListItem",
+    "position": 2,
+    "name": category.charAt(0).toUpperCase() + category.slice(1),
+    "item": `${Astro.site}blog/`
+  });
+  breadcrumbItems.push({
+    "@type": "ListItem",
+    "position": 3,
+    "name": title,
+    "item": canonicalURL
+  });
+}
+---
+
+<!-- Primary Meta Tags -->
+<title>{fullTitle}</title>
+<meta name="title" content={fullTitle} />
+<meta name="description" content={description} />
+<meta name="author" content={author} />
+<link rel="canonical" href={canonicalURL} />
+
+<!-- Enhanced viewport and mobile optimization -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#0891b2" />
+
+<!-- Language and locale -->
+<meta http-equiv="content-language" content="en" />
+<meta property="og:locale" content="en_US" />
+
+<!-- Additional meta tags for better indexing -->
+{tags && <meta name="keywords" content={tags.join(', ')} />}
+{readingTime && <meta name="twitter:label1" content="Reading time" />}
+{readingTime && <meta name="twitter:data1" content={`${readingTime} min read`} />}
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content={type} />
+<meta property="og:url" content={canonicalURL} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={socialImageURL} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content={title} />
+<meta property="og:site_name" content="Kunal Jain - ML Engineer" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={canonicalURL} />
+<meta property="twitter:title" content={fullTitle} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={socialImageURL} />
+<meta property="twitter:image:alt" content={title} />
+<meta property="twitter:creator" content="@kj7kunal" />
+<meta property="twitter:site" content="@kj7kunal" />
+
+<!-- Article specific meta tags -->
+{type === 'article' && (
+  <>
+    {publishedTime && <meta property="article:published_time" content={publishedTime.toISOString()} />}
+    {modifiedTime && <meta property="article:modified_time" content={modifiedTime.toISOString()} />}
+    {author && <meta property="article:author" content={author} />}
+    {tags && tags.map(tag => <meta property="article:tag" content={tag} />)}
+  </>
+)}
+
+<!-- Additional SEO tags -->
+<meta name="robots" content="index, follow" />
+<meta name="googlebot" content="index, follow" />
+
+<!-- Enhanced Schema.org JSON-LD -->
+<script type="application/ld+json" is:inline set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": type === 'article' ? "BlogPosting" : "WebSite",
+  "name": fullTitle,
+  "description": description,
+  "url": canonicalURL,
+  "author": {
+    "@type": "Person",
+    "name": author,
+    "url": "https://kj7kunal.github.io",
+    "sameAs": [
+      "https://twitter.com/kj7kunal",
+      "https://linkedin.com/in/kj7kunal",
+      "https://github.com/kj7kunal"
+    ]
+  },
+  ...(type === 'website' && {
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://kj7kunal.github.io/blog/?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }),
+  ...(type === 'article' && {
+    "headline": title,
+    "datePublished": publishedTime?.toISOString(),
+    "dateModified": modifiedTime?.toISOString() || publishedTime?.toISOString(),
+    "image": socialImageURL,
+    "keywords": tags?.join(', '),
+    "wordCount": readingTime ? readingTime * 200 : undefined,
+    "timeRequired": readingTime ? `PT${readingTime}M` : undefined,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": canonicalURL
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Kunal Jain - ML Engineer",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://kj7kunal.github.io/icon.png"
+      }
+    }
+  })
+})} />
+
+<!-- Breadcrumb structured data for articles -->
+{type === 'article' && breadcrumbItems.length > 0 && (
+  <script type="application/ld+json" is:inline set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": breadcrumbItems
+  })} />
+)}

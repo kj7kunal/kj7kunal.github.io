@@ -16,8 +16,8 @@ export default {
         'text-dark': '#111827',
       },
       fontFamily: {
-        sans: ['Inter','sans-serif'],
-        mono: ['JetBrains Mono','monospace'],
+        sans: ['Inter', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace'],
       },
       maxWidth: {
         '150': '150px',
