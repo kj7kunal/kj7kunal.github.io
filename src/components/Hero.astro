@@ -1,0 +1,55 @@
+---
+// Hero section component
+---
+
+<div class="w-full h-full flex items-center justify-center px-4 py-8">
+  <div class="container-fluid">
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16">
+      <div class="flex-1 text-center lg:text-left order-2 lg:order-1">
+        <!-- Hero Text -->
+        <h1 class="text-fluid-5xl lg:text-fluid-7xl font-bold mb-4 lg:mb-fluid-lg leading-tight">
+          Hi, I'm <span class="gradient-text">Kunal Jain</span>
+        </h1>
+        <h2 class="text-fluid-2xl lg:text-fluid-4xl text-gray-700 dark:text-gray-300 font-medium mb-4 lg:mb-fluid-lg tracking-wide">
+          MACHINE LEARNING ENGINEER
+        </h2>
+        <p class="text-fluid-base lg:text-fluid-2xl text-gray-600 dark:text-gray-400 max-w-none lg:max-w-[70ch] mx-auto lg:mx-0 mb-6 lg:mb-fluid-xl leading-relaxed">
+          Building life paths by connecting data points, <br class="hidden sm:block">I'm a quietly ambitious Machine Learning Engineer based in Tokyo, <br class="hidden sm:block"> 
+          navigating the logic of code and the narratives of travel, strategy, and life.
+        </p>
+
+        <div class="mb-6 lg:mb-fluid-lg">
+          <span class="inline-flex items-center gradient-text font-mono text-fluid-xs lg:text-fluid-sm p-2 lg:p-fluid-sm rounded-full shadow-sm">
+            <svg class="w-4 h-4 lg:w-6 lg:h-6 mr-2 text-electric-teal" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z"/></svg>
+            <span class="text-xs lg:text-sm">Currently: Documenting my ML journey & exploring Japan's islands 🏝️</span>
+          </span>
+        </div>
+        
+        <!-- Navigation Actions -->
+        <div class="flex flex-wrap justify-center lg:justify-start gap-2 lg:gap-4 mb-6 lg:mb-fluid-lg">
+          <a href="#about" class="btn-secondary text-sm lg:text-base">About</a>
+          <a href="#storyboard" class="btn-secondary text-sm lg:text-base">Journey</a>
+          <a href="#zine" class="btn-secondary text-sm lg:text-base">Zine</a>
+          <a href="/blog" class="btn-primary text-sm lg:text-base">Read My Blog</a>
+          <a href="https://tinyurl.com/kunaljainresume" class="btn-primary text-sm lg:text-base">Résumé</a>
+        </div>
+      </div>
+      
+      <!-- Profile Image -->
+      <div class="flex-shrink-0 order-1 lg:order-2">
+        <div class="relative">
+          <div class="rounded-full overflow-hidden border-4 border-gray-200 dark:border-gray-700 shadow-2xl w-40 h-40 sm:w-48 sm:h-48 lg:w-80 lg:h-80 xl:w-96 xl:h-96">
+            <img 
+              src="/profile.jpg"
+              alt="Kunal Jain - ML Engineer" 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <!-- Decorative elements -->
+          <div class="absolute rounded-full blur-xl bg-electric-teal/20 w-8 h-8 lg:w-16 lg:h-16 -top-2 -right-2 lg:-top-4 lg:-right-4"></div>
+          <div class="absolute rounded-full blur-xl bg-soft-lilac/20 w-10 h-10 lg:w-20 lg:h-20 -bottom-2 -left-2 lg:-bottom-4 lg:-left-4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

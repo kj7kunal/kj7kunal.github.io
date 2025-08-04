@@ -1,0 +1,236 @@
+---
+// Professional timeline/storyboard component with actual experience
+interface TimelineItem {
+  title: string;
+  organization: string;
+  year: string;
+  period: string;
+  description: string;
+  highlights: string[];
+  tags: string[];
+  side: 'left' | 'right';
+  accentColor: 'electric-teal' | 'soft-lilac';
+  blogLink?: string;
+}
+
+// Memoized timeline data for better performance
+const timelineItems: TimelineItem[] = [
+  {
+    title: 'Machine Learning Engineer',
+    organization: 'Visional Inc. (formerly BizReach Inc.)',
+    year: '2019 - Present',
+    period: 'Oct 2019 - Present',
+    description: 'Leading AI/ML initiatives in HR Tech, from end-to-end ML workflows to production systems serving millions of users.',
+    highlights: [
+      'Built Resume Generation system with ChatGPT, achieving 40% improvement in KPIs',
+      'Led LLM fine-tuning R&D using ELYZA-Japanese-Llama-2-7b with LoRA/PEFT',
+      'Architected Feature Store PoC with Vertex AI, reducing technical debt across 30+ pipelines'
+    ],
+    tags: ['PyTorch', 'LLM', 'MLOps', 'Computer Vision', 'NLP'],
+    side: 'left',
+    accentColor: 'electric-teal',
+    blogLink: '/blog/2024-visional'
+  },
+  {
+    title: 'Summer Research Internship',
+    organization: 'Nanyang Technological University, Singapore',
+    year: '2018',
+    period: 'May 2018 - Jul 2018',
+    description: 'Computer Vision research at ROSE Lab, developing privacy-aware Person Re-ID systems for surveillance applications.',
+    highlights: [
+      'Built automated person detection pipeline using YOLOv3 architecture in PyTorch',
+      'Created Re-ID-Outdoor dataset - first privacy-aware public dataset for Person Re-ID',
+      'Achieved 10fps real-time detection and 5fps full tracking pipeline performance'
+    ],
+    tags: ['Computer Vision', 'PyTorch', 'YOLO', 'Person Re-ID', 'Research'],
+    side: 'right',
+    accentColor: 'soft-lilac',
+    blogLink: '/blog/2018-ntu-intern'
+  },
+  {
+    title: 'Summer Research Internship',
+    organization: 'ISRO Satellite Centre, Bangalore',
+    year: '2017',
+    period: 'May 2017 - Jul 2017',
+    description: 'Space technology research on active debris removal using satellite formations and tether-net systems.',
+    highlights: [
+      'Designed spacecraft formation flying models using Hill-Clohessy-Wiltshire equations',
+      'Developed tether-net dynamics simulation using lumped parameter approach',
+      'Research accepted for International Astronautical Congress 2018 presentation'
+    ],
+    tags: ['MATLAB', 'C++', 'Space Technology', 'Orbital Mechanics', 'Research'],
+    side: 'left',
+    accentColor: 'electric-teal',
+    blogLink: '/blog/2017-isro-intern'
+  }
+] as const;
+
+// Utility function for generating unique IDs
+const generateId = (prefix: string, index: number) => `${prefix}-${index}`;
+
+// Error boundary for safe rendering
+const safeRender = (content: string | undefined, fallback = 'N/A') => content || fallback;
+---
+
+<div class="w-full" role="main" aria-labelledby="professional-journey-title">
+  <div class="container-fluid">
+    <!-- Section Header -->
+    <div class="text-center mb-8 lg:mb-12">
+      <h2 id="professional-journey-title" class="text-fluid-4xl lg:text-fluid-6xl font-bold gradient-text mb-4">Professional Journey</h2>
+      <p class="text-fluid-base lg:text-fluid-xl text-gray-600 dark:text-gray-400 mb-6">My career milestones and achievements</p>
+      <div class="w-24 h-1 bg-gradient-to-r from-electric-teal to-soft-lilac mx-auto rounded-full" aria-hidden="true"></div>
+    </div>
+    
+    <!-- Cards Container -->
+    <div class="relative">
+      <!-- Desktop: Grid Layout -->
+      <div class="hidden lg:grid lg:grid-cols-1 lg:gap-8 lg:max-w-6xl lg:mx-auto" role="list" aria-label="Professional experience timeline">
+        {timelineItems.map((item, index) => (
+          <article 
+            class={`journey-card ${index % 2 === 0 ? 'journey-card-left' : 'journey-card-right'}`}
+            role="listitem"
+            aria-labelledby={generateId('experience', index)}
+          >
+            <div class="card">
+              <span class={`card-corner-accent border-${item.accentColor}`} aria-hidden="true"></span>
+              
+              <!-- Card Content -->
+              <div class="grid grid-cols-12 gap-8 items-start">
+                <!-- Main Content -->
+                <div class="col-span-6">
+                  <div class="mb-4">
+                    <div class="flex items-start justify-between mb-3">
+                      <time class="text-2xl font-bold font-mono text-electric-teal dark:text-electric-teal" datetime={item.year}>{item.year}</time>
+                    </div>
+                    <h3 id={generateId('experience', index)} class="text-2xl font-bold text-text-dark dark:text-snow mb-2 leading-tight">{safeRender(item.title)}</h3>
+                    <h4 class="text-lg font-semibold text-gray-700 dark:text-snow/90 mb-2">{safeRender(item.organization)}</h4>
+                    <p class="text-sm font-mono text-gray-500 dark:text-snow/60 mb-4">{safeRender(item.period)}</p>
+                  </div>
+                  <p class="text-base text-gray-600 dark:text-snow/80 leading-relaxed">{safeRender(item.description)}</p>
+                </div>
+                
+                <!-- Achievements -->
+                <div class="col-span-6">
+                  <h5 class="text-sm font-semibold text-gray-700 dark:text-snow/90 mb-4 uppercase tracking-wide">Key Achievements</h5>
+                  <ul class="space-y-3" role="list">
+                    {item.highlights.map((highlight) => (
+                      <li class="text-sm text-gray-600 dark:text-snow/75 leading-relaxed flex items-start" role="listitem">
+                        <span class="text-electric-teal dark:text-electric-teal mr-3 mt-1 flex-shrink-0 font-bold" aria-hidden="true">•</span>
+                        <span>{highlight}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              
+              <!-- Bottom Section -->
+              <div class="flex flex-wrap items-center justify-between gap-4 mt-6 pt-6 border-t border-gray-200/50 dark:border-gray-600/50">
+                <div class="flex flex-wrap gap-2" role="list" aria-label="Technologies and skills used">
+                  {item.tags.map((tag) => (
+                    <span class="tag" role="listitem">{tag}</span>
+                  ))}
+                </div>
+                {item.blogLink && (
+                  <a 
+                    href={item.blogLink} 
+                    class="text-sm text-electric-teal dark:text-electric-teal hover:text-soft-lilac dark:hover:text-soft-lilac transition-colors duration-200 font-semibold flex items-center gap-2 group"
+                    rel="noopener noreferrer"
+                    aria-label={`Read more about ${item.title} experience`}
+                  >
+                    Read More 
+                    <span class="transform group-hover:translate-x-1 transition-transform duration-200" aria-hidden="true">→</span>
+                  </a>
+                )}
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <!-- Mobile/Tablet: Horizontal Scroll -->
+      <div class="lg:hidden">
+        <div 
+          class="flex gap-6 overflow-x-auto pb-6 snap-x snap-mandatory scrollbar-hide" 
+          style="scroll-padding-left: 1rem;"
+          role="list" 
+          aria-label="Professional experience cards - swipe to explore"
+          tabindex="0"
+        >
+          {timelineItems.map((item, index) => (
+            <article 
+              class="flex-none w-80 sm:w-96 snap-start" 
+              role="listitem"
+              aria-labelledby={generateId('mobile-experience', index)}
+            >
+              <div class="card h-full">
+                <span class={`card-corner-accent border-${item.accentColor}`} aria-hidden="true"></span>
+                
+                <!-- Mobile Card Content -->
+                <div class="flex flex-col h-full">
+                  <!-- Header -->
+                  <div class="mb-4">
+                    <div class="flex items-start justify-between mb-3">
+                      <time class="text-l font-bold font-mono text-electric-teal dark:text-electric-teal" datetime={item.year}>{item.year}</time>
+                    </div>
+                    <h3 id={generateId('mobile-experience', index)} class="text-xl font-bold text-text-dark dark:text-snow mb-2 leading-tight">{safeRender(item.title)}</h3>
+                    <h4 class="text-base font-semibold text-gray-700 dark:text-snow/90 mb-1">{safeRender(item.organization)}</h4>
+                    <p class="text-sm font-mono text-gray-500 dark:text-snow/60">{safeRender(item.period)}</p>
+                  </div>
+
+                  
+                  <!-- Description -->
+                  <p class="text-sm text-gray-600 dark:text-snow/80 leading-relaxed mb-4">{safeRender(item.description)}</p>
+                  
+                  <!-- Achievements -->
+                  <div class="mb-4 flex-1">
+                    <h5 class="text-xs font-semibold text-gray-700 dark:text-snow/90 mb-2 uppercase tracking-wide">Key Achievements</h5>
+                    <ul class="space-y-1.5" role="list">
+                      {item.highlights.map((highlight) => (
+                        <li class="text-xs text-gray-600 dark:text-snow/75 leading-relaxed flex items-start" role="listitem">
+                          <span class="text-electric-teal dark:text-electric-teal mr-2 mt-0.5 flex-shrink-0 font-bold" aria-hidden="true">•</span>
+                          <span>{highlight}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  
+                  <!-- Bottom Section -->
+                  <div class="mt-auto pt-4 border-t border-gray-200/50 dark:border-gray-600/50">
+                    <div class="flex flex-wrap gap-1.5 mb-3" role="list" aria-label="Technologies and skills used">
+                      {item.tags.map((tag) => (
+                        <span class="tag text-xs" role="listitem">{tag}</span>
+                      ))}
+                    </div>
+                    {item.blogLink && (
+                      <a 
+                        href={item.blogLink} 
+                        class="text-sm text-electric-teal dark:text-electric-teal hover:text-soft-lilac dark:hover:text-soft-lilac transition-colors duration-200 font-semibold flex items-center gap-2 group"
+                        rel="noopener noreferrer"
+                        aria-label={`Read more about ${item.title} experience`}
+                      >
+                        Read More 
+                        <span class="transform group-hover:translate-x-1 transition-transform duration-200" aria-hidden="true">→</span>
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="flex justify-center mt-4 gap-2" role="tablist" aria-label="Experience timeline navigation">
+          {timelineItems.map((item, index) => (
+            <button 
+              class="w-2 h-2 rounded-full bg-gray-300 dark:bg-gray-600 transition-colors duration-200 hover:bg-electric-teal dark:hover:bg-electric-teal focus:bg-electric-teal dark:focus:bg-electric-teal focus:outline-none focus:ring-2 focus:ring-electric-teal focus:ring-offset-2 dark:focus:ring-offset-gray-900"
+              role="tab"
+              aria-label={`Go to ${item.title} experience`}
+              onclick={`document.querySelector('.lg\\\\:hidden .flex.gap-6.overflow-x-auto').children[${index}].scrollIntoView({behavior: 'smooth', inline: 'center'})`}
+            ></button>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

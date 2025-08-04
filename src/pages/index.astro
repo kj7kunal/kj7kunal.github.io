@@ -1,0 +1,53 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Storyboard from '../components/Storyboard.astro';
+import DigitalZine from '../components/DigitalZine.astro';
+import About from '../components/About.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout
+  title="Kunal Jain | Machine Learning Engineer" 
+  description="Machine Learning Engineer based in Tokyo. Building AI solutions, exploring generative AI, and sharing insights on ML engineering, career growth, and life in Japan. 5+ years experience in MLOps, computer vision, and LLM fine-tuning."
+  image="/social.jpg"
+  type="website"
+  tags={['machine learning', 'ai engineer', 'tokyo', 'ml engineering', 'generative ai', 'mlops', 'computer vision', 'llm fine-tuning', 'career', 'japan', 'data science', 'python', 'tensorflow', 'pytorch']}
+>
+  <Header />
+  
+  <!-- Responsive main container -->
+  <main class="w-full">
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center justify-center py-8 md:py-16">
+      <div class="container">
+        <Hero />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="min-h-screen flex items-center justify-center py-8 md:py-16">
+      <div class="container">
+        <About />
+      </div>
+    </section>
+
+    <!-- Storyboard Section -->
+    <section id="storyboard" class="min-h-screen flex items-center justify-center py-8 md:py-16">
+      <div class="container">
+        <Storyboard />
+      </div>
+    </section>
+    
+    <!-- DigitalZine Section -->
+    <section id="zine" class="min-h-screen flex items-center justify-center py-8 md:py-16">
+      <div class="container">
+        <DigitalZine />
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <Footer />
+  </main>
+</Layout>

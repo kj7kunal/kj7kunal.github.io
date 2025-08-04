@@ -1,0 +1,119 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="404 - Page Not Found" description="Oops! The page you're looking for doesn't exist.">
+  <main class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-indigo-950 flex items-center justify-center px-4">
+    <div class="text-center max-w-lg mx-auto">
+      <!-- Large 404 Animation -->
+      <div class="relative mb-8">
+        <div class="text-9xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 animate-pulse">
+          404
+        </div>
+        <div class="absolute inset-0 text-9xl font-bold text-blue-200 dark:text-blue-800 transform translate-x-2 translate-y-2 -z-10">
+          404
+        </div>
+      </div>
+
+      <!-- Fun Message -->
+      <h1 class="text-4xl font-bold text-gray-800 dark:text-white mb-4">
+        Oops! Page Not Found
+      </h1>
+      
+      <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+        Looks like you've ventured into uncharted territory! 🚀<br>
+        The page you're looking for seems to have wandered off into the digital cosmos.
+      </p>
+
+      <!-- Fun ASCII Art -->
+      <div class="bg-gray-800 dark:bg-gray-700 text-green-400 font-mono text-sm p-4 rounded-lg mb-8 overflow-x-auto">
+        <pre class="whitespace-pre">
+    ¯\_(ツ)_/¯
+    
+ > ls -la /requested-page
+ ls: /requested-page: 
+ No such file or directory
+        </pre>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
+        <a 
+          href="/" 
+          class="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+        >
+          🏠 Go Home
+        </a>
+        
+        <a 
+          href="/blog" 
+          class="inline-block px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+        >
+          📝 Read Blog
+        </a>
+        
+        <button 
+          onclick="history.back()"
+          class="inline-block px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 cursor-pointer"
+        >
+          ⬅️ Go Back
+        </button>
+      </div>
+
+      <!-- Fun Facts -->
+      <div class="mt-12 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
+        <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-3">
+          💡 Fun 404 Facts
+        </h2>
+        <div class="text-left text-gray-600 dark:text-gray-300 space-y-2">
+          <p>• HTTP 404 was named after room 404 at CERN (not really, but it's a fun myth!)</p>
+          <p>• The first 404 error page was created in 1993</p>
+          <p>• You're one of the brave few who found this page! 🎉</p>
+        </div>
+      </div>
+
+      <!-- Easter Egg -->
+      <div class="mt-8 text-sm text-gray-500 dark:text-gray-400">
+        <p>
+          Still lost? Try the 
+          <a href="/" class="text-blue-600 dark:text-blue-400 hover:underline">Konami Code</a> 
+          ↑↑↓↓←→←→BA
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Easter egg: Konami Code
+    let konamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+    let userInput: number[] = [];
+
+    document.addEventListener('keydown', function(e) {
+      userInput.push(e.key === 'ArrowUp' ? 38 : 
+                    e.key === 'ArrowDown' ? 40 : 
+                    e.key === 'ArrowLeft' ? 37 : 
+                    e.key === 'ArrowRight' ? 39 : 
+                    e.key === 'b' || e.key === 'B' ? 66 : 
+                    e.key === 'a' || e.key === 'A' ? 65 : 0);
+      
+      if (userInput.length > konamiCode.length) {
+        userInput.shift();
+      }
+      
+      if (userInput.length === konamiCode.length) {
+        let match = true;
+        for (let i = 0; i < konamiCode.length; i++) {
+          if (userInput[i] !== konamiCode[i]) {
+            match = false;
+            break;
+          }
+        }
+        
+        if (match) {
+          alert('🎉 Konami Code activated! You found the secret! 🎮');
+          window.location.href = '/';
+        }
+      }
+    });
+  </script>
+</Layout>

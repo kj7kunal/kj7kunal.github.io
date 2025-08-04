@@ -1,0 +1,64 @@
+---
+// About section component
+---
+
+<div class="w-full">
+  <div class="container-fluid">
+    <!-- Section Header -->
+    <div class="text-center mb-fluid-xl">
+      <div class="relative inline-block">
+        <!-- Coffee ring stain logo -->
+        <svg class="absolute -top-2 -right-2 opacity-30 dark:opacity-20" style="width: var(--space-2xl); height: var(--space-2xl);" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M80 150C118.66 150 150 118.66 150 80C150 41.3401 118.66 10 80 10C41.3401 10 10 41.3401 10 80C10 118.66 41.3401 150 80 150Z" stroke="#00F5D4" stroke-width="6" stroke-miterlimit="10" stroke-linecap="round" stroke-dasharray="1.5 15"/>
+          <path d="M115.28 123.06C125.01 112.51 129.1 97.6 126.81 83.2C124.52 68.8 116.09 56.49 104.01 49.73" stroke="#00F5D4" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"/>
+        </svg>
+        <h2 class="text-fluid-4xl lg:text-fluid-6xl font-bold gradient-text relative z-10">About</h2>
+      </div>
+      <p class="text-center lg:text-fluid-xl text-gray-600 dark:text-gray-400 mt-4">My Introduction</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
+      <!-- Text Content -->
+      <div class="flex-1 w-full lg:w-auto">
+        <div class="text-gray-700 dark:text-gray-300 leading-relaxed space-y-4 lg:space-y-6">
+          <p class="text-fluid-lg lg:text-fluid-2xl">
+            Hey 👋🏼 I'm a Machine Learning Engineer based in Tokyo, Japan 🗼
+          </p>
+          <p class="text-fluid-base lg:text-fluid-lg">
+            I graduated with a Masters degree from IIT Kharagpur and my ML journey has taken me from building models to owning entire ML system lifecycles. 
+            These days, I drive the AI in GenAI-powered resume/job description generation at BizReach, focusing on MLOps best practices, platformizing solutions, and reducing duplication through smart standardization.
+          </p>
+          <p class="text-fluid-base lg:text-fluid-lg">
+            I'm passionate about building reliable ML/AI systems (inspired by Chip Huyen), exploring new technologies, and uncovering the stories hidden in data. 
+            When I'm not coding, you can find me running 🏃‍♂️, hunting for great coffee ☕, trying to learn the piano 🎹, or cooking up way too much experimental curry 🍛.
+          </p>
+          <p class="text-fluid-base lg:text-fluid-lg">
+            I love traveling ✈️ and I boast a conquest score of 90 on my Japanese prefecture map 🗾
+          </p>
+
+        </div>
+      </div>
+
+      <!-- Image Section -->
+      <div class="flex-shrink-0 w-full lg:w-2/5 mt-6 lg:mt-0">
+        <div class="relative max-w-sm lg:max-w-md mx-auto">
+          <!-- Main image -->
+          <div class="relative overflow-hidden rounded-2xl shadow-2xl">
+            <img 
+              src="/kj_collage.jpg"
+              alt="Kunal Jain" 
+              class="w-full h-auto object-cover"
+            />
+            <!-- Overlay gradient for better text contrast if needed -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
+          
+          <!-- Decorative elements -->
+          <div class="absolute -top-2 -left-2 bg-electric-teal/20 rounded-full blur-xl w-8 h-8 lg:w-12 lg:h-12"></div>
+          <div class="absolute -bottom-2 -right-2 bg-soft-lilac/20 rounded-full blur-xl w-10 h-10 lg:w-16 lg:h-16"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
