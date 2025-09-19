@@ -4,7 +4,7 @@ description: "2 years as an ML/AI Engineer at Visional Inc. - reflections on my 
 date: 2021-10-01
 tags: ["career", "machine-learning", "japan", "visional", "reflection"]
 category: "life"
-featured: true
+featured: false
 ---
 
 I have been working with [Visional Inc.](https://www.visional.inc/ja/index.html), based in
