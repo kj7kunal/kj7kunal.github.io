@@ -108,7 +108,7 @@ A third of the height already covered by bus, I started my ascent at 5pm for the
 
 </div>
 
-As the sun went down, I quickly realised that I was the only one within a 100 metre radius, as there were not a lot of climbers who chose his trail.
+As the sun went down, I quickly realised that I was the only one within a 100 metre radius, as there were not a lot of climbers who chose this trail.
 Climbing through the forest, I felt a pang of fear as the night fell and I took out my headlamp. 
 
 The dead silence and long hike leaves you alone with your ideas and any unfamiliar setting gives birth to conjectural horrors.
@@ -136,7 +136,7 @@ The terrain alternated between rocky pumice and sandy ash, and was thankful for 
 
 </div>
 
-It was fairly clear, so while I rested my loudly beating heart, I was able to identify many constellations I had memorised as a nerdy child - Casseiopeia, Big Dipper, Ursa Minor, Orion, Pleiades. The city below glimmered, and the cloud cover below me seemed like a confluence of artificial and natural light. In this backdrop, I exercised some of my photography skills.
+It was fairly clear, so while I rested my loudly beating heart, I was able to identify many constellations I had memorised as a nerdy child - Cassiopeia, Big Dipper, Ursa Minor, Orion, Pleiades. The city below glimmered, and the cloud cover below me seemed like a confluence of artificial and natural light. In this backdrop, I exercised some of my photography skills.
 
 I had to make multiple stops along the way, not only to catch my breath, but to put on warmer layers, eat my energy bars and most importantly, to acclimatize to the altitude.
 
